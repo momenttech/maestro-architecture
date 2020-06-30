@@ -10,7 +10,7 @@ menu:
     - uri: /Admin
       label: Admin Module
 slideshow:
-   #logoUrl: /images/MMTT_dark-blue.png
+   #logoUrl: ../images/plantuml/MMTT_dark-blue.png
    headingLevel: 4
    #theme: simple
 ---
@@ -57,7 +57,7 @@ slideshow:
         <li>Index is saved in **data_dir** volume</li>
       </ul>
     </TD>
-    <TD style="width:55%"><img src="images/plantuml/FAISS/faiss/FAISS_Full.svg" width="100%" height="610"></TD>
+    <TD style="width:55%"><img src="../images/plantuml/FAISS/faiss/FAISS_Full.svg" width="100%" height="610"></TD>
   </TR>
 </TABLE>
 

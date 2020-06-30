@@ -10,7 +10,7 @@ menu:
     - uri: /Admin
       label: Admin Module
 slideshow:
-   #logoUrl: /images/MMTT_dark-blue.png
+   #logoUrl: ../images/MMTT_dark-blue.png
    headingLevel: 4
    #theme: simple
 ---
@@ -19,7 +19,7 @@ slideshow:
 ## Architecture Overview
 
 ##  
-<img src="images/plantuml/Admin/admin/Admin_Full.svg" height="610">
+<img src="../images/plantuml/Admin/admin/Admin_Full.svg" height="610">
 
 ## Attributes
 
@@ -67,13 +67,13 @@ slideshow:
 
 ###  
 
-<img src="images/plantuml/Admin/admin_coms/CommandsMaster.svg" height="610">
+<img src="../images/plantuml/Admin/admin_coms/CommandsMaster.svg" height="610">
 
 ### State diagram 
 
 ###  
 
-<img src="images/plantuml/Admin/admin_master_selection/AdminHeartbeats.svg" height="610">
+<img src="../images/plantuml/Admin/admin_master_selection/AdminHeartbeats.svg" height="610">
 
 
 ## Admin GUI commands
@@ -82,18 +82,18 @@ slideshow:
 * Commands are adressed to multiple Pods
 * Only one pod, the master, reply to all commands
 
-<img src="images/plantuml/Admin/admin/Admin_EntryPoint.svg" height="400">
+<img src="../images/plantuml/Admin/admin/Admin_EntryPoint.svg" height="400">
 
 ### Messaging architecture
 
 ####  
 
-<img src="images/plantuml/Admin/messaging_commands/MessagingCommands.svg" height="610">
+<img src="../images/plantuml/Admin/messaging_commands/MessagingCommands.svg" height="610">
 
 ### Command processing
 
 ###  
-<img src="images/plantuml/Admin/admin/Admin_Manage.svg" height="610">
+<img src="../images/plantuml/Admin/admin/Admin_Manage.svg" height="610">
 
 
 ### FAISS request example:
@@ -158,5 +158,5 @@ slideshow:
   
 ###  
 
-<img src="images/plantuml/Admin/admin/Admin_Index.svg" height="610">
+<img src="../images/plantuml/Admin/admin/Admin_Index.svg" height="610">
 

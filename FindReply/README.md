@@ -10,7 +10,7 @@ menu:
     - uri: /Admin
       label: Admin Module
 slideshow:
-   #logoUrl: /images/MMTT_dark-blue.png
+   #logoUrl: ../images/plantuml/MMTT_dark-blue.png
    headingLevel: 4
    #theme: simple
 ---
@@ -19,7 +19,7 @@ slideshow:
 ## Architecture Overview
 
 ##  
-<img src="images/plantuml/FindReply/find_reply/FindReply_Full.svg" height="610">
+<img src="../images/plantuml/FindReply/find_reply/FindReply_Full.svg" height="610">
 
 
 
@@ -53,7 +53,7 @@ slideshow:
 
 ## Communications
 _most of the code can be picked from the previous version of Maestro_  
-<img src="images/plantuml/FindReply/find_reply/FindReply_EntryPoint.svg">   
+<img src="../images/plantuml/FindReply/find_reply/FindReply_EntryPoint.svg">   
 
 ### Two type of requests  
 To be compatible with the existing  
@@ -184,6 +184,6 @@ return final_ids, final_scores
         <li>**Internal** communication only (Admin)</li>
       </ul>
     </TD>
-    <TD style="width:55%"><img src="images/plantuml/FindReply/find_reply/FindReply_TestingInterface.svg"></TD>
+    <TD style="width:55%"><img src="../images/plantuml/FindReply/find_reply/FindReply_TestingInterface.svg"></TD>
   </TR>
 </TABLE>
