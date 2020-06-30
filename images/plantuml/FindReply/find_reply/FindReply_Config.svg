@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="496.875px" preserveAspectRatio="none" style="width:305px;height:496px;" version="1.1" viewBox="0 0 305 496" width="305.2083px" zoomAndPan="magnify"><defs><filter height="300%" id="f192cc67brw8dk" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fa66ffc8969e3bb00fdf02ebbafc856c]
+cluster FindReplyModule_cfg--><rect fill="#EEEEEE" height="460.4167" rx="4.1667" ry="4.1667" style="stroke: #444444; stroke-width: 2.0833333333333335; stroke-dasharray: 7.0,7.0;" width="270.8333" x="22.9167" y="25"/><text fill="#444444" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="102.0833" x="107.2917" y="43.8944">Docker Config</text><!--MD5=[27ef8fd0563cd6f6841e9e57f151cd84]
+entity FindReplyModule_vars--><path d="M39.5833,72.9167 L39.5833,368.5791 A4.1667,4.1667 0 0 0 43.75,372.7458 L272.9167,372.7458 A4.1667,4.1667 0 0 0 277.0833,368.5791 L277.0833,79.1667 L266.6667,68.75 L43.75,68.75 A4.1667,4.1667 0 0 0 39.5833,72.9167 " fill="#FFFFFF" filter="url(#f192cc67brw8dk)" style="stroke: #868E96; stroke-width: 1.5625;"/><path d="M266.6667,68.75 L266.6667,75 A4.1667,4.1667 0 0 0 270.8333,79.1667 L277.0833,79.1667 " fill="#FFFFFF" style="stroke: #868E96; stroke-width: 1.5625;"/><text fill="#868E96" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="80.2083" x="61.4583" y="123.3704">Mandatory</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="43.75" x="61.4583" y="146.404">RMQ_IP:</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60.4167" x="108.3333" y="146.404">RMQ broker</text><text fill="#868E96" font-family="Verdana" font-size="11.4583" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57.2917" x="61.4583" y="169.9132">Optional</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="71.875" x="61.4583" y="192.7012">RMQ_USER =</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="25" x="136.4583" y="192.7012">tbott</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="88.5417" x="61.4583" y="215.2435">RMQ_PASSWD =</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="68.75" x="153.125" y="215.2435">M0m3n773ch</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="119.7917" x="61.4583" y="237.7858">QUESTIONS_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="44.7917" x="184.375" y="237.7858">tbott-rpc</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="111.4583" x="61.4583" y="260.3282">ENCODER_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="69.7917" x="176.0417" y="260.3282">tbott-encoder</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="114.5833" x="61.4583" y="282.8705">MATCHING_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="76.0417" x="179.1667" y="282.8705">tbott-matching</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="94.7917" x="61.4583" y="305.4128">NB_INSTANCES =</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="6.25" x="159.375" y="305.4128">5</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="69.7917" x="61.4583" y="327.9551">RMQ_PORT =</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="25" x="134.375" y="327.9551">5672</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="70.8333" x="61.4583" y="350.4974">LOG_LEVEL=</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="26.0417" x="135.4167" y="350.4974">INFO</text><line style="stroke: #868E96; stroke-width: 1.0416666666666667;" x1="40.625" x2="115.1042" y1="92.863" y2="92.863"/><text fill="#868E96" font-family="Verdana" font-size="14.5833" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="76.0417" x="120.3125" y="97.3907">Variables</text><line style="stroke: #868E96; stroke-width: 1.0416666666666667;" x1="201.5625" x2="276.0417" y1="92.863" y2="92.863"/><!--MD5=[ad43a35547d8f31748ef47d7c656d86d]
+entity FindReplyModule_vols--><path d="M68.75,397.9167 L68.75,464.5182 A4.1667,4.1667 0 0 0 72.9167,468.6849 L243.75,468.6849 A4.1667,4.1667 0 0 0 247.9167,464.5182 L247.9167,404.1667 L237.5,393.75 L72.9167,393.75 A4.1667,4.1667 0 0 0 68.75,397.9167 " fill="#FFFFFF" filter="url(#f192cc67brw8dk)" style="stroke: #868E96; stroke-width: 1.5625;"/><path d="M237.5,393.75 L237.5,400 A4.1667,4.1667 0 0 0 241.6667,404.1667 L247.9167,404.1667 " fill="#FFFFFF" style="stroke: #868E96; stroke-width: 1.5625;"/><text fill="#868E96" font-family="Verdana" font-size="10.4167" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23.9583" x="90.625" y="446.4366">logs</text><text fill="#868E96" font-family="Verdana" font-size="10.4167" lengthAdjust="spacingAndGlyphs" textLength="108.3333" x="117.7083" y="446.4366">-&gt; /var/log/supervisor</text><line style="stroke: #868E96; stroke-width: 1.0416666666666667;" x1="69.7917" x2="117.7083" y1="417.863" y2="417.863"/><text fill="#868E96" font-family="Verdana" font-size="14.5833" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="70.8333" x="122.9167" y="422.3907">Volumes</text><line style="stroke: #868E96; stroke-width: 1.0416666666666667;" x1="198.9583" x2="246.875" y1="417.863" y2="417.863"/><!--MD5=[ce87164961160ef57e12dd1e6fb85888]
+link FindReplyModule_vars to FindReplyModule_vols--><!--MD5=[2e49e69cb43e01c0910ae4964d14994b]
+@startuml
+
+
+
+
+skinparam backgroundColor White
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             True
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor $SUCCESS_DARK
+    IBackgroundColor #D2494E
+    IBorderColor $DANGER_DARK
+    EBackgroundColor #E47833
+    EBorderColor $WARNING_DARK
+    NBackgroundColor #35638F
+    NBorderColor $INFO_DARK
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              White
+}
+
+skinparam legend {
+	BackgroundColor White
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam activity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor White
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #BABDBF
+}
+
+
+skinparam participant {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam arrow {
+	Thickness 2.5
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor White
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor White
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor White
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	DividerBackgroundColor White
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor White
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor White
+}
+
+
+skinparam collections {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam control {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam entity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam boundary {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam agent {
+	BackgroundColor White
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam artifact {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam component {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	
+}
+
+
+skinparam interface {
+	BackgroundColor  White
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+}
+
+
+skinparam node {
+	BackgroundColor White
+	BorderColor #343A40
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #343A40
+}
+
+
+skinparam database {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam class {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	BackgroundColor #F2FCFE-#eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+
+skinparam state {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam card {
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam file {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam stack {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+
+hide stereotype
+
+!pragma horizontalLineBetweenDifferentPackageAllowed
+
+skinparam file<<NOTE>> {
+	BorderThickness 0.5
+    BackgroundColor LightYellow
+	BorderColor LightSteelBlue
+	FontColor SteelBlue
+    FontSize 10
+    ArrowColor LightSteelBlue
+}
+skinparam arrow<<NOTE>> {
+    Color LightSteelBlue
+}
+
+
+
+
+
+skinparam node<<MULTITHREADED>>{
+    FontColor #E47833
+	BorderColor #E47833
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+skinparam frame<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam rectangle<<boundary>> {
+    BackgroundColor #eeeeee
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+    BoxPadding 0
+}
+
+skinparam file<<docker_params>> {
+    Shadowing True
+    FontSize 10
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam nodesep 30
+skinparam ranksep 20
+skinparam componentStyle uml2
+
+skinparam Entity<<ADMIN>>{
+    FontColor black
+	BorderColor #6F42C1
+	BackgroundColor #Red/Yellow
+}
+skinparam Entity<<FAISS>>{
+    FontColor black
+	BorderColor #6F42C1
+	BackgroundColor #Blue/White
+}
+skinparam arrow<<TEST>> {
+	Thickness 1
+	Color #73A839
+	FontColor #343A40
+}
+
+skinparam arrow<<INTRA>> {
+	Color #868E96
+}
+
+
+            rectangle "Docker Config" <<boundary>> as FindReplyModule_cfg {
+                    
+
+        file "- - =Variables - -\n==Mandatory\nRMQ_IP: <i>RMQ broker</i>\n===Optional\nRMQ_USER = <i>tbott</i>\n                                RMQ_PASSWD = <i>M0m3n773ch</i>\n                                QUESTIONS_QUEUE = <i>tbott-rpc</i>\n                                ENCODER_QUEUE = <i>tbott-encoder</i>\n                                MATCHING_QUEUE = <i>tbott-matching</i>\n                                NB_INSTANCES = <i>5</i>\n                                RMQ_PORT = <i>5672</i>\n                                LOG_LEVEL= <i>INFO</i>" <<docker_params>> as FindReplyModule_vars
+                    
+
+        file "- - =Volumes - -\n<b>logs</b> -> /var/log/supervisor" <<docker_params>> as FindReplyModule_vols
+    
+                FindReplyModule_vols -[hidden]U- FindReplyModule_vars
+        }
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

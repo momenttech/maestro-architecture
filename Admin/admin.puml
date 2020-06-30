@@ -1,0 +1,51 @@
+@startuml Admin_Full
+!include admin_parts.puml
+scale 1.2
+
+actor "Admin GUI" as AdminRMQ_IN
+'interface "Proxy" as AdminRMQ_OUT
+Entity "Find Reply\nrequests" <<FINDREP>> as AdminPodComInterface
+Entity "Git Repo" as GitRepo
+Entity "Find Reply" <<FINDREP>> as FindReply
+Entity "Bert Encoder" as AdminEncoder
+Entity Faiss <<FAISS>>
+
+$Container("AdminModule") {
+    '"all", "variables", "ports", "volumes", "extra"
+    $make_docker_config("all") 
+    'top to bottom direction
+    '"all", "AdminEntryPoint", "AdminExecCommand", "AdminIndex"
+    $make_content("all")
+}
+@enduml
+
+@startuml Admin_EntryPoint
+!include admin_parts.puml
+
+
+actor "Admin GUI" as AdminRMQ_IN
+'( ) as AdminRMQ_OUT
+'interface "<b>Start Here</b>" as AdminRMQ
+$make_content("AdminEntryPoint")
+
+@enduml
+
+@startuml Admin_Manage
+!include admin_parts.puml
+
+Entity "Git Repo" as GitRepo
+Entity "Find Reply" <<FINDREP>> as FindReply
+Entity "Bert Encoder" as AdminEncoder
+Entity Faiss <<FAISS>>
+
+'"all", "AdminEntryPoint", "AdminExecCommand", "AdminIndex"
+$make_content("AdminExecCommand")
+@enduml
+
+@startuml Admin_Index
+!include admin_parts.puml
+Entity "Find Reply\nrequests" <<FINDREP>> as AdminPodComInterface
+
+'"all", "AdminEntryPoint", "AdminExecCommand", "AdminIndex"
+$make_content("AdminIndex")
+@enduml

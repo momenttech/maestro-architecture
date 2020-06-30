@@ -1,0 +1,100 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/momenttech/plantuml/master/globals/commons.puml
+'left to right direction
+'top to bottom direction
+skinparam nodesep 20
+skinparam ranksep 10
+
+scale 1
+
+!procedure $make_docker_config($display)
+    !if ($display != "")
+        $DockerConfig("FaissModule") {
+            !if ($display == "all") || ($display == "variables")
+                $DockerVariables("FaissModule", \
+                                "", \
+                                "NB_MATCHING= <i>10</i>\n\
+                                LOG_LEVEL= <i>INFO</i>")
+            !endif
+            '!if ($display == "all") || ($display == "ports")
+            '    $DockerPorts("FaissModule",\
+            '                "127.0.0.1:<b>14000</b>")
+            '!endif
+            !if ($display == "all") || ($display == "volumes")
+                $DockerVolumes("FaissModule",\
+                            "<b>logs</b> -> /var/log/supervisor\n\
+                            <b>data_dir</b> -> /opt/faiss")
+            !endif
+            !if ($display == "all") || ($display == "extra")
+                '$DockerExtra("FaissModule", "test", "content")
+            !endif
+        }
+    !endif
+!endprocedure
+
+!procedure $make_content($display)
+
+    !if ($display == "all") || ($display == "EntryPoint")
+        frame "Entry point" as EntryPoint {
+            component FAISS_MSG_C [
+                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                ----
+                <i><color:teal>ListenNumpyMsg()</color></i>
+                <i><color:teal>on <b>127.0.0.1:14000</b></color></i>
+                ----
+                ThreadPool
+                ]
+        }
+        !if ($display == "all")
+            FAISSØMQ o-r-> EntryPoint
+        !endif
+    !endif
+    
+    !if ($display == "all") || ($display == "ManageIndex")
+        frame "Manage Index" as MgntIndex {
+            component FaissIdxMgnt [
+                create
+                ---
+                update
+                ---
+                del
+                ---
+                add]
+                [search]
+        }
+    !endif
+
+    !if ($display == "all")
+        FAISS_MSG_C o..> [search]: Thread N+1
+        FAISS_MSG_C o..> FaissIdxMgnt: Thread N
+    !endif
+
+    !if ($display == "all") || ($display == "FaissIndex")
+        database "Faiss Index" as FaissIndex {
+            frame "RWLock¹" as FaissRWLock {
+                component "<b>write</b>\n<i>prioritized</i>" as write
+                [read]
+            }
+        }
+        !if ($display == "all")
+            [search] o--> [read]
+            FaissIdxMgnt o--> [write]
+        !endif
+    !endif
+
+
+!endprocedure
+
+' $Container("FaissModule") {
+'     '"all", "variables", "ports", "volumes", "extra"
+'     $make_docker_config("all") 
+'     'top to bottom direction
+'     '"all", "EntryPoint", "ManageIndex", "FaissIndex"
+'     $make_content("all")
+' }
+' legend
+'     (1) RWLock lib: 
+'     [[https://github.com/elarivie/pyReaderWriterLock]]
+' endlegend
+
+@enduml

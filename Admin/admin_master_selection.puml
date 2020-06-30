@@ -1,0 +1,76 @@
+@startuml AdminHeartbeats
+!includeurl https://raw.githubusercontent.com/momenttech/plantuml/master/globals/commons.puml
+'!include ./globals/commons.puml
+'skinparam linetype ortho
+'skinparam linetype polyline
+'left to right direction
+'top to bottom direction
+skinparam nodesep 30
+skinparam ranksep 20
+scale 1.4
+
+skinparam activity<<ASK>>{
+    FontColor $WARNING_LIGHT
+    FontStyle bold
+	'BorderColor $PURPLE
+	'BackgroundColor #White|LightSteelBlue
+}
+skinparam ActivityDiamondFontStyle bold
+skinparam ActivityDiamondFontColor $WARNING_LIGHT
+
+partition "Reply to GUI" {
+    "Master Reply to GUI" --> "Master start listening\n<master> topic"
+    --> (*)
+}
+(*) --> "GUI post command"
+
+partition "Master selection" {
+    --> "All pods post a <b>WIM</b> request" 
+    note left: <b>WIM</b>: <b>W</b>ho <b>I</b>s <b>M</b>aster
+    --> "Wait replies"
+    --> "Received a reply\nbefore timeout ?" <<ASK>>
+    if ""
+        --> [No] "No previous master\nor Master KO"
+    else
+        --> [Yes] "Select a master"
+        --> "All timestamps\nare empty ?" <<ASK>>
+        note left: <i>date of the last</i>\n<i>cmd received</i>
+        if ""
+            --> [Yes] "First in queue\nis now Master"
+            --> ===DONE===
+        else
+            --> [No] "Keep only replies\n with timestamp"
+            --> "NB replies > 1 ?" <<ASK>>
+            if ""
+                --> [Yes] "Select last timestamp\nas Master"
+                --> ===DONE===
+            else
+                --> [No] "Select as Master"
+                --> ===DONE===
+            endif
+        endif
+    endif
+
+===DONE=== --> "Master Reply to GUI"
+}
+
+partition "Apply for Master position" {
+    "No previous master\nor Master KO" -> "All pods post a <b>WKWIM</b> request"
+    note left: <b>WKWIM</b>: <b>W</b>ho <b>K</b>nows <b>W</b>ho <b>I</b>s <b>M</b>aster
+    --> "All replies\nare <<UNK>> ?" <<ASK>>
+    if ""
+        --> [Yes] "No master defined\n or I'm alone"
+        --> "Someone else\nhas replied ?" <<ASK>>
+        if ""
+            --> [No] "Act as a <b>temporary</b> Master"
+            --> "Master Reply to GUI"
+        else
+            --> [Yes] "No master defined\nChoose a new one"
+            --> "all pods apply as Master\nwith empty timestamp"
+            --> "Wait replies"
+        endif
+    else
+        --> [No] "Ask for command forwarding\ntill master is reachable"
+    endif
+
+}

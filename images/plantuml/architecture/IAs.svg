@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="192.7083px" preserveAspectRatio="none" style="width:328px;height:192px;" version="1.1" viewBox="0 0 328 192" width="328.125px" zoomAndPan="magnify"><defs><filter height="300%" id="f1fs6t57u93sk5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[f1663fbf14c00e59c125eabd1ddaa8e2]
+cluster General Purpose\nNeural Networks--><rect fill="#F0F8FF" filter="url(#f1fs6t57u93sk5)" height="156.25" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 2.0833333333333335;" width="293.75" x="22.9167" y="25"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="123.9583" x="107.8125" y="43.8944">General Purpose</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="123.9583" x="107.8125" y="58.4452">Neural Networks</text><!--MD5=[be204df2846cf3374b6939adaaf1394d]
+entity sentencematching--><rect fill="#EEEEEE" filter="url(#f1fs6t57u93sk5)" height="81.1849" rx="4.1667" ry="4.1667" style="stroke: #033C73; stroke-width: 1.5625;" width="114.5833" x="185.4167" y="83.3333"/><path d="M223.6111,84.375 L223.6111,88.5417 L216.3194,95.8333 L185.4167,95.8333 " fill="none" style="stroke: #033C73; stroke-width: 1.5625;"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="62.5" x="206.25" y="120.9778">Sentence</text><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="60.4167" x="206.25" y="145.9452">matching</text><!--MD5=[60550a84bd3e591d28477d1e7a7b3a2e]
+entity bertencoder--><rect fill="#EEEEEE" filter="url(#f1fs6t57u93sk5)" height="81.1849" rx="4.1667" ry="4.1667" style="stroke: #033C73; stroke-width: 1.5625;" width="114.5833" x="39.5833" y="83.3333"/><path d="M77.7778,84.375 L77.7778,88.5417 L70.4861,95.8333 L39.5833,95.8333 " fill="none" style="stroke: #033C73; stroke-width: 1.5625;"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="62.5" x="60.4167" y="120.9778">Sentence</text><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="54.1667" x="60.4167" y="145.9452">encoder</text><!--MD5=[2432ea93fc9babacc1af8cfe7fe18e0a]
+@startuml
+
+
+
+
+skinparam backgroundColor White
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             True
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor $SUCCESS_DARK
+    IBackgroundColor #D2494E
+    IBorderColor $DANGER_DARK
+    EBackgroundColor #E47833
+    EBorderColor $WARNING_DARK
+    NBackgroundColor #35638F
+    NBorderColor $INFO_DARK
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              White
+}
+
+skinparam legend {
+	BackgroundColor White
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam activity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor White
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #BABDBF
+}
+
+
+skinparam participant {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam arrow {
+	Thickness 2.5
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor White
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor White
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor White
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	DividerBackgroundColor White
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor White
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor White
+}
+
+
+skinparam collections {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam control {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam entity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam boundary {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam agent {
+	BackgroundColor White
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam artifact {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam component {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	
+}
+
+
+skinparam interface {
+	BackgroundColor  White
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+}
+
+
+skinparam node {
+	BackgroundColor White
+	BorderColor #343A40
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #343A40
+}
+
+
+skinparam database {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam class {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	BackgroundColor #F2FCFE-#eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+
+skinparam state {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam card {
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam file {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam stack {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+
+hide stereotype
+
+!pragma horizontalLineBetweenDifferentPackageAllowed
+
+skinparam file<<NOTE>> {
+	BorderThickness 0.5
+    BackgroundColor LightYellow
+	BorderColor LightSteelBlue
+	FontColor SteelBlue
+    FontSize 10
+    ArrowColor LightSteelBlue
+}
+skinparam arrow<<NOTE>> {
+    Color LightSteelBlue
+}
+
+
+
+
+
+skinparam node<<MULTITHREADED>>{
+    FontColor #E47833
+	BorderColor #E47833
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+skinparam frame<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam rectangle<<boundary>> {
+    BackgroundColor #eeeeee
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+    BoxPadding 0
+}
+
+skinparam file<<docker_params>> {
+    Shadowing True
+    FontSize 10
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam nodesep 30
+skinparam ranksep 20
+
+skinparam Entity<<FINDREP>>{
+    FontColor black
+	BorderColor #6F42C1
+	BackgroundColor #Yellow/Blue
+}
+skinparam Entity<<FAISS>>{
+    FontColor black
+	BorderColor #6F42C1
+	BackgroundColor #Blue/White
+}
+skinparam arrow<<TEST>> {
+	Thickness 1
+	Color #73A839
+	FontColor #343A40
+}
+skinparam arrow<<INTRA>> {
+	Color #868E96
+}
+
+
+
+
+
+skinparam rectangle<<OUTOFSCOPE>>{
+    BackgroundColor AliceBlue
+}
+rectangle "General Purpose\nNeural Networks" <<OUTOFSCOPE>>{
+    frame "Sentence\nmatching" as sentencematching <<CONTAINER>>
+    frame "Sentence\nencoder" as bertencoder <<CONTAINER>>
+    
+}
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

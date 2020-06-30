@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="992.7083px" preserveAspectRatio="none" style="width:1288px;height:992px;" version="1.1" viewBox="0 0 1288 992" width="1288.5417px" zoomAndPan="magnify"><defs><filter height="300%" id="f4ay1oeoprfid" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="g4ay1oeoprfid0" x1="0%" x2="100%" y1="50%" y2="50%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#20B2AA"/></linearGradient><linearGradient id="g4ay1oeoprfid1" x1="0%" x2="100%" y1="50%" y2="50%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#B0C4DE"/></linearGradient></defs><g><!--MD5=[6fcec6c9571699bb1af81e383e2402d5]
+cluster RmqBroker--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="613.0208" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 2.0833333333333335;" width="936.4583" x="218.2292" y="25.5208"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132.2917" x="620.3125" y="44.4153">RabbitMQ   Broker</text><!--MD5=[f1e20e71595d95b6db30bcaa2e95b211]
+cluster TopicEx--><rect fill="url(#g4ay1oeoprfid0)" filter="url(#f4ay1oeoprfid)" height="118.75" rx="4.1667" ry="4.1667" style="stroke: #6F42C1; stroke-width: 2.0833333333333335;" width="136.4583" x="456.7708" y="271.875"/><text fill="#6F42C1" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="109.375" x="470.3125" y="290.7694">Topic Exchanges</text><!--MD5=[3f7cfe63488b49d88667eca315af6fa5]
+cluster RmqQueuesIn--><rect fill="url(#g4ay1oeoprfid1)" filter="url(#f4ay1oeoprfid)" height="320.3125" rx="4.1667" ry="4.1667" style="stroke: #6F42C1; stroke-width: 2.0833333333333335;" width="170.8333" x="249.4792" y="77.6042"/><text fill="#6F42C1" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="113.5417" x="278.125" y="96.4986">Backend's Queue</text><!--MD5=[24d4c9fcf9df2212a15269c3fa538f4c]
+cluster RmqQueuesOut--><rect fill="url(#g4ay1oeoprfid1)" filter="url(#f4ay1oeoprfid)" height="141.6667" rx="4.1667" ry="4.1667" style="stroke: #6F42C1; stroke-width: 2.0833333333333335;" width="886.4583" x="243.2292" y="471.875"/><text fill="#6F42C1" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="104.1667" x="634.375" y="490.7694">Admins' Queues</text><!--MD5=[d9092fa08a4aee0ee73c2d74c12404c1]
+cluster POD1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="268.75" rx="4.1667" ry="4.1667" style="stroke: #228B22; stroke-width: 1.5625;" width="570.8333" x="148.4375" y="712.5"/><path d="M291.1458,713.5417 L291.1458,730.1758 L280.7292,740.5924 L148.4375,740.5924 " fill="none" style="stroke: #228B22; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="121.875" x="156.7708" y="730.3528">Pods D0.P0.prod</text><!--MD5=[a020b2b44b71a6dfdce1677d50bfa0ec]
+cluster FrameD0P0T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="191.6667" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 1.5625;" width="291.6667" x="173.4375" y="764.5833"/><path d="M245.3125,765.625 L245.3125,782.2591 L234.8958,792.6758 L173.4375,792.6758 " fill="none" style="stroke: #2683B9; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="51.0417" x="181.7708" y="782.4361">Admin*</text><!--MD5=[c2dedb58e9ef86241cf3414158b43e32]
+cluster FrameD0P0T2--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="191.6667" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 1.5625;" width="204.1667" x="490.1042" y="764.5833"/><path d="M555.7292,765.625 L555.7292,782.2591 L545.3125,792.6758 L490.1042,792.6758 " fill="none" style="stroke: #2683B9; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="44.7917" x="498.4375" y="782.4361">Admin</text><!--MD5=[a7de22634073a1fd95d18e07e4aac321]
+cluster POD2--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="268.75" rx="4.1667" ry="4.1667" style="stroke: #6495ED; stroke-width: 1.5625;" width="254.1667" x="744.2708" y="712.5"/><path d="M886.9792,713.5417 L886.9792,730.1758 L876.5625,740.5924 L744.2708,740.5924 " fill="none" style="stroke: #6495ED; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="121.875" x="752.6042" y="730.3528">Pods D0.P1.prod</text><!--MD5=[b1a851f36c8b58cf2ef57bed1ffa59d7]
+cluster FrameD0P1T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="191.6667" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 1.5625;" width="204.1667" x="769.2708" y="764.5833"/><path d="M834.8958,765.625 L834.8958,782.2591 L824.4792,792.6758 L769.2708,792.6758 " fill="none" style="stroke: #2683B9; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="44.7917" x="777.6042" y="782.4361">Admin</text><!--MD5=[13584cac203c42500de553c5fed025cd]
+cluster POD3--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="268.75" rx="4.1667" ry="4.1667" style="stroke: #FF8C00; stroke-width: 1.5625;" width="254.1667" x="1023.4375" y="712.5"/><path d="M1161.9792,713.5417 L1161.9792,730.1758 L1151.5625,740.5924 L1023.4375,740.5924 " fill="none" style="stroke: #FF8C00; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="117.7083" x="1031.7708" y="730.3528">Pods D1.P0.test</text><!--MD5=[0ed2766013f950850a9e7b5727679f80]
+cluster FrameD1P0T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="191.6667" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 1.5625;" width="204.1667" x="1048.4375" y="764.5833"/><path d="M1114.0625,765.625 L1114.0625,782.2591 L1103.6458,792.6758 L1048.4375,792.6758 " fill="none" style="stroke: #2683B9; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="44.7917" x="1056.7708" y="782.4361">Admin</text><!--MD5=[6ff46c104f7c023355cca5ebe9432b1e]
+entity ExchTbott--><ellipse cx="523.4375" cy="332.2917" fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" rx="12.5" ry="12.5" style="stroke: #2683B9; stroke-width: 2.0833333333333335;"/><polygon fill="#2683B9" points="519.2708,319.7917,525.5208,314.5833,523.4375,319.7917,525.5208,325,519.2708,319.7917" style="stroke: #2683B9; stroke-width: 1.0416666666666667;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="76.0417" x="485.4167" y="365.7694">tbott topics</text><!--MD5=[0d8fdcaa5f4eb1a5c69ba44c9f357b01]
+entity Card_TbottAdmin_out--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="72.8841" rx="4.1667" ry="4.1667" style="stroke: #033C73; stroke-width: 1.5625;" width="137.5" x="266.1458" y="121.3542"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="106.25" x="281.7708" y="141.2903">tbott_admin_out</text><line style="stroke: #033C73; stroke-width: 1.5625;" x1="267.1875" x2="402.6042" y1="149.4466" y2="149.4466"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="267.1875" x2="402.6042" y1="157.7799" y2="157.7799"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="267.1875" x2="402.6042" y1="166.1133" y2="166.1133"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="267.1875" x2="402.6042" y1="174.4466" y2="174.4466"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="267.1875" x2="402.6042" y1="182.7799" y2="182.7799"/><!--MD5=[8f555960ff3fd5bfd64b093d8edc8d7f]
+entity Card_TbottAdmin_in--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="72.8841" rx="4.1667" ry="4.1667" style="stroke: #033C73; stroke-width: 1.5625;" width="127.0833" x="271.3542" y="308.3333"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="95.8333" x="286.9792" y="328.2694">tbott_admin_in</text><line style="stroke: #033C73; stroke-width: 1.5625;" x1="272.3958" x2="397.3958" y1="336.4258" y2="336.4258"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="272.3958" x2="397.3958" y1="344.7591" y2="344.7591"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="272.3958" x2="397.3958" y1="353.0924" y2="353.0924"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="272.3958" x2="397.3958" y1="361.4258" y2="361.4258"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="272.3958" x2="397.3958" y1="369.7591" y2="369.7591"/><!--MD5=[795920c1dd95cbb7cfe91486bb9f839a]
+entity Card_D0P0T1MASTER--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="72.8841" rx="4.1667" ry="4.1667" style="stroke: #DD5600; stroke-width: 1.5625;" width="160.4167" x="259.8958" y="519.7917"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="129.1667" x="275.5208" y="539.7278">D0_P0_prod_master</text><line style="stroke: #DD5600; stroke-width: 1.5625;" x1="260.9375" x2="419.2708" y1="547.8841" y2="547.8841"/><line style="stroke: #DD5600; stroke-width: 1.0416666666666667;" x1="260.9375" x2="419.2708" y1="556.2174" y2="556.2174"/><line style="stroke: #DD5600; stroke-width: 1.0416666666666667;" x1="260.9375" x2="419.2708" y1="564.5508" y2="564.5508"/><line style="stroke: #DD5600; stroke-width: 1.0416666666666667;" x1="260.9375" x2="419.2708" y1="572.8841" y2="572.8841"/><line style="stroke: #DD5600; stroke-width: 1.0416666666666667;" x1="260.9375" x2="419.2708" y1="581.2174" y2="581.2174"/><!--MD5=[850d9b4188b284223da76c15df1a4264]
+entity Card_D0P0T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="72.8841" rx="4.1667" ry="4.1667" style="stroke: #033C73; stroke-width: 1.5625;" width="142.7083" x="452.0833" y="519.7917"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="111.4583" x="467.7083" y="539.7278">D0_P0_prod_uid1</text><line style="stroke: #033C73; stroke-width: 1.5625;" x1="453.125" x2="593.75" y1="547.8841" y2="547.8841"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="453.125" x2="593.75" y1="556.2174" y2="556.2174"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="453.125" x2="593.75" y1="564.5508" y2="564.5508"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="453.125" x2="593.75" y1="572.8841" y2="572.8841"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="453.125" x2="593.75" y1="581.2174" y2="581.2174"/><!--MD5=[8c0be97a71d9270a348420ae90957f82]
+entity Card_D0P0T2--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="81.2174" rx="4.1667" ry="4.1667" style="stroke: #033C73; stroke-width: 1.5625;" width="142.7083" x="626.0417" y="515.625"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="111.4583" x="641.6667" y="535.5611">D0_P0_prod_uid2</text><line style="stroke: #033C73; stroke-width: 1.5625;" x1="627.0833" x2="767.7083" y1="543.7174" y2="543.7174"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="627.0833" x2="767.7083" y1="552.0508" y2="552.0508"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="627.0833" x2="767.7083" y1="560.3841" y2="560.3841"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="627.0833" x2="767.7083" y1="568.7174" y2="568.7174"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="627.0833" x2="767.7083" y1="577.0508" y2="577.0508"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="627.0833" x2="767.7083" y1="585.3841" y2="585.3841"/><!--MD5=[148f9b5692216749e42257212a8c0671]
+entity Card_D0P1T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="81.2174" rx="4.1667" ry="4.1667" style="stroke: #033C73; stroke-width: 1.5625;" width="142.7083" x="800" y="515.625"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="111.4583" x="815.625" y="535.5611">D0_P1_prod_uid3</text><line style="stroke: #033C73; stroke-width: 1.5625;" x1="801.0417" x2="941.6667" y1="543.7174" y2="543.7174"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="801.0417" x2="941.6667" y1="552.0508" y2="552.0508"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="801.0417" x2="941.6667" y1="560.3841" y2="560.3841"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="801.0417" x2="941.6667" y1="568.7174" y2="568.7174"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="801.0417" x2="941.6667" y1="577.0508" y2="577.0508"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="801.0417" x2="941.6667" y1="585.3841" y2="585.3841"/><!--MD5=[046a8aef42b39c86c751ebbcbc3dc603]
+entity Card_D1P0T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="81.2174" rx="4.1667" ry="4.1667" style="stroke: #033C73; stroke-width: 1.5625;" width="138.5417" x="973.9583" y="515.625"/><text fill="#033C73" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="107.2917" x="989.5833" y="535.5611">D1_P0_test_uid4</text><line style="stroke: #033C73; stroke-width: 1.5625;" x1="975" x2="1111.4583" y1="543.7174" y2="543.7174"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="975" x2="1111.4583" y1="552.0508" y2="552.0508"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="975" x2="1111.4583" y1="560.3841" y2="560.3841"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="975" x2="1111.4583" y1="568.7174" y2="568.7174"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="975" x2="1111.4583" y1="577.0508" y2="577.0508"/><line style="stroke: #033C73; stroke-width: 1.0416666666666667;" x1="975" x2="1111.4583" y1="585.3841" y2="585.3841"/><!--MD5=[926ad3823a4a2816efbfc976b87f81ec]
+entity CompD0P0T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="131.1198" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 1.5625;" width="170.8333" x="277.6042" y="808.3333"/><rect fill="#FFFFFF" height="10.4167" style="stroke: #2683B9; stroke-width: 1.5625;" width="15.625" x="427.6042" y="813.5417"/><rect fill="#FFFFFF" height="2.0833" style="stroke: #2683B9; stroke-width: 1.5625;" width="4.1667" x="425.5208" y="815.625"/><rect fill="#FFFFFF" height="2.0833" style="stroke: #2683B9; stroke-width: 1.5625;" width="4.1667" x="425.5208" y="819.7917"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="53.125" x="298.4375" y="845.9778">Domain:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="18.75" x="355.7292" y="845.9778">D0</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="50" x="298.4375" y="870.9452">Project:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17.7083" x="352.6042" y="870.9452">P0</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="46.875" x="298.4375" y="895.9127">Target:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="34.375" x="349.4792" y="895.9127">prod</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="118.75" x="298.4375" y="920.8801">Uuid : uid1 (auto.)</text><!--MD5=[e6001af16d4774e0fdad2715570119d9]
+entity master--><ellipse cx="218.2292" cy="837.5" fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" rx="8.3333" ry="8.3333" style="stroke: #2683B9; stroke-width: 1.5625;"/><path d="M218.2292,845.8333 L218.2292,873.9583 M204.6875,854.1667 L231.7708,854.1667 M218.2292,873.9583 L204.6875,889.5833 M218.2292,873.9583 L231.7708,889.5833 " fill="none" filter="url(#f4ay1oeoprfid)" style="stroke: #2683B9; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="45.8333" x="195.3125" y="912.1236">master</text><!--MD5=[ed0d7185eaf257e3b93e8f1dea70b33b]
+entity CompD0P0T2--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="131.1198" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 1.5625;" width="170.8333" x="506.7708" y="808.3333"/><rect fill="#FFFFFF" height="10.4167" style="stroke: #2683B9; stroke-width: 1.5625;" width="15.625" x="656.7708" y="813.5417"/><rect fill="#FFFFFF" height="2.0833" style="stroke: #2683B9; stroke-width: 1.5625;" width="4.1667" x="654.6875" y="815.625"/><rect fill="#FFFFFF" height="2.0833" style="stroke: #2683B9; stroke-width: 1.5625;" width="4.1667" x="654.6875" y="819.7917"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="53.125" x="527.6042" y="845.9778">Domain:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="18.75" x="584.8958" y="845.9778">D0</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="50" x="527.6042" y="870.9452">Project:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17.7083" x="581.7708" y="870.9452">P0</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="46.875" x="527.6042" y="895.9127">Target:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="34.375" x="578.6458" y="895.9127">prod</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="118.75" x="527.6042" y="920.8801">Uuid : uid2 (auto.)</text><!--MD5=[d34dab09fa96c1eacfa3e931e3775034]
+entity CompD0P1T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="131.1198" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 1.5625;" width="170.8333" x="785.9375" y="808.3333"/><rect fill="#FFFFFF" height="10.4167" style="stroke: #2683B9; stroke-width: 1.5625;" width="15.625" x="935.9375" y="813.5417"/><rect fill="#FFFFFF" height="2.0833" style="stroke: #2683B9; stroke-width: 1.5625;" width="4.1667" x="933.8542" y="815.625"/><rect fill="#FFFFFF" height="2.0833" style="stroke: #2683B9; stroke-width: 1.5625;" width="4.1667" x="933.8542" y="819.7917"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="53.125" x="806.7708" y="845.9778">Domain:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="18.75" x="864.0625" y="845.9778">D0</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="50" x="806.7708" y="870.9452">Project:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17.7083" x="860.9375" y="870.9452">P1</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="46.875" x="806.7708" y="895.9127">Target:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="34.375" x="857.8125" y="895.9127">prod</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="118.75" x="806.7708" y="920.8801">Uuid : uid3 (auto.)</text><!--MD5=[487a7470cc6687bace03742d43a3c666]
+entity CompD1P0T1--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="131.1198" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 1.5625;" width="170.8333" x="1065.1042" y="808.3333"/><rect fill="#FFFFFF" height="10.4167" style="stroke: #2683B9; stroke-width: 1.5625;" width="15.625" x="1215.1042" y="813.5417"/><rect fill="#FFFFFF" height="2.0833" style="stroke: #2683B9; stroke-width: 1.5625;" width="4.1667" x="1213.0208" y="815.625"/><rect fill="#FFFFFF" height="2.0833" style="stroke: #2683B9; stroke-width: 1.5625;" width="4.1667" x="1213.0208" y="819.7917"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="53.125" x="1085.9375" y="845.9778">Domain:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="18.75" x="1143.2292" y="845.9778">D1</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="50" x="1085.9375" y="870.9452">Project:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17.7083" x="1140.1042" y="870.9452">P1</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="46.875" x="1085.9375" y="895.9127">Target:</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="30.2083" x="1136.9792" y="895.9127">test</text><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="118.75" x="1085.9375" y="920.8801">Uuid : uid4 (auto.)</text><!--MD5=[63cd45bfe8ce5232e0cf4e791771f97b]
+entity Dashboard--><ellipse cx="47.3958" cy="121.3542" fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" rx="8.3333" ry="8.3333" style="stroke: #2683B9; stroke-width: 1.5625;"/><path d="M47.3958,129.6875 L47.3958,157.8125 M33.8542,138.0208 L60.9375,138.0208 M47.3958,157.8125 L33.8542,173.4375 M47.3958,157.8125 L60.9375,173.4375 " fill="none" filter="url(#f4ay1oeoprfid)" style="stroke: #2683B9; stroke-width: 1.5625;"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="71.875" x="11.4583" y="195.9778">Dashboard</text><!--MD5=[a6db0c926898241e7c594507fb3ca544]
+entity Backend--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 2.0833333333333335;" width="87.5" x="91.1458" y="321.875"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="106.7708" y="349.1028">Backend</text><!--MD5=[7434fc19771e0f66f8659a4e95695800]
+entity Proxy--><rect fill="#FFFFFF" filter="url(#f4ay1oeoprfid)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke: #2683B9; stroke-width: 2.0833333333333335;" width="65.625" x="26.0417" y="533.3333"/><text fill="#2683B9" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="34.375" x="41.6667" y="560.5611">Proxy</text><!--MD5=[6df32f8a3856e3d51cdd9e62d96e817f]
+link Dashboard to Backend--><path d="M69.0251,204.5583 C85.6734,239.7385 108.1215,287.1729 122.0438,316.5917 " fill="none" id="Dashboard-&gt;Backend" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="124.3708,321.5104,124.1264,311.2541,122.1428,316.8027,116.5941,314.819,124.3708,321.5104" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="114.5833" x="97.3958" y="232.4361">update command</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="93.75" x="107.8125" y="246.9869">test command</text><!--MD5=[1fe89d486d960637e462d35349f94a42]
+reverse link Dashboard to Proxy--><path d="M48.8652,209.6813 C51.3861,296.8833 56.4358,471.5542 58.2155,533.1167 " fill="none" id="Dashboard&lt;-Proxy" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><polygon fill="#DD5600" points="48.7102,204.3208,44.8185,213.8133,48.862,209.527,53.1483,213.5704,48.7102,204.3208" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><!--MD5=[baeed9bf1aaae993b6250d4ce3f31551]
+link Card_TbottAdmin_out to Card_TbottAdmin_in--><!--MD5=[c76573a5c56c68a6dbeab027a7ea091f]
+link Backend to Card_TbottAdmin_in--><path d="M178.6458,344.7917 C207.6625,344.7917 236.6792,344.7917 265.6958,344.7917 " fill="none" id="Backend-&gt;Card_TbottAdmin_in" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="271.1146,344.7917,261.7396,340.625,265.9063,344.7917,261.7396,348.9583,271.1146,344.7917" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><!--MD5=[b2e44663dbc847f8aab172b05d19c010]
+link Card_TbottAdmin_in to ExchTbott--><path d="M398.6021,344.7917 C423.9448,344.7917 449.2875,344.7917 474.6302,344.7917 " fill="none" id="Card_TbottAdmin_in-&gt;ExchTbott" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="480.0375,344.7917,470.6625,340.625,474.8292,344.7917,470.6625,348.9583,480.0375,344.7917" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><!--MD5=[7657e2b57a1ae782ebeb53146b96b616]
+reverse link Card_TbottAdmin_out to ExchTbott--><path d="M375.1073,198.2875 C410.9958,233.4823 462.6729,284.1604 494.5969,315.4667 " fill="none" id="Card_TbottAdmin_out&lt;-ExchTbott" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><polygon fill="#DD5600" points="371.249,194.5042,375.0245,204.0434,374.9673,198.1511,380.8596,198.094,371.249,194.5042" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="51.0417" x="471.875" y="232.4361">routing:</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="122.9167" x="435.9375" y="246.9869">D0.P0.prod.master</text><!--MD5=[2f714ffdd23997bc2b93c6f4c04f0a6f]
+link Card_TbottAdmin_out to Backend--><path d="M296.3333,194.5042 C257.175,230.7052 197.4948,285.8781 162.725,318.0219 " fill="none" id="Card_TbottAdmin_out-&gt;Backend" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><polygon fill="#DD5600" points="158.6115,321.825,168.3245,318.5223,162.4366,318.2901,162.6687,312.4021,158.6115,321.825" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><!--MD5=[07c599f7b7f37fbb89d1a1eefa1e9fc8]
+link Backend to Proxy--><path d="M126.9021,367.8448 C112.8677,406.4854 83.8489,486.3875 68.6396,528.2646 " fill="none" id="Backend-&gt;Proxy" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><polygon fill="#DD5600" points="66.8552,533.1781,73.9723,525.789,68.6334,528.2828,66.1397,522.9439,66.8552,533.1781" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><!--MD5=[a10d900c212cc938f060aa310a49f0d6]
+link ExchTbott to Card_D0P0T1--><path d="M523.4375,374.0708 C523.4375,410.1781 523.4375,472.9635 523.4375,514.3042 " fill="none" id="ExchTbott-&gt;Card_D0P0T1" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="523.4375,519.7385,527.6042,510.3635,523.4375,514.5302,519.2708,510.3635,523.4375,519.7385" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="51.0417" x="547.9167" y="432.4361">routing:</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="529.6875" y="446.9869">D0.P0.prod.#</text><!--MD5=[849976356444043599e249393627d8e7]
+reverse link ExchTbott to Card_D0P0T1MASTER--><path d="M477.0146,376.9323 C459.5167,387.5167 439.0531,398.5938 419.2708,406.25 C402.9271,412.575 393.5375,402.6208 380.7292,414.5833 C351.849,441.5552 343.0646,487.6458 340.6188,519.6771 " fill="none" id="ExchTbott&lt;-Card_D0P0T1MASTER" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><polygon fill="#DD5600" points="481.8677,373.9635,471.6959,375.2998,477.4243,376.6808,476.0434,382.4092,481.8677,373.9635" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="51.0417" x="422.9167" y="432.4361">routing:</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="122.9167" x="386.9792" y="446.9869">D0.P0.prod.master</text><!--MD5=[f736c53caf462d115b366cbb3a99be3a]
+link ExchTbott to Card_D0P0T2--><path d="M566.7229,366.2625 C588.1052,378.0323 613.0417,394.4906 630.7292,414.5833 C655.2,442.3823 672.5781,480.7271 683.4438,510.3563 " fill="none" id="ExchTbott-&gt;Card_D0P0T2" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="685.2646,515.4063,686.0043,505.1737,683.4979,510.5067,678.165,508.0003,685.2646,515.4063" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="51.0417" x="682.2917" y="432.4361">routing:</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="664.0625" y="446.9869">D0.P0.prod.#</text><!--MD5=[3a4e01dd2337593801ab88ef11fda6bc]
+link ExchTbott to Card_D0P1T1--><path d="M566.6708,349.7677 C617.9344,356.2125 704.1,372.8073 765.1042,414.5833 C800.9583,439.1365 829.7302,479.725 848.2438,511.001 " fill="none" id="ExchTbott-&gt;Card_D0P1T1" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="850.901,515.5448,849.7684,505.3483,848.2732,511.048,842.5735,509.5528,850.901,515.5448" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="51.0417" x="832.2917" y="432.4361">routing:</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="814.0625" y="446.9869">D0.P1.prod.#</text><!--MD5=[4b519c1eb21c3b84c579095927e4c51d]
+link ExchTbott to Card_D1P0T1--><path d="M566.7646,349.8833 C655.7031,358.7667 855.5188,381.8135 915.1042,414.5833 C956.7875,437.5073 992.124,479.151 1015.0615,511.1938 " fill="none" id="ExchTbott-&gt;Card_D1P0T1" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="1018.075,515.449,1016.0562,505.3903,1015.0645,511.1988,1009.256,510.2071,1018.075,515.449" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="51.0417" x="987.5" y="432.4361">routing:</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="83.3333" x="971.3542" y="446.9869">D1.P0.test.#</text><!--MD5=[92d26d94038e264ebba3d9746394e316]
+link Card_D0P0T1 to CompD0P0T1--><path d="M516.2167,592.8302 C509.6469,621.4875 498.5594,662.3833 482.8125,695.8333 C465.1073,733.4427 439.9667,772.0365 417.2854,803.5552 " fill="none" id="Card_D0P0T1-&gt;CompD0P0T1" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="413.9583,808.1531,422.8305,803.0018,417.0122,803.934,416.0799,798.1157,413.9583,808.1531" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="32.2917" x="542.1875" y="673.0611">topic</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="105.2083" x="505.7292" y="687.6119">D0.P0.prod.uid1</text><!--MD5=[0f8144486ffc79f3f343bc033a725767]
+reverse link Card_D0P0T1MASTER to CompD0P0T1--><path d="M340.5271,598.3073 C341.0104,625.901 342.0479,663.0854 344.2708,695.8333 C346.8042,733.1552 351.1313,774.7573 354.9917,808.2552 " fill="none" id="Card_D0P0T1MASTER&lt;-CompD0P0T1" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><polygon fill="#DD5600" points="340.4375,592.9208,336.4267,602.3636,340.5238,598.1285,344.7589,602.2255,340.4375,592.9208" style="stroke: #DD5600; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="32.2917" x="395.8333" y="673.0611">topic</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="122.9167" x="350.5208" y="687.6119">D0.P0.prod.master</text><!--MD5=[282aade597398e8426de55b6d561af9c]
+link Card_D0P0T2 to CompD0P0T2--><path d="M684.1781,596.9458 C666.9729,648.5594 636.6177,739.6271 615.5021,802.9719 " fill="none" id="Card_D0P0T2-&gt;CompD0P0T2" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="613.7438,808.2469,620.6612,800.6706,615.3908,803.3058,612.7555,798.0354,613.7438,808.2469" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="32.2917" x="706.7708" y="673.0611">topic</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="105.2083" x="670.3125" y="687.6119">D0.P0.prod.uid2</text><!--MD5=[a4c6cc89af4011e49cddcccf1031a0c2]
+link Card_D0P1T1 to CompD0P1T1--><path d="M871.3542,596.9458 C871.3542,648.5594 871.3542,739.6271 871.3542,802.9719 " fill="none" id="Card_D0P1T1-&gt;CompD0P1T1" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="871.3542,808.2469,875.5208,798.8719,871.3542,803.0385,867.1875,798.8719,871.3542,808.2469" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="32.2917" x="914.0625" y="673.0611">topic</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="105.2083" x="877.6042" y="687.6119">D0.P1.prod.uid3</text><!--MD5=[9307564a79cf2f31c3e2e1ff7332fcd9]
+link Card_D1P0T1 to CompD1P0T1--><path d="M1056.7083,596.9458 C1074.25,648.5594 1105.2083,739.6271 1126.7396,802.9719 " fill="none" id="Card_D1P0T1-&gt;CompD1P0T1" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><polygon fill="#2FA4E7" points="1128.5417,808.2469,1129.4671,798.0295,1126.8643,803.316,1121.5777,800.7133,1128.5417,808.2469" style="stroke: #2FA4E7; stroke-width: 2.604166666666667;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="32.2917" x="1127.6042" y="673.0611">topic</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacingAndGlyphs" textLength="101.0417" x="1093.2292" y="687.6119">D1.P0.test.uid4</text><!--MD5=[5fa8003293e2b56fa6d88ce4e68bbf31]
+@startuml
+
+
+
+
+skinparam backgroundColor White
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             True
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor $SUCCESS_DARK
+    IBackgroundColor #D2494E
+    IBorderColor $DANGER_DARK
+    EBackgroundColor #E47833
+    EBorderColor $WARNING_DARK
+    NBackgroundColor #35638F
+    NBorderColor $INFO_DARK
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              White
+}
+
+skinparam legend {
+	BackgroundColor White
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam activity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor White
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #BABDBF
+}
+
+
+skinparam participant {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam arrow {
+	Thickness 2.5
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor White
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor White
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor White
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	DividerBackgroundColor White
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor White
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor White
+}
+
+
+skinparam collections {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam control {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam entity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam boundary {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam agent {
+	BackgroundColor White
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam artifact {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam component {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	
+}
+
+
+skinparam interface {
+	BackgroundColor  White
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+}
+
+
+skinparam node {
+	BackgroundColor White
+	BorderColor #343A40
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #343A40
+}
+
+
+skinparam database {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam class {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	BackgroundColor #F2FCFE-#eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+
+skinparam state {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam card {
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam file {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam stack {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+
+hide stereotype
+
+!pragma horizontalLineBetweenDifferentPackageAllowed
+
+skinparam file<<NOTE>> {
+	BorderThickness 0.5
+    BackgroundColor LightYellow
+	BorderColor LightSteelBlue
+	FontColor SteelBlue
+    FontSize 10
+    ArrowColor LightSteelBlue
+}
+skinparam arrow<<NOTE>> {
+    Color LightSteelBlue
+}
+
+
+
+
+
+skinparam node<<MULTITHREADED>>{
+    FontColor #E47833
+	BorderColor #E47833
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+skinparam frame<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam rectangle<<boundary>> {
+    BackgroundColor #eeeeee
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+    BoxPadding 0
+}
+
+skinparam file<<docker_params>> {
+    Shadowing True
+    FontSize 10
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam nodesep 30
+skinparam ranksep 20
+
+actor Dashboard
+rectangle Backend
+rectangle Proxy
+
+skinparam rectangle<<QUEUES>>{
+    FontColor #6F42C1
+    FontStyle none
+	BorderColor #6F42C1
+	BackgroundColor #White|LightSteelBlue
+}
+skinparam rectangle<<EXCHANGE>>{
+    FontColor #6F42C1
+    FontStyle none
+	BorderColor #6F42C1
+	BackgroundColor #White|LightSeaGreen
+}
+skinparam card<<MASTER>>{
+    BorderColor #DD5600
+}
+skinparam arrow<<MASTER>> {
+    Thickness 1
+	Color #DD5600
+}
+skinparam frame<<POD1>> {
+	BorderColor ForestGreen
+}
+skinparam frame<<POD2>> {
+	BorderColor CornflowerBlue
+}
+skinparam frame<<POD3>> {
+	BorderColor Darkorange
+}
+
+
+Dashboard - -> Backend: "update command\ntest command"
+Proxy -l-> Dashboard<<MASTER>>
+rectangle "RabbitMQ   Broker" as RmqBroker {
+    rectangle "Topic Exchanges" <<EXCHANGE>> as TopicEx {
+        control "tbott topics" as ExchTbott
+
+    }
+
+    rectangle "Backend's Queue" <<QUEUES>> as RmqQueuesIn {
+        card Card_TbottAdmin_out [
+            tbott_admin_out
+            ___
+            - - -
+            - - -
+            - - -
+            - - -
+        ]
+        card Card_TbottAdmin_in [
+            tbott_admin_in
+            ___
+            - - -
+            - - -
+            - - -
+            - - -
+        ]
+        Card_TbottAdmin_in -[hidden]u- Card_TbottAdmin_out
+    }
+
+    rectangle "Admins' Queues" <<QUEUES>> as RmqQueuesOut {
+        card Card_D0P0T1MASTER <<MASTER>> [
+            D0_P0_prod_master
+            ___
+            - - -
+            - - -
+            - - -
+            - - -
+        ]
+        card Card_D0P0T1 [
+            D0_P0_prod_uid1
+            ___
+            - - -
+            - - -
+            - - -
+            - - -
+        ]
+        card Card_D0P0T2 [
+            D0_P0_prod_uid2
+            ___
+            - - -
+            - - -
+            - - -
+            - - -
+            - - -
+        ]
+        card Card_D0P1T1 [
+            D0_P1_prod_uid3
+            ___
+            - - -
+            - - -
+            - - -
+            - - -
+            - - -
+        ]
+        card Card_D1P0T1 [
+            D1_P0_test_uid4
+            ___
+            - - -
+            - - -
+            - - -
+            - - -
+            - - -
+        ]
+
+    }
+
+}
+
+Backend -> Card_TbottAdmin_in
+Card_TbottAdmin_in -> ExchTbott
+ExchTbott -u-> Card_TbottAdmin_out<<MASTER>>: "routing:\nD0.P0.prod.master"
+Card_TbottAdmin_out -> Backend<<MASTER>>
+Backend - -> Proxy<<MASTER>>
+
+
+ExchTbott - -> Card_D0P0T1: "routing:\nD0.P0.prod.#"
+ExchTbott <- - Card_D0P0T1MASTER<<MASTER>>: "routing:\nD0.P0.prod.master"
+ExchTbott - -> Card_D0P0T2: "routing:\nD0.P0.prod.#"
+ExchTbott - -> Card_D0P1T1: "routing:\nD0.P1.prod.#"
+ExchTbott - -> Card_D1P0T1: "routing:\nD1.P0.test.#"
+
+frame "Pods D0.P0.prod" as POD1 <<POD1>> {
+    frame "Admin*" as FrameD0P0T1 {
+        component CompD0P0T1 [
+            Domain: <b>D0</b>
+            Project: <b>P0</b>
+            Target: <b>prod</b>
+            Uuid : uid1 (auto.)
+        ]
+        "master"
+    }
+
+    frame "Admin" as FrameD0P0T2 {
+        component CompD0P0T2 [
+            Domain: <b>D0</b>
+            Project: <b>P0</b>
+            Target: <b>prod</b>
+            Uuid : uid2 (auto.)
+        ]
+    }
+}
+
+frame "Pods D0.P1.prod" as POD2 <<POD2>> {
+    frame "Admin" as FrameD0P1T1 {
+        component CompD0P1T1 [
+            Domain: <b>D0</b>
+            Project: <b>P1</b>
+            Target: <b>prod</b>
+            Uuid : uid3 (auto.)
+        ]
+
+    }
+}
+
+frame "Pods D1.P0.test" as POD3 <<POD3>> {
+    frame "Admin" as FrameD1P0T1 {
+        component CompD1P0T1 [
+            Domain: <b>D1</b>
+            Project: <b>P1</b>
+            Target: <b>test</b>
+            Uuid : uid4 (auto.)
+        ]
+
+    }
+}
+
+Card_D0P0T1 - -> CompD0P0T1: topic\nD0.P0.prod.uid1
+Card_D0P0T1MASTER <- - CompD0P0T1<<MASTER>>: topic\nD0.P0.prod.master
+Card_D0P0T2 - -> CompD0P0T2: topic\nD0.P0.prod.uid2
+Card_D0P1T1 - -> CompD0P1T1: topic\nD0.P1.prod.uid3
+Card_D1P0T1 - -> CompD1P0T1: topic\nD1.P0.test.uid4
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

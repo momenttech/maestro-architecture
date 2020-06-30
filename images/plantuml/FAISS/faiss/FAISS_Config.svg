@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="359px" preserveAspectRatio="none" style="width:237px;height:359px;" version="1.1" viewBox="0 0 237 359" width="237px" zoomAndPan="magnify"><defs><filter height="300%" id="f1f9rb119rayb" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6b4b3b1bbdd8387328ca5689c9e21d3b]
+cluster FaissModule_cfg--><rect fill="#EEEEEE" height="324" rx="4" ry="4" style="stroke: #444444; stroke-width: 2.0; stroke-dasharray: 7.0,7.0;" width="204" x="22" y="24"/><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="98" x="75" y="42.1387">Docker Config</text><!--MD5=[6ba3af77585f0f96afa8ecbab1226636]
+entity FaissModule_vars--><path d="M53.5,70 L53.5,223.9922 A4,4 0 0 0 57.5,227.9922 L190.5,227.9922 A4,4 0 0 0 194.5,223.9922 L194.5,76 L184.5,66 L57.5,66 A4,4 0 0 0 53.5,70 " fill="#FFFFFF" filter="url(#f1f9rb119rayb)" style="stroke: #868E96; stroke-width: 1.5;"/><path d="M184.5,66 L184.5,72 A4,4 0 0 0 188.5,76 L194.5,76 " fill="#FFFFFF" style="stroke: #868E96; stroke-width: 1.5;"/><text fill="#868E96" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="77" x="74.5" y="118.4355">Mandatory</text><text fill="#868E96" font-family="Verdana" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="0" x="77.5" y="140.5479"/><text fill="#868E96" font-family="Verdana" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55" x="74.5" y="163.1167">Optional</text><text fill="#868E96" font-family="Verdana" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="84" x="74.5" y="184.9932">NB_MATCHING=</text><text fill="#868E96" font-family="Verdana" font-size="10" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="12" x="161.5" y="184.9932">10</text><text fill="#868E96" font-family="Verdana" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="68" x="74.5" y="206.6338">LOG_LEVEL=</text><text fill="#868E96" font-family="Verdana" font-size="10" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="25" x="145.5" y="206.6338">INFO</text><line style="stroke: #868E96; stroke-width: 1.0;" x1="54.5" x2="82.5" y1="89.1484" y2="89.1484"/><text fill="#868E96" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="73" x="87.5" y="93.4951">Variables</text><line style="stroke: #868E96; stroke-width: 1.0;" x1="165.5" x2="193.5" y1="89.1484" y2="89.1484"/><!--MD5=[ebd114480cba0ff1de10da84bec6bb98]
+entity FaissModule_vols--><path d="M38,242 L38,327.5781 A4,4 0 0 0 42,331.5781 L206,331.5781 A4,4 0 0 0 210,327.5781 L210,248 L200,238 L42,238 A4,4 0 0 0 38,242 " fill="#FFFFFF" filter="url(#f1f9rb119rayb)" style="stroke: #868E96; stroke-width: 1.5;"/><path d="M200,238 L200,244 A4,4 0 0 0 204,248 L210,248 " fill="#FFFFFF" style="stroke: #868E96; stroke-width: 1.5;"/><text fill="#868E96" font-family="Verdana" font-size="10" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="23" x="59" y="288.5791">logs</text><text fill="#868E96" font-family="Verdana" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="85" y="288.5791">-&gt; /var/log/supervisor</text><text fill="#868E96" font-family="Verdana" font-size="10" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="46" x="59" y="310.2197">data_dir</text><text fill="#868E96" font-family="Verdana" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="59" x="108" y="310.2197">-&gt; /opt/faiss</text><line style="stroke: #868E96; stroke-width: 1.0;" x1="39" x2="85" y1="261.1484" y2="261.1484"/><text fill="#868E96" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="68" x="90" y="265.4951">Volumes</text><line style="stroke: #868E96; stroke-width: 1.0;" x1="163" x2="209" y1="261.1484" y2="261.1484"/><!--MD5=[5f65ec4dd6da316f9b865de109142c8c]
+link FaissModule_vars to FaissModule_vols--><!--MD5=[5decb11606321be9a3bbaca4227c4c5a]
+@startuml
+
+
+
+
+skinparam backgroundColor White
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             True
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor $SUCCESS_DARK
+    IBackgroundColor #D2494E
+    IBorderColor $DANGER_DARK
+    EBackgroundColor #E47833
+    EBorderColor $WARNING_DARK
+    NBackgroundColor #35638F
+    NBorderColor $INFO_DARK
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              White
+}
+
+skinparam legend {
+	BackgroundColor White
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam activity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor White
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #BABDBF
+}
+
+
+skinparam participant {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam arrow {
+	Thickness 2.5
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor White
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor White
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor White
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	DividerBackgroundColor White
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor White
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor White
+}
+
+
+skinparam collections {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam control {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam entity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam boundary {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam agent {
+	BackgroundColor White
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam artifact {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam component {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	
+}
+
+
+skinparam interface {
+	BackgroundColor  White
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+}
+
+
+skinparam node {
+	BackgroundColor White
+	BorderColor #343A40
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #343A40
+}
+
+
+skinparam database {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam class {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	BackgroundColor #F2FCFE-#eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+
+skinparam state {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam card {
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam file {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam stack {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+
+hide stereotype
+
+!pragma horizontalLineBetweenDifferentPackageAllowed
+
+skinparam file<<NOTE>> {
+	BorderThickness 0.5
+    BackgroundColor LightYellow
+	BorderColor LightSteelBlue
+	FontColor SteelBlue
+    FontSize 10
+    ArrowColor LightSteelBlue
+}
+skinparam arrow<<NOTE>> {
+    Color LightSteelBlue
+}
+
+
+
+
+
+skinparam node<<MULTITHREADED>>{
+    FontColor #E47833
+	BorderColor #E47833
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+skinparam frame<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam rectangle<<boundary>> {
+    BackgroundColor #eeeeee
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+    BoxPadding 0
+}
+
+skinparam file<<docker_params>> {
+    Shadowing True
+    FontSize 10
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam nodesep 20
+skinparam ranksep 10
+
+scale 1
+
+
+
+
+            rectangle "Docker Config" <<boundary>> as FaissModule_cfg {
+                    
+
+        file "- - =Variables - -\n==Mandatory\n\n===Optional\nNB_MATCHING= <i>10</i>\n                                LOG_LEVEL= <i>INFO</i>" <<docker_params>> as FaissModule_vars
+                    
+
+        file "- - =Volumes - -\n<b>logs</b> -> /var/log/supervisor\n                            <b>data_dir</b> -> /opt/faiss" <<docker_params>> as FaissModule_vols
+    
+                FaissModule_vols -[hidden]U- FaissModule_vars
+        }
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

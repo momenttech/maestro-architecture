@@ -1,0 +1,46 @@
+@startuml FindReply_Full
+!include find_reply_parts.puml
+scale 1.2
+interface "<b>Start Here</b>" as FindReplyRMQ
+interface "<b>Testings</b>" as TestFindings
+
+Entity "Admin" <<ADMIN>> as Admin1
+Entity "Admin" <<ADMIN>> as Admin2
+Entity Faiss <<FAISS>>
+Entity "Bert Encoder" as Encoder
+Entity "Sentence\nMatching" as Matcher
+
+$Container("FindReplyModule") {
+    '"all", "variables", "ports", "volumes", "extra"
+    $make_docker_config("all") 
+    'top to bottom direction
+    '"all", "EntryPoint", "TestingInterface", "SearchBest"
+    $make_content("all")
+}
+@enduml
+
+@startuml FindReply_Config
+!include find_reply_parts.puml
+$make_docker_config("all")
+@enduml
+
+@startuml FindReply_EntryPoint
+!include find_reply_parts.puml
+interface "<b>Start Here</b>" as FindReplyRMQ
+$make_content("EntryPoint")
+@enduml
+
+@startuml FindReply_TestingInterface
+!include find_reply_parts.puml
+$make_content("TestingInterface")
+@enduml
+
+@startuml FindReply_SearchBest
+!include find_reply_parts.puml
+Entity "Admin" <<ADMIN>> as Admin1
+Entity "Admin" <<ADMIN>> as Admin2
+Entity Faiss <<FAISS>>
+Entity "Bert Encoder" as Encoder
+Entity "Sentence\nMatching" as Matcher
+$make_content("SearchBest")
+@enduml

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="2467.2px" preserveAspectRatio="none" style="width:1318px;height:2467px;" version="1.1" viewBox="0 0 1318 2467" width="1318.8px" zoomAndPan="magnify"><defs><filter height="300%" id="f13704wjpentib" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.4"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.8" dy="4.8" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="g13704wjpentib0" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFF00"/><stop offset="100%" stop-color="#0000FF"/></linearGradient><linearGradient id="g13704wjpentib1" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#0000FF"/><stop offset="100%" stop-color="#FFFFFF"/></linearGradient></defs><g><!--MD5=[b605930c54a7b5cabe598402510ea606]
+cluster AdminModule--><path d="M141.6,211.2 L265.2,211.2 A7.2,7.2 0 0 1 270,216 L278.4,247.1625 L1198.8,247.1625 A4.8,4.8 0 0 1 1203.6,251.9625 L1203.6,2448 A4.8,4.8 0 0 1 1198.8,2452.8 L141.6,2452.8 A4.8,4.8 0 0 1 136.8,2448 L136.8,216 A4.8,4.8 0 0 1 141.6,211.2 " fill="#EEEEEE" filter="url(#f13704wjpentib)" style="stroke: #033C73; stroke-width: 1.7999999999999998;"/><line style="stroke: #033C73; stroke-width: 1.7999999999999998;" x1="136.8" x2="278.4" y1="247.1625" y2="247.1625"/><text fill="#033C73" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="114" x="147.6" y="232.9664">AdminModule</text><!--MD5=[d14a5e80aac7c50d9251bc3622ae104d]
+cluster AdminModule_cfg--><rect fill="#EEEEEE" height="688.8" rx="4.8" ry="4.8" style="stroke: #444444; stroke-width: 2.4; stroke-dasharray: 7.0,7.0;" width="448.8" x="726" y="271.2"/><text fill="#444444" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="117.6" x="891.6" y="292.9664">Docker Config</text><!--MD5=[295f1b7d5caf5de2a78d466114522ddb]
+cluster AdminPodCom--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="240" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="266.4" x="908.4" y="1645.2"/><path d="M1106.4,1646.4 L1106.4,1665.5625 L1094.4,1677.5625 L908.4,1677.5625 " fill="none" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="174" x="918" y="1665.7664">Pod communications</text><!--MD5=[0cc7568451087a30db554c8d43f7fea9]
+cluster AdminDataAccess--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="172.8" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="302.4" x="804" y="1953.6"/><path d="M931.2,1954.8 L931.2,1973.9625 L919.2,1985.9625 L804,1985.9625 " fill="none" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="103.2" x="813.6" y="1974.1664">Data Access</text><!--MD5=[c94a2ce020338e5949030fc81766094f]
+cluster AdminEntryPoint--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="412.8" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="338.4" x="195.6" y="326.4"/><path d="M313.2,327.6 L313.2,346.7625 L301.2,358.7625 L195.6,358.7625 " fill="none" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="93.6" x="205.2" y="346.9664">Entry Point</text><!--MD5=[ff43e428b2b3996eb57236215115fd95]
+cluster AdminExecCommand--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="1573.2" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="531.6" x="165.6" y="807.6"/><path d="M343.2,808.8 L343.2,827.9625 L331.2,839.9625 L165.6,839.9625 " fill="none" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="153.6" x="175.2" y="828.1664">Execute Command</text><!--MD5=[f30aaf73501d4d5a4a3b6634bd475f7d]
+cluster AdminIndex--><path d="M726,2178 C726,2166 882.6,2166 882.6,2166 C882.6,2166 1039.2,2166 1039.2,2178 L1039.2,2412 C1039.2,2424 882.6,2424 882.6,2424 C882.6,2424 726,2424 726,2412 L726,2178 " fill="#FFFFFF" filter="url(#f13704wjpentib)" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><path d="M726,2178 C726,2190 882.6,2190 882.6,2190 C882.6,2190 1039.2,2190 1039.2,2178 " fill="none" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136.8" x="814.2" y="2211.7664">Questions Index</text><!--MD5=[8b39d1a61a2795262d45380b62d699ce]
+cluster AdminRWLock--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="151.2" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="255.6" x="754.8" y="2244"/><path d="M850.8,2245.2 L850.8,2264.3625 L838.8,2276.3625 L754.8,2276.3625 " fill="none" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="72" x="764.4" y="2264.5664">RWLock¹</text><!--MD5=[22f10ab43e3d8ecbd13cc959316eed0a]
+entity AdminTopicRouting_note--><path d="M717,1076.4 L717,1194.675 A4.8,4.8 0 0 0 721.8,1199.475 L888.6,1199.475 A4.8,4.8 0 0 0 893.4,1194.675 L893.4,1083.6 L881.4,1071.6 L721.8,1071.6 A4.8,4.8 0 0 0 717,1076.4 " fill="#FFFFE0" filter="url(#f13704wjpentib)" style="stroke: #B0C4DE; stroke-width: 1.7999999999999998;"/><path d="M881.4,1071.6 L881.4,1078.8 A4.8,4.8 0 0 0 886.2,1083.6 L893.4,1083.6 " fill="#FFFFE0" style="stroke: #B0C4DE; stroke-width: 1.7999999999999998;"/><text fill="#4682B4" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="140.4" x="735" y="1100.7387">NB: if last msg &lt; X mins</text><text fill="#4682B4" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="108" x="735" y="1126.7074">then GUI can send</text><text fill="#4682B4" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="94.8" x="735" y="1152.6762">direct messages</text><text fill="#4682B4" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49.2" x="735" y="1178.6449">for tests</text><!--MD5=[a9705ed7ad48ab2284d4a1b66d7342d9]
+entity AdminModule_vars--><path d="M745.2,326.4 L745.2,770.8781 A4.8,4.8 0 0 0 750,775.6781 L1150.8,775.6781 A4.8,4.8 0 0 0 1155.6,770.8781 L1155.6,333.6 L1143.6,321.6 L750,321.6 A4.8,4.8 0 0 0 745.2,326.4 " fill="#FFFFFF" filter="url(#f13704wjpentib)" style="stroke: #868E96; stroke-width: 1.7999999999999998;"/><path d="M1143.6,321.6 L1143.6,328.8 A4.8,4.8 0 0 0 1148.4,333.6 L1155.6,333.6 " fill="#FFFFFF" style="stroke: #868E96; stroke-width: 1.7999999999999998;"/><text fill="#868E96" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="92.4" x="770.4" y="384.5227">Mandatory</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50.4" x="770.4" y="411.0574">RMQ_IP:</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="69.6" x="824.4" y="411.0574">RMQ broker</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="79.2" x="770.4" y="437.0262">GIT_SERVER:</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="106.8" x="853.2" y="437.0262">Git server address</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80.4" x="770.4" y="462.9949">GIT_DOMAIN:</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="72" x="854.4" y="462.9949">Git DOMAIN</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82.8" x="770.4" y="488.9637">GIT_PROJECT:</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="160.8" x="856.8" y="488.9637">Git project in $GIT_DOMAIN</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50.4" x="770.4" y="514.9324">TARGET:</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="205.2" x="824.4" y="514.9324">Pod's destination (ex: prod, test ...)</text><text fill="#868E96" font-family="Verdana" font-size="13.2" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="66" x="770.4" y="542.015">Optional</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82.8" x="770.4" y="568.2668">RMQ_USER =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="28.8" x="856.8" y="568.2668">tbott</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="102" x="770.4" y="594.2355">RMQ_PASSWD =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="79.2" x="876" y="594.2355">M0m3n773ch</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="133.2" x="770.4" y="620.2043">COMMAND_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="84" x="907.2" y="620.2043">tbott-admin-in</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="105.6" x="770.4" y="646.173">REPLY_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="93.6" x="879.6" y="646.173">tbott-admin-out</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="124.8" x="770.4" y="672.1418">COMMAND_TOPIC =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="231.6" x="898.8" y="672.1418">$GIT_DOMAIN.$GIT_PROJECT.$TARGET</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="128.4" x="770.4" y="698.1105">ENCODER_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80.4" x="902.4" y="698.1105">tbott-encoder</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80.4" x="770.4" y="724.0793">RMQ_PORT =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="28.8" x="854.4" y="724.0793">5672</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="81.6" x="770.4" y="750.048">LOG_LEVEL=</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="30" x="855.6" y="750.048">INFO</text><line style="stroke: #868E96; stroke-width: 1.2;" x1="746.4" x2="900.6" y1="349.3781" y2="349.3781"/><text fill="#868E96" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="87.6" x="906.6" y="354.5941">Variables</text><line style="stroke: #868E96; stroke-width: 1.2;" x1="1000.2" x2="1154.4" y1="349.3781" y2="349.3781"/><!--MD5=[3e6cc39773165a61674383732e1333fc]
+entity AdminModule_vols--><path d="M847.2,832.8 L847.2,935.4938 A4.8,4.8 0 0 0 852,940.2937 L1048.8,940.2937 A4.8,4.8 0 0 0 1053.6,935.4938 L1053.6,840 L1041.6,828 L852,828 A4.8,4.8 0 0 0 847.2,832.8 " fill="#FFFFFF" filter="url(#f13704wjpentib)" style="stroke: #868E96; stroke-width: 1.7999999999999998;"/><path d="M1041.6,828 L1041.6,835.2 A4.8,4.8 0 0 0 1046.4,840 L1053.6,840 " fill="#FFFFFF" style="stroke: #868E96; stroke-width: 1.7999999999999998;"/><text fill="#868E96" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="27.6" x="872.4" y="888.6949">logs</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="124.8" x="903.6" y="888.6949">-&gt; /var/log/supervisor</text><text fill="#868E96" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55.2" x="872.4" y="914.6637">data_dir</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80.4" x="931.2" y="914.6637">-&gt; /opt/admin</text><line style="stroke: #868E96; stroke-width: 1.2;" x1="848.4" x2="903.6" y1="855.7781" y2="855.7781"/><text fill="#868E96" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="81.6" x="909.6" y="860.9941">Volumes</text><line style="stroke: #868E96; stroke-width: 1.2;" x1="997.2" x2="1052.4" y1="855.7781" y2="855.7781"/><!--MD5=[d2b0e5a6e4b9435a491ee30c6e9f8222]
+entity ADM_MSG--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="170.25" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="228" x="927.6" y="1695.6"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="1131.6" y="1701.6"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="1129.2" y="1704"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="1129.2" y="1708.8"/><a href="http://10.165.64.205/AI/Messaging" target="_top" title="http://10.165.64.205/AI/Messaging" xlink:actuate="onRequest" xlink:href="http://10.165.64.205/AI/Messaging" xlink:show="new" xlink:title="http://10.165.64.205/AI/Messaging" xlink:type="simple"><text fill="#0000FF" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="80.4" x="951.6" y="1738.9664">Messaging</text></a><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="16.8" x="1036.8" y="1738.9664">lib</text><line style="stroke: #2683B9; stroke-width: 1.2;" x1="928.8" x2="1154.4" y1="1748.3625" y2="1748.3625"/><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="104.4" x="958.8" y="1772.5289">waitRequest()</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="19.2" x="958.8" y="1801.2914">on</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="129.6" x="982.8" y="1801.2914">127.0.0.1:14001</text><line style="stroke: #2683B9; stroke-width: 1.2;" x1="928.8" x2="1154.4" y1="1815.4875" y2="1815.4875"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="85.2" x="958.8" y="1839.6539">ThreadPool</text><!--MD5=[18d340d4b84bc25838f637ccab5136fc]
+entity AdminGetData--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="103.125" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="262.8" x="823.8" y="2004"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="1062.6" y="2010"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="1060.2" y="2012.4"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="1060.2" y="2017.2"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="148.8" x="847.8" y="2047.3664">get_all_categories()</text><line style="stroke: #2683B9; stroke-width: 1.2;" x1="825" x2="1085.4" y1="2056.7625" y2="2056.7625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="188.4" x="855" y="2080.9289">get_questions_from_ids()</text><!--MD5=[fcbde464ea5a1f77691284702ee22d40]
+entity ADMIN_MSG_C--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="342.825" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="298.8" x="215.4" y="376.8"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="490.2" y="382.8"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="487.8" y="385.2"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="487.8" y="390"/><a href="http://10.165.64.205/AI/Messaging" target="_top" title="http://10.165.64.205/AI/Messaging" xlink:actuate="onRequest" xlink:href="http://10.165.64.205/AI/Messaging" xlink:show="new" xlink:title="http://10.165.64.205/AI/Messaging" xlink:type="simple"><text fill="#0000FF" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="80.4" x="239.4" y="420.1664">Messaging</text></a><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="16.8" x="324.6" y="420.1664">lib</text><line style="stroke: #2683B9; stroke-width: 1.2;" x1="216.6" x2="513" y1="429.5625" y2="429.5625"/><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="151.2" x="246.6" y="453.7289">base.backend_com(</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="45.6" x="246.6" y="482.4914">host=</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69.6" x="292.2" y="482.4914">$RMQ_IP</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="176.4" x="246.6" y="511.2539">username=$RMQ_USER</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="195.6" x="246.6" y="540.0164">password=$RMQ_PASSWD</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="224.4" x="246.6" y="568.7789">in_queue=$COMMAND_QUEUE</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="205.2" x="246.6" y="597.5414">out_queue=$REPLY_QUEUE</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="183.6" x="246.6" y="626.3039">topic=$COMMAND_TOPIC</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="133.2" x="246.6" y="655.0664">port=$RPC_PORT)</text><line style="stroke: #2683B9; stroke-width: 1.2;" x1="216.6" x2="513" y1="669.2625" y2="669.2625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="128.4" x="246.6" y="693.4289">on_request(msg)</text><!--MD5=[30b6bf9c817ebd9136ffc83c562e217c]
+entity AdminTopicRouting--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="134.4" x="388.8" y="858"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="382.8" y="864"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="382.8" y="898.7625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="98.4" x="406.8" y="889.3664">Topic routing</text><!--MD5=[57bc4c5f3c154770187e12442531d4b6]
+entity AdminRes--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="79.2" x="258" y="858"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="252" y="864"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="252" y="898.7625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="43.2" x="276" y="889.3664">result</text><!--MD5=[3ae2938487bb651daf5a025e8d6a789e]
+entity AdminMasterCmd--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="147.6" x="223.8" y="1109.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="217.8" y="1115.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="217.8" y="1150.1625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="111.6" x="241.8" y="1140.7664">Test questions</text><!--MD5=[7da668664257ef4d12b819845662fc1e]
+entity AdminElectMaster--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="217.2" x="460.2" y="1109.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="454.2" y="1115.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="454.2" y="1150.1625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="181.2" x="478.2" y="1140.7664">Master Election process</text><!--MD5=[948b7ff905f0829725470951a71decbb]
+entity AdminCheckout--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="188.4" x="388.2" y="1261.2"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="382.2" y="1267.2"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="382.2" y="1301.9625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="152.4" x="406.2" y="1292.5664">Checkout git project</text><!--MD5=[4f7f63c120c1b1ae1979b448a54e23f9]
+entity AdminGetDiff--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="175.2" x="340.8" y="1346.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="334.8" y="1352.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="334.8" y="1387.1625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="139.2" x="358.8" y="1377.7664">Get git differences</text><!--MD5=[1f47b4557b59eea1fe0a3fe867fc58e8]
+entity AdminCreateQuestions--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="211.2" x="309.6" y="1424.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="303.6" y="1430.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="303.6" y="1465.1625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="175.2" x="327.6" y="1455.7664">Create list of questions</text><!--MD5=[cee07e8dca7fe5b378072308c87c61c2]
+entity AdminDataAugment--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="110.2875" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="218.4" x="302.4" y="1502.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="296.4" y="1508.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="296.4" y="1600.6875"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="146.4" x="320.4" y="1533.7664">Data augmentation</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="114" x="320.4" y="1562.5289">with N1 and N2</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="182.4" x="320.4" y="1591.2914">categories (or contexts)</text><!--MD5=[74b2590a88666c07f27544f72ab65a63]
+entity AdminEncodeSent--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="264" x="279.6" y="1754.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="273.6" y="1760.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="273.6" y="1795.1625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="228" x="297.6" y="1785.7664">Get vectors from Bert encoder</text><!--MD5=[38d59ea5521f52b01dd21fb50af62908]
+entity FaissCmd--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="375.6" x="223.8" y="2029.2"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="217.8" y="2035.2"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="217.8" y="2069.9625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="339.6" x="241.8" y="2060.5664">Send command to create/update FAISS index</text><!--MD5=[bbd02ffc9a62cd4a1682067ac6c62d62]
+entity AdminCreateIndex--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="270" x="276.6" y="2308.8"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="270.6" y="2314.8"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="270.6" y="2349.5625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="234" x="294.6" y="2340.1664">Create/Update questions index</text><!--MD5=[8a24ae891035ef3308c41c178b1fa79b]
+entity admin_read--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="52.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="70.8" x="919.8" y="2308.8"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="913.8" y="2314.8"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="913.8" y="2349.5625"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="34.8" x="937.8" y="2340.1664">read</text><!--MD5=[bbdefe950abe5f950e0a4edbb7f6667d]
+entity admin_write--><rect fill="#FFFFFF" filter="url(#f13704wjpentib)" height="81.525" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="109.2" x="774.6" y="2294.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="768.6" y="2300.4"/><rect fill="#FFFFFF" height="6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="12" x="768.6" y="2363.925"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="44.4" x="792.6" y="2325.7664">write</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="73.2" x="792.6" y="2354.5289">prioritized</text><!--MD5=[34294aea9f4d19809f3e5e3ec75b4474]
+entity AdminRMQ_IN--><ellipse cx="364.8" cy="21" fill="#FFFFFF" filter="url(#f13704wjpentib)" rx="9.6" ry="9.6" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><path d="M364.8,30.6 L364.8,63 M349.2,40.2 L380.4,40.2 M364.8,63 L349.2,81 M364.8,63 L380.4,81 " fill="none" filter="url(#f13704wjpentib)" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="75.6" x="327" y="106.9664">Admin GUI</text><!--MD5=[6f7dc82b214bb18c594236e7c40192b9]
+entity AdminPodComInterface--><ellipse cx="1267.2" cy="1752" fill="url(#g13704wjpentib0)" filter="url(#f13704wjpentib)" rx="14.4" ry="14.4" style="stroke: #6F42C1; stroke-width: 2.4;"/><line style="stroke: #6F42C1; stroke-width: 2.4;" x1="1252.8" x2="1281.6" y1="1768.8" y2="1768.8"/><text fill="#000000" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="75.6" x="1229.4" y="1790.5664">Find Reply</text><text fill="#000000" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="67.2" x="1229.4" y="1819.3289">requests</text><!--MD5=[1350349b64f67f07b4dbf1d89d7f0ce2]
+entity GitRepo--><ellipse cx="79.2" cy="1273.2" fill="#FFFFFF" filter="url(#f13704wjpentib)" rx="14.4" ry="14.4" style="stroke: #2683B9; stroke-width: 2.4;"/><line style="stroke: #2683B9; stroke-width: 2.4;" x1="64.8" x2="93.6" y1="1290" y2="1290"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="63.6" x="47.4" y="1311.7664">Git Repo</text><!--MD5=[f548a745fcdbafc3f0ef48ed99eb1063]
+entity FindReply--><ellipse cx="73.2" cy="1121.4" fill="url(#g13704wjpentib0)" filter="url(#f13704wjpentib)" rx="14.4" ry="14.4" style="stroke: #6F42C1; stroke-width: 2.4;"/><line style="stroke: #6F42C1; stroke-width: 2.4;" x1="58.8" x2="87.6" y1="1138.2" y2="1138.2"/><text fill="#000000" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="75.6" x="35.4" y="1159.9664">Find Reply</text><!--MD5=[30f41b3f3655a269d4ffe2f3bbb65e5c]
+entity AdminEncoder--><ellipse cx="62.4" cy="1766.4" fill="#FFFFFF" filter="url(#f13704wjpentib)" rx="14.4" ry="14.4" style="stroke: #2683B9; stroke-width: 2.4;"/><line style="stroke: #2683B9; stroke-width: 2.4;" x1="48" x2="76.8" y1="1783.2" y2="1783.2"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="98.4" x="13.2" y="1804.9664">Bert Encoder</text><!--MD5=[3ceae401b49d0ad0fe702da941d15e72]
+entity Faiss--><ellipse cx="92.4" cy="2041.2" fill="url(#g13704wjpentib1)" filter="url(#f13704wjpentib)" rx="14.4" ry="14.4" style="stroke: #6F42C1; stroke-width: 2.4;"/><line style="stroke: #6F42C1; stroke-width: 2.4;" x1="78" x2="106.8" y1="2058" y2="2058"/><text fill="#000000" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="38.4" x="73.2" y="2079.7664">Faiss</text><!--MD5=[d8ad0576e63a5c96f5104d1e600ce3cf]
+link AdminModule_vars to AdminModule_vols--><!--MD5=[a880360c973bd7206259c48c66bbb0c3]
+link ADM_MSG to AdminPodComInterface--><path d="M1171.5408,1780.8 C1183.518,1780.8 1208.82,1780.8 1208.82,1780.8 " fill="none" id="ADM_MSG-AdminPodComInterface" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="1223.22,1780.8,1216.02,1776,1208.82,1780.8,1216.02,1785.6,1223.22,1780.8" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="1155.7224,1780.8,1166.5224,1785.6,1161.7224,1780.8,1166.5224,1776,1155.7224,1780.8" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="1161.7224" x2="1171.3224" y1="1780.8" y2="1780.8"/><!--MD5=[161b4f821b40196ae448ae33be1c1f96]
+link ADM_MSG to AdminGetData--><path d="M946.5269,1878.2111 C946.5269,1878.2111 936.8424,1895.8248 933.6,1904.4 C923.5656,1930.938 925.818,1961.7348 931.7856,1988.4924 " fill="none" id="ADM_MSG-AdminGetData" style="stroke: #2FA4E7; stroke-width: 3.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#2FA4E7" points="935.664,2003.718,937.6485,1992.0672,934.1824,1997.9038,928.3458,1994.4377,935.664,2003.718" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="934.1824" x2="931.8132" y1="1997.9038" y2="1988.601"/><polygon fill="#FFFFFF" points="954.3348,1866.1116,946.3977,1869.5587,946.5269,1878.2111,954.464,1874.764,954.3348,1866.1116" style="stroke: #2FA4E7; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="68.4" x="940.8" y="1924.9664">Thread N</text><!--MD5=[161b4f821b40196ae448ae33be1c1f96]
+link ADM_MSG to AdminGetData--><path d="M1032.8403,1880.5002 C1032.8403,1880.5002 1025.4924,1917.7128 1020,1934.4 C1013.8704,1953.024 1004.9256,1972.1568 995.628,1989.5196 " fill="none" id="ADM_MSG-AdminGetData-1" style="stroke: #2FA4E7; stroke-width: 3.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#2FA4E7" points="987.7896,2003.6376,997.2291,1996.526,990.7024,1998.3921,988.8363,1991.8654,987.7896,2003.6376" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="990.7024" x2="995.3616" y1="1998.3921" y2="1989.9984"/><polygon fill="#FFFFFF" points="1035.0684,1866.2736,1029.2121,1872.6442,1032.8403,1880.5002,1038.6965,1874.1296,1035.0684,1866.2736" style="stroke: #2FA4E7; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="90" x="1034.4" y="1924.9664">Thread N+1</text><!--MD5=[207e72fa839d5fbe1d55f6fd1ad6ab8b]
+link AdminRMQ_IN to ADMIN_MSG_C--><path d="M364.8,131.208 C364.8,131.208 364.8,280.68 364.8,360.876 " fill="none" id="AdminRMQ_IN-ADMIN_MSG_C" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="364.8,376.788,369.6,365.988,364.8,370.788,360,365.988,364.8,376.788" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="364.8" x2="364.8" y1="370.788" y2="361.188"/><polygon fill="#FFFFFF" points="364.8,116.808,360,124.008,364.8,131.208,369.6,124.008,364.8,116.808" style="stroke: #2FA4E7; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="26.4" x="396" y="148.9664">Get</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="74.4" x="372" y="165.7289">Command</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="31.2" x="393.6" y="182.4914">msg</text><path d="M356.3147,224.4538 A12,12 0 0 0 373.2853 224.4538" fill="#FFFFFF" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><ellipse cx="364.8" cy="215.9685" fill="#FFFFFF" rx="7.2" ry="7.2" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><!--MD5=[05f2d316a2854592e355c379cbdd0482]
+link ADMIN_MSG_C to AdminTopicRouting--><path d="M411.4692,720.312 C425.274,770.808 438.948,820.824 447.426,851.844 " fill="none" id="ADMIN_MSG_C-&gt;AdminTopicRouting" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="449.052,857.784,450.8113,846.0971,447.4585,851.9995,441.5561,848.6466,449.052,857.784" style="stroke: #2FA4E7; stroke-width: 3.0;"/><!--MD5=[4c9096fdbcf848321e0c6eb073607278]
+reverse link ADMIN_MSG_C to AdminRes--><path d="M329.2056,726.3 C318.7716,778.092 308.5956,828.612 302.7204,857.784 " fill="none" id="ADMIN_MSG_C&lt;-AdminRes" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="330.4128,720.312,323.5777,729.9536,329.2298,726.1942,332.9893,731.8464,330.4128,720.312" style="stroke: #2FA4E7; stroke-width: 3.0;"/><!--MD5=[5225f55ac77ba120e2bf4c0ea00a594b]
+link AdminTopicRouting to AdminTopicRouting_note--><path d="M511.2396,910.884 C546.7476,928.152 593.178,952.632 631.2,979.2 C670.212,1006.452 710.0676,1041.432 741.7752,1071.3 " fill="none" id="AdminTopicRouting-AdminTopicRouting_note" style="stroke: #B0C4DE; stroke-width: 3.0; stroke-dasharray: 7.0,7.0;"/><!--MD5=[4d2f5655057594c0842f128345eaf713]
+link AdminTopicRouting to AdminElectMaster--><path d="M467.4372,910.848 C488.2536,956.796 532.2636,1053.948 554.8224,1103.748 " fill="none" id="AdminTopicRouting-&gt;AdminElectMaster" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="557.3328,1109.292,557.2614,1097.4736,554.8629,1103.8239,548.5126,1101.4254,557.3328,1109.292" style="stroke: #868E96; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="72" x="541.8" y="999.7664">$DOMAIN.</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="75.6" x="540" y="1016.5289">$PROJECT.</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="70.8" x="542.4" y="1033.2914">$TARGET.</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="12" x="571.8" y="1050.0539">#</text><!--MD5=[2a95df7b465d132a6b9da6286f12157c]
+reverse link AdminMasterCmd to AdminElectMaster--><path d="M377.814,1135.8 C403.4748,1135.8 432.33,1135.8 459.6888,1135.8 " fill="none" id="AdminMasterCmd&lt;-AdminElectMaster" style="stroke: #73A839; stroke-width: 3.0;"/><polygon fill="#73A839" points="371.706,1135.8,382.506,1140.6,377.706,1135.8,382.506,1131,371.706,1135.8" style="stroke: #73A839; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="38.4" x="396.6" y="1122.7664">tests</text><!--MD5=[1ff34ecb74c11c30842a6efc9d21ea52]
+link FindReply to AdminMasterCmd--><path d="M133.2144,1135.8 C156.156,1135.8 209.3616,1135.8 209.3616,1135.8 " fill="none" id="FindReply-AdminMasterCmd" style="stroke: #73A839; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="223.7616,1135.8,216.5616,1131,209.3616,1135.8,216.5616,1140.6,223.7616,1135.8" style="stroke: #73A839; stroke-width: 3.0;"/><polygon fill="#73A839" points="117.5342,1135.8,128.3342,1140.6,123.5342,1135.8,128.3342,1131,117.5342,1135.8" style="stroke: #73A839; stroke-width: 3.0;"/><line style="stroke: #73A839; stroke-width: 3.0;" x1="123.5342" x2="133.134" y1="1135.8" y2="1135.8"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="38.4" x="151.2" y="1122.7664">tests</text><!--MD5=[ceb9a6fc2cc7233f511548f0765e3935]
+reverse link AdminRes to AdminMasterCmd--><path d="M297.6,916.992 C297.6,966.924 297.6,1063.476 297.6,1109.292 " fill="none" id="AdminRes&lt;-AdminMasterCmd" style="stroke: #73A839; stroke-width: 3.0;"/><polygon fill="#73A839" points="297.6,910.848,292.8,921.648,297.6,916.848,302.4,921.648,297.6,910.848" style="stroke: #73A839; stroke-width: 3.0;"/><!--MD5=[0dad4168e4efe0beaad5829df07447dd]
+link AdminTopicRouting to AdminMasterCmd--><path d="M439.9404,910.848 C410.6472,956.892 348.6564,1054.344 317.0352,1104.048 " fill="none" id="AdminTopicRouting-&gt;AdminMasterCmd" style="stroke: #73A839; stroke-width: 3.0;"/><polygon fill="#73A839" points="313.7028,1109.292,323.5519,1102.7594,316.9251,1104.2307,315.4538,1097.6038,313.7028,1109.292" style="stroke: #73A839; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="72" x="405" y="999.7664">$DOMAIN.</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="75.6" x="403.2" y="1016.5289">$PROJECT.</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="70.8" x="405.6" y="1033.2914">$TARGET.</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="52.8" x="414.6" y="1050.0539">master</text><!--MD5=[0948f74fcacb2d9ea1189fa5d9bc5444]
+link AdminElectMaster to AdminCheckout--><path d="M554.1432,1162.344 C539.2488,1188.096 516.1596,1228.02 500.2176,1255.596 " fill="none" id="AdminElectMaster-&gt;AdminCheckout" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="497.1288,1260.936,506.6868,1253.9844,500.1296,1255.7403,498.3737,1249.1831,497.1288,1260.936" style="stroke: #868E96; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="108" x="530.4" y="1232.5664">create/update</text><!--MD5=[2bb20cfee9d28421044400fd2ab6faa3]
+link GitRepo to AdminCheckout--><path d="M133.032,1287.6 C193.8828,1287.6 373.5756,1287.6 373.5756,1287.6 " fill="none" id="GitRepo-AdminCheckout" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="387.9756,1287.6,380.7756,1282.8,373.5756,1287.6,380.7756,1292.4,387.9756,1287.6" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="117.1321,1287.6,127.9321,1292.4,123.1321,1287.6,127.9321,1282.8,117.1321,1287.6" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="123.1321" x2="132.732" y1="1287.6" y2="1287.6"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="93.6" x="205.8" y="1274.5664">git checkout</text><!--MD5=[373cd4a603c7e4e571c2231b86949ca2]
+link AdminCheckout to AdminGetDiff--><path d="M465.9048,1314.0924 C460.4592,1322.442 454.3392,1331.8272 448.6464,1340.556 " fill="none" id="AdminCheckout-&gt;AdminGetDiff" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="445.1664,1345.8912,455.0864,1339.4667,448.4438,1340.8654,447.0451,1334.2228,445.1664,1345.8912" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[beef9926e2c5ee934968683c3840b7fb]
+link AdminGetDiff to AdminCreateQuestions--><path d="M423.9312,1399.5948 C422.8992,1405.506 421.7892,1411.8636 420.7176,1417.9968 " fill="none" id="AdminGetDiff-&gt;AdminCreateQuestions" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="419.664,1424.0316,426.25,1414.2181,420.696,1418.121,416.793,1412.567,419.664,1424.0316" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[33d6c34bdc3c97fdc915ab73f2efbd8a]
+link AdminCreateQuestions to AdminDataAugment--><path d="M414.3288,1477.272 C414.1272,1483.0944 413.9064,1489.5312 413.6772,1496.1444 " fill="none" id="AdminCreateQuestions-&gt;AdminDataAugment" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="413.4672,1502.2548,418.6377,1491.6272,413.6746,1496.2584,409.0434,1491.2953,413.4672,1502.2548" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[e142ed951ab3bd9a951e6421b54861b4]
+link AdminDataAugment to AdminEncodeSent--><path d="M411.6,1612.8132 C411.6,1655.1204 411.6,1712.5296 411.6,1747.7688 " fill="none" id="AdminDataAugment-&gt;AdminEncodeSent" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="411.6,1754.0832,416.4,1743.2832,411.6,1748.0832,406.8,1743.2832,411.6,1754.0832" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[3080444d37a1a34cb0940019019e82ef]
+link AdminEncoder to AdminEncodeSent--><path d="M133.4556,1780.8 C176.8272,1780.8 265.1496,1780.8 265.1496,1780.8 " fill="none" id="AdminEncoder-AdminEncodeSent" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="279.5496,1780.8,272.3496,1776,265.1496,1780.8,272.3496,1785.6,279.5496,1780.8" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="117.6445,1780.8,128.4445,1785.6,123.6445,1780.8,128.4445,1776,117.6445,1780.8" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="123.6445" x2="133.2444" y1="1780.8" y2="1780.8"/><path d="M224.0522,1789.2853 A12,12 0 0 0 224.0522 1772.3147" fill="#FFFFFF" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><ellipse cx="215.5669" cy="1780.8" fill="#FFFFFF" rx="7.2" ry="7.2" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><!--MD5=[92527d7446681fee8595fac05ce3261d]
+link AdminEncodeSent to FaissCmd--><path d="M411.6,1807.6272 C411.6,1857.7452 411.6,1968.5808 411.6,2023.0056 " fill="none" id="AdminEncodeSent-&gt;FaissCmd" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="411.6,2029.0404,416.4,2018.2404,411.6,2023.0404,406.8,2018.2404,411.6,2029.0404" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[ddf4fc091b15e2852ba24a66e0052d24]
+reverse link Faiss to FaissCmd--><path d="M123.8389,2055.6 C156.9888,2055.6 190.1376,2055.6 223.2876,2055.6 " fill="none" id="Faiss&lt;-FaissCmd" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="117.6492,2055.6,128.4492,2060.4,123.6492,2055.6,128.4492,2050.8,117.6492,2055.6" style="stroke: #2FA4E7; stroke-width: 3.0;"/><!--MD5=[bc9588d838f0e2c1e6256a457e0ea6fb]
+link FaissCmd to AdminCreateIndex--><path d="M411.6,2082.3816 C411.6,2133.2292 411.6,2246.8728 411.6,2302.3344 " fill="none" id="FaissCmd-&gt;AdminCreateIndex" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="411.6,2308.4808,416.4,2297.6808,411.6,2302.4808,406.8,2297.6808,411.6,2308.4808" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[3e4c2f1545e052ce28f60e8570f17c6f]
+reverse link AdminRes to AdminCreateIndex--><path d="M273.7656,916.092 C240.9864,961.164 186,1049.472 186,1134.6 C186,1134.6 186,1134.6 186,2056.8 C186,2171.9004 304.4532,2265.7416 369.6948,2308.698 " fill="none" id="AdminRes&lt;-AdminCreateIndex" style="stroke: #868E96; stroke-width: 3.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#868E96" points="277.6476,910.812,267.3864,916.6762,274.0964,915.6482,275.1243,922.3581,277.6476,910.812" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[7d7c4698a3ee1f0a3199bb6957a51026]
+link admin_write to AdminCreateIndex--><path d="M758.412,2335.2 C693.2616,2335.2 561.3936,2335.2 561.3936,2335.2 " fill="none" id="admin_write-AdminCreateIndex" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="546.9936,2335.2,554.1936,2340,561.3936,2335.2,554.1936,2330.4,546.9936,2335.2" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="774.0816,2335.2,763.2816,2330.4,768.0816,2335.2,763.2816,2340,774.0816,2335.2" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="768.0816" x2="758.4816" y1="2335.2" y2="2335.2"/><!--MD5=[c1ca2f670ffc9642e337c8d84635929b]
+link AdminGetData to admin_read--><path d="M955.2,2121.72 C955.2,2121.72 955.2,2248.2936 955.2,2293.056 " fill="none" id="AdminGetData-admin_read" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="955.2,2308.7604,960,2297.9604,955.2,2302.7604,950.4,2297.9604,955.2,2308.7604" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="955.2" x2="955.2" y1="2302.7604" y2="2293.1604"/><polygon fill="#FFFFFF" points="955.2,2107.32,950.4,2114.52,955.2,2121.72,960,2114.52,955.2,2107.32" style="stroke: #2FA4E7; stroke-width: 3.0;"/><!--MD5=[054f3f6428cd4c62ebe041bf2c738f19]
+@startuml
+
+
+
+
+skinparam backgroundColor White
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             True
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor $SUCCESS_DARK
+    IBackgroundColor #D2494E
+    IBorderColor $DANGER_DARK
+    EBackgroundColor #E47833
+    EBorderColor $WARNING_DARK
+    NBackgroundColor #35638F
+    NBorderColor $INFO_DARK
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              White
+}
+
+skinparam legend {
+	BackgroundColor White
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam activity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor White
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #BABDBF
+}
+
+
+skinparam participant {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam arrow {
+	Thickness 2.5
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor White
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor White
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor White
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	DividerBackgroundColor White
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor White
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor White
+}
+
+
+skinparam collections {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam control {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam entity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam boundary {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam agent {
+	BackgroundColor White
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam artifact {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam component {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	
+}
+
+
+skinparam interface {
+	BackgroundColor  White
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+}
+
+
+skinparam node {
+	BackgroundColor White
+	BorderColor #343A40
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #343A40
+}
+
+
+skinparam database {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam class {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	BackgroundColor #F2FCFE-#eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+
+skinparam state {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam card {
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam file {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam stack {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+
+hide stereotype
+
+!pragma horizontalLineBetweenDifferentPackageAllowed
+
+skinparam file<<NOTE>> {
+	BorderThickness 0.5
+    BackgroundColor LightYellow
+	BorderColor LightSteelBlue
+	FontColor SteelBlue
+    FontSize 10
+    ArrowColor LightSteelBlue
+}
+skinparam arrow<<NOTE>> {
+    Color LightSteelBlue
+}
+
+
+
+
+
+skinparam node<<MULTITHREADED>>{
+    FontColor #E47833
+	BorderColor #E47833
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+skinparam frame<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam rectangle<<boundary>> {
+    BackgroundColor #eeeeee
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+    BoxPadding 0
+}
+
+skinparam file<<docker_params>> {
+    Shadowing True
+    FontSize 10
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam nodesep 30
+skinparam ranksep 20
+
+skinparam Entity<<FINDREP>>{
+    FontColor black
+	BorderColor #6F42C1
+	BackgroundColor #Yellow/Blue
+}
+skinparam Entity<<FAISS>>{
+    FontColor black
+	BorderColor #6F42C1
+	BackgroundColor #Blue/White
+}
+skinparam arrow<<TEST>> {
+	Thickness 1
+	Color #73A839
+	FontColor #343A40
+}
+skinparam arrow<<INTRA>> {
+	Color #868E96
+}
+
+
+
+
+
+scale 1.2
+
+actor "Admin GUI" as AdminRMQ_IN
+Entity "Find Reply\nrequests" <<FINDREP>> as AdminPodComInterface
+Entity "Git Repo" as GitRepo
+Entity "Find Reply" <<FINDREP>> as FindReply
+Entity "Bert Encoder" as AdminEncoder
+Entity Faiss <<FAISS>>
+
+    package AdminModule as AdminModule <<CONTAINER>> {
+            rectangle "Docker Config" <<boundary>> as AdminModule_cfg {
+                    
+
+        file "- - =Variables - -\n==Mandatory\nRMQ_IP: <i>RMQ broker</i>\n                                GIT_SERVER: <i>Git server address</i>\n                                GIT_DOMAIN: <i>Git DOMAIN</i>\n                                GIT_PROJECT: <i>Git project in $GIT_DOMAIN</i>\n                                TARGET: <i>Pod's destination (ex: prod, test ...)</i>\n===Optional\nRMQ_USER = <i>tbott</i>\n                                RMQ_PASSWD = <i>M0m3n773ch</i>\n                                COMMAND_QUEUE = <i>tbott-admin-in</i>\n                                REPLY_QUEUE = <i>tbott-admin-out</i>\n                                COMMAND_TOPIC = <i>$GIT_DOMAIN.$GIT_PROJECT.$TARGET</i>\n                                ENCODER_QUEUE = <i>tbott-encoder</i>\n                                RMQ_PORT = <i>5672</i>\n                                LOG_LEVEL= <i>INFO</i>" <<docker_params>> as AdminModule_vars
+                    
+
+        file "- - =Volumes - -\n<b>logs</b> -> /var/log/supervisor\n                            <b>data_dir</b> -> /opt/admin" <<docker_params>> as AdminModule_vols
+    
+                AdminModule_vols -[hidden]U- AdminModule_vars
+        } 
+            frame "Pod communications" as AdminPodCom {
+            component ADM_MSG [
+                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                - - - -
+                <i><color:teal>waitRequest()</color></i>
+                <i><color:teal>on <b>127.0.0.1:14001</b></color></i>
+                - - -
+                ThreadPool
+                ]
+        }
+        AdminPodComInterface o-l-> ADM_MSG<<request>>
+        frame "Data Access" as AdminDataAccess {
+            component AdminGetData [
+                get_all_categories()
+                - - - -
+                get_questions_from_ids()
+                ]
+        }
+        ADM_MSG o..> AdminGetData: Thread N
+        ADM_MSG o..> AdminGetData: Thread N+1
+       frame "Entry Point" as AdminEntryPoint {
+            component ADMIN_MSG_C [
+                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                - - - -
+                <i><color:teal>base.backend_com(</color></i>
+                <i><color:teal>host=<b>$RMQ_IP</b></color></i>
+                <i><color:teal>username=$RMQ_USER</color></i>
+                <i><color:teal>password=$RMQ_PASSWD</color></i>
+                <i><color:teal>in_queue=$COMMAND_QUEUE</color></i>
+                <i><color:teal>out_queue=$REPLY_QUEUE</color></i>
+                <i><color:teal>topic=$COMMAND_TOPIC</color></i>
+                <i><color:teal>port=$RPC_PORT)</color></i>
+                - - - -
+                on_request(msg)
+                ]
+        }
+        AdminRMQ_IN o-0)-> ADMIN_MSG_C: Get\nCommand\nmsg
+        
+
+        frame "Execute Command" as AdminExecCommand {
+            [Topic routing] as AdminTopicRouting
+            [result] as AdminRes
+            [Test questions] as AdminMasterCmd
+            [Master Election process] as AdminElectMaster
+            [Checkout git project] as AdminCheckout
+            [Get git differences] as AdminGetDiff
+            [Create list of questions] as AdminCreateQuestions
+            [Data augmentation\nwith N1 and N2\ncategories (or contexts)] as AdminDataAugment
+            [Get vectors from Bert encoder] as AdminEncodeSent
+            [Send command to create/update FAISS index] as FaissCmd
+            [Create/Update questions index] as AdminCreateIndex
+        }
+            ADMIN_MSG_C -d-> AdminTopicRouting
+            AdminRes -u-> ADMIN_MSG_C
+        
+
+            file "NB: if last msg < X mins\nthen GUI can send\ndirect messages\nfor tests" as AdminTopicRouting_note <<NOTE>>
+    AdminTopicRouting .d. AdminTopicRouting_note<<NOTE>>
+        AdminTopicRouting - -> AdminElectMaster<<INTRA>>: $DOMAIN.\n$PROJECT.\n$TARGET.\n#
+        AdminElectMaster -l-> AdminMasterCmd<<TEST>>: tests
+        AdminMasterCmd o-l-> FindReply<<TEST>>: tests
+        AdminMasterCmd -u-> AdminRes<<TEST>>
+        AdminTopicRouting - -> AdminMasterCmd<<TEST>>: $DOMAIN.\n$PROJECT.\n$TARGET.\nmaster
+        AdminElectMaster - -> AdminCheckout<<INTRA>>: create/update
+        AdminCheckout o-l-> GitRepo: git checkout
+        AdminCheckout - -> AdminGetDiff<<INTRA>>
+        AdminGetDiff - -> AdminCreateQuestions<<INTRA>>
+        AdminCreateQuestions - -> AdminDataAugment<<INTRA>>
+        AdminDataAugment - -> AdminEncodeSent<<INTRA>>
+        AdminEncodeSent o-l0)-> AdminEncoder
+        AdminEncodeSent - -> FaissCmd<<INTRA>>
+        FaissCmd -l-> Faiss
+        FaissCmd - -> AdminCreateIndex<<INTRA>>
+        AdminCreateIndex ..u-> AdminRes<<INTRA>>
+        
+
+        database "Questions Index" as AdminIndex {
+            frame "RWLock¹" as AdminRWLock {
+                 component "read" as admin_read
+                    component "<b>write</b>\n<i>prioritized</i>" as admin_write
+            }
+        }
+            AdminCreateIndex o-l-> admin_write
+            AdminGetData o- -> admin_read
+    
+    
+
+}
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

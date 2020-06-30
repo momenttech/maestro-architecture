@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1430.4px" preserveAspectRatio="none" style="width:1261px;height:1430px;" version="1.1" viewBox="0 0 1261 1430" width="1261.2px" zoomAndPan="magnify"><defs><filter height="300%" id="fxi04wucfllwy" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.4"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.8" dy="4.8" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="gxi04wucfllwy0" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF0000"/><stop offset="100%" stop-color="#FFFF00"/></linearGradient><linearGradient id="gxi04wucfllwy1" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#0000FF"/><stop offset="100%" stop-color="#FFFFFF"/></linearGradient></defs><g><!--MD5=[8d246cae1ccf67eca7a1cc42c84dd820]
+cluster FindReplyModule--><path d="M154.8,128.4 L309.6,128.4 A7.2,7.2 0 0 1 314.4,133.2 L322.8,164.3625 L1242,164.3625 A4.8,4.8 0 0 1 1246.8,169.1625 L1246.8,1411.2 A4.8,4.8 0 0 1 1242,1416 L154.8,1416 A4.8,4.8 0 0 1 150,1411.2 L150,133.2 A4.8,4.8 0 0 1 154.8,128.4 " fill="#EEEEEE" filter="url(#fxi04wucfllwy)" style="stroke: #033C73; stroke-width: 1.7999999999999998;"/><line style="stroke: #033C73; stroke-width: 1.7999999999999998;" x1="150" x2="322.8" y1="164.3625" y2="164.3625"/><text fill="#033C73" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145.2" x="160.8" y="150.1664">FindReplyModule</text><!--MD5=[fa66ffc8969e3bb00fdf02ebbafc856c]
+cluster FindReplyModule_cfg--><rect fill="#EEEEEE" height="591.6" rx="4.8" ry="4.8" style="stroke: #444444; stroke-width: 2.4; stroke-dasharray: 7.0,7.0;" width="312" x="906" y="198"/><text fill="#444444" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="117.6" x="1003.2" y="219.7664">Docker Config</text><!--MD5=[c1d178f271b00b0e56a3fc4264397750]
+cluster TestingInterface--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="201.6" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="266.4" x="610.8" y="307.2"/><path d="M770.4,308.4 L770.4,327.5625 L758.4,339.5625 L610.8,339.5625 " fill="none" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="135.6" x="620.4" y="327.7664">Internal Testing</text><!--MD5=[475d745c38d6d4a8cd520ef0ab5e7cb0]
+cluster EntryPoint--><polygon fill="#FFFFFF" filter="url(#fxi04wucfllwy)" points="188.4,210,200.4,198,572.4,198,572.4,583.2,560.4,595.2,188.4,595.2,188.4,210" style="stroke: #E47833; stroke-width: 1.7999999999999998;"/><line style="stroke: #E47833; stroke-width: 1.7999999999999998;" x1="560.4" x2="571.2" y1="210" y2="199.2"/><line style="stroke: #E47833; stroke-width: 1.7999999999999998;" x1="188.4" x2="560.4" y1="210" y2="210"/><line style="stroke: #E47833; stroke-width: 1.7999999999999998;" x1="560.4" x2="560.4" y1="210" y2="595.2"/><text fill="#E47833" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="93.6" x="328.8" y="232.9664">Entry Point</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="121.2" x="277.8" y="249.7289">NB_INSTANCES</text><text fill="#E47833" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69.6" x="403.8" y="249.7289">Threads</text><!--MD5=[5a67b7ef1662e0e5eb1558fe4777d068]
+cluster SearchBest--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="742.8" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="511.2" x="178.8" y="644.4"/><path d="M304.8,645.6 L304.8,664.7625 L292.8,676.7625 L178.8,676.7625 " fill="none" style="stroke: #2683B9; stroke-width: 1.7999999999999998;"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="102" x="188.4" y="664.9664">Search Best</text><!--MD5=[27ef8fd0563cd6f6841e9e57f151cd84]
+entity FindReplyModule_vars--><path d="M925.2,253.2 L925.2,593.8031 A4.8,4.8 0 0 0 930,598.6031 L1194,598.6031 A4.8,4.8 0 0 0 1198.8,593.8031 L1198.8,260.4 L1186.8,248.4 L930,248.4 A4.8,4.8 0 0 0 925.2,253.2 " fill="#FFFFFF" filter="url(#fxi04wucfllwy)" style="stroke: #868E96; stroke-width: 1.7999999999999998;"/><path d="M1186.8,248.4 L1186.8,255.6 A4.8,4.8 0 0 0 1191.6,260.4 L1198.8,260.4 " fill="#FFFFFF" style="stroke: #868E96; stroke-width: 1.7999999999999998;"/><text fill="#868E96" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="92.4" x="950.4" y="311.3227">Mandatory</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50.4" x="950.4" y="337.8574">RMQ_IP:</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="69.6" x="1004.4" y="337.8574">RMQ broker</text><text fill="#868E96" font-family="Verdana" font-size="13.2" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="66" x="950.4" y="364.94">Optional</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82.8" x="950.4" y="391.1918">RMQ_USER =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="28.8" x="1036.8" y="391.1918">tbott</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="102" x="950.4" y="417.1605">RMQ_PASSWD =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="79.2" x="1056" y="417.1605">M0m3n773ch</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="138" x="950.4" y="443.1293">QUESTIONS_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="51.6" x="1092" y="443.1293">tbott-rpc</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="128.4" x="950.4" y="469.098">ENCODER_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80.4" x="1082.4" y="469.098">tbott-encoder</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="132" x="950.4" y="495.0668">MATCHING_QUEUE =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="87.6" x="1086" y="495.0668">tbott-matching</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="109.2" x="950.4" y="521.0355">NB_INSTANCES =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="7.2" x="1063.2" y="521.0355">5</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80.4" x="950.4" y="547.0043">RMQ_PORT =</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="28.8" x="1034.4" y="547.0043">5672</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="81.6" x="950.4" y="572.973">LOG_LEVEL=</text><text fill="#868E96" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="30" x="1035.6" y="572.973">INFO</text><line style="stroke: #868E96; stroke-width: 1.2;" x1="926.4" x2="1012.2" y1="276.1781" y2="276.1781"/><text fill="#868E96" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="87.6" x="1018.2" y="281.3941">Variables</text><line style="stroke: #868E96; stroke-width: 1.2;" x1="1111.8" x2="1197.6" y1="276.1781" y2="276.1781"/><!--MD5=[ad43a35547d8f31748ef47d7c656d86d]
+entity FindReplyModule_vols--><path d="M958.8,688.8 L958.8,765.525 A4.8,4.8 0 0 0 963.6,770.325 L1160.4,770.325 A4.8,4.8 0 0 0 1165.2,765.525 L1165.2,696 L1153.2,684 L963.6,684 A4.8,4.8 0 0 0 958.8,688.8 " fill="#FFFFFF" filter="url(#fxi04wucfllwy)" style="stroke: #868E96; stroke-width: 1.7999999999999998;"/><path d="M1153.2,684 L1153.2,691.2 A4.8,4.8 0 0 0 1158,696 L1165.2,696 " fill="#FFFFFF" style="stroke: #868E96; stroke-width: 1.7999999999999998;"/><text fill="#868E96" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="27.6" x="984" y="744.6949">logs</text><text fill="#868E96" font-family="Verdana" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="124.8" x="1015.2" y="744.6949">-&gt; /var/log/supervisor</text><line style="stroke: #868E96; stroke-width: 1.2;" x1="960" x2="1015.2" y1="711.7781" y2="711.7781"/><text fill="#868E96" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="81.6" x="1021.2" y="716.9941">Volumes</text><line style="stroke: #868E96; stroke-width: 1.2;" x1="1108.8" x2="1164" y1="711.7781" y2="711.7781"/><!--MD5=[cc34de39782346c444ab9ec26a286d1d]
+entity MSG_T--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="131.8875" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="228" x="630" y="357.6"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="834" y="363.6"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="831.6" y="366"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="831.6" y="370.8"/><a href="http://10.165.64.205/AI/Messaging" target="_top" title="http://10.165.64.205/AI/Messaging" xlink:actuate="onRequest" xlink:href="http://10.165.64.205/AI/Messaging" xlink:show="new" xlink:title="http://10.165.64.205/AI/Messaging" xlink:type="simple"><text fill="#0000FF" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="80.4" x="654" y="400.9664">Messaging</text></a><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="16.8" x="739.2" y="400.9664">lib</text><line style="stroke: #2683B9; stroke-width: 1.2;" x1="631.2" x2="856.8" y1="410.3625" y2="410.3625"/><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="104.4" x="661.2" y="434.5289">waitRequest()</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="19.2" x="661.2" y="463.2914">on</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="129.6" x="685.2" y="463.2914">127.0.0.1:14002</text><!--MD5=[5b265eb2fd3f1a0aa329f1963cffe059]
+entity MSG_C--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="285.3" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="308.4" x="234.6" y="280.8"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="519" y="286.8"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="516.6" y="289.2"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="516.6" y="294"/><a href="http://10.165.64.205/AI/Messaging" target="_top" title="http://10.165.64.205/AI/Messaging" xlink:actuate="onRequest" xlink:href="http://10.165.64.205/AI/Messaging" xlink:show="new" xlink:title="http://10.165.64.205/AI/Messaging" xlink:type="simple"><text fill="#0000FF" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="80.4" x="258.6" y="324.1664">Messaging</text></a><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="16.8" x="343.8" y="324.1664">lib</text><line style="stroke: #2683B9; stroke-width: 1.2;" x1="235.8" x2="541.8" y1="333.5625" y2="333.5625"/><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="152.4" x="265.8" y="357.7289">treaded_rpc.worker(</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="45.6" x="265.8" y="386.4914">host=</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69.6" x="311.4" y="386.4914">$RMQ_IP</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="176.4" x="265.8" y="415.2539">username=$RMQ_USER</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="195.6" x="265.8" y="444.0164">password=$RMQ_PASSWD</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="234" x="265.8" y="472.7789">rpc_queue=$QUESTION_QUEUE</text><text fill="#008080" font-family="Verdana" font-size="14.4" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="136.8" x="265.8" y="501.5414">port=$RMQ_PORT)</text><line style="stroke: #2683B9; stroke-width: 1.2;" x1="235.8" x2="541.8" y1="515.7375" y2="515.7375"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="128.4" x="265.8" y="539.9039">on_request(msg)</text><!--MD5=[0b6da4d3acf42b1a006f10501b03f29a]
+entity GetCtx--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="122.2875" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="372" x="229.2" y="822"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="577.2" y="828"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="574.8" y="830.4"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="574.8" y="835.2"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="162" x="253.2" y="865.3664">if type == "question":</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="312" x="253.2" y="894.1289">&gt; get N1/N2 contexts @ 127.0.0.1:14001</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="165.6" x="253.2" y="922.8914">&gt; extend question list</text><!--MD5=[7be7f317a0ea0c634215121d8fef2d75]
+entity GetVects--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="64.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="309.6" x="260.4" y="970.8"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="546" y="976.8"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="543.6" y="979.2"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="543.6" y="984"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="249.6" x="284.4" y="1014.1664">get vectors @ $ENCODER_QUEUE</text><!--MD5=[3cbeaa90f45d418792d3fe0131e2a8b6]
+entity AskFaiss--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="93.525" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="435.6" x="197.4" y="1062"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="609" y="1068"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="606.6" y="1070.4"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="606.6" y="1075.2"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="375.6" x="221.4" y="1105.3664">get candidates IDs from FAISS @ 127.0.0.1:14000</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="97.2" x="221.4" y="1134.1289">rearange IDs</text><!--MD5=[fe5f9f92828b1c2fccf346540a4e6477]
+entity GetVectAdm--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="64.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="392.4" x="219" y="1182"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="587.4" y="1188"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="585" y="1190.4"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="585" y="1195.2"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="56.4" x="243" y="1225.3664">get IDs'</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85.2" x="304.2" y="1225.3664">questions</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="28.8" x="394.2" y="1225.3664">and</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="58.8" x="427.8" y="1225.3664">replies</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="84" x="491.4" y="1225.3664">from Admin</text><!--MD5=[c5a1ccf7239e9782fa8c48518b78c9ad]
+entity getBestMatching--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="93.525" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="366" x="252.6" y="1274.4"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="594.6" y="1280.4"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="592.2" y="1282.8"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="592.2" y="1287.6"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="207.6" x="276.6" y="1317.7664">create list of paired vectors</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="306" x="276.6" y="1346.5289">get best Matching @ $MATCHING_QUEUE</text><!--MD5=[b4655307bea1750bf10a3711aa3c6075]
+entity RetBet--><rect fill="#FFFFFF" filter="url(#fxi04wucfllwy)" height="64.7625" rx="4.8" ry="4.8" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="145.2" x="525" y="694.8"/><rect fill="#FFFFFF" height="12" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="18" x="646.2" y="700.8"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="643.8" y="703.2"/><rect fill="#FFFFFF" height="2.4" style="stroke: #2683B9; stroke-width: 1.7999999999999998;" width="4.8" x="643.8" y="708"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="85.2" x="549" y="738.1664">return best</text><!--MD5=[165d55e2697f3381849a9a2b5cbc76bd]
+entity FindReplyRMQ--><ellipse cx="67.2" cy="423.6" fill="#FFFFFF" filter="url(#fxi04wucfllwy)" rx="9.6" ry="9.6" style="stroke: #C71C22; stroke-width: 2.4;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="88.8" x="22.8" y="463.3664">Start Here</text><!--MD5=[eede99d28d534b032ba9856d99f66a6c]
+entity TestFindings--><ellipse cx="744" cy="52.8" fill="#FFFFFF" filter="url(#fxi04wucfllwy)" rx="9.6" ry="9.6" style="stroke: #C71C22; stroke-width: 2.4;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="73.2" x="707.4" y="92.5664">Testings</text><!--MD5=[65a15915d2cc54585b137278ef6b7e75]
+entity Admin1--><ellipse cx="102" cy="868.8" fill="url(#gxi04wucfllwy0)" filter="url(#fxi04wucfllwy)" rx="14.4" ry="14.4" style="stroke: #6F42C1; stroke-width: 2.4;"/><line style="stroke: #6F42C1; stroke-width: 2.4;" x1="87.6" x2="116.4" y1="885.6" y2="885.6"/><text fill="#000000" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="45.6" x="79.2" y="907.3664">Admin</text><!--MD5=[eee6185bd73f45d88be72cec907cd9c5]
+entity Admin2--><ellipse cx="102" cy="1200" fill="url(#gxi04wucfllwy0)" filter="url(#fxi04wucfllwy)" rx="14.4" ry="14.4" style="stroke: #6F42C1; stroke-width: 2.4;"/><line style="stroke: #6F42C1; stroke-width: 2.4;" x1="87.6" x2="116.4" y1="1216.8" y2="1216.8"/><text fill="#000000" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="45.6" x="79.2" y="1238.5664">Admin</text><!--MD5=[3ceae401b49d0ad0fe702da941d15e72]
+entity Faiss--><ellipse cx="105.6" cy="1094.4" fill="url(#gxi04wucfllwy1)" filter="url(#fxi04wucfllwy)" rx="14.4" ry="14.4" style="stroke: #6F42C1; stroke-width: 2.4;"/><line style="stroke: #6F42C1; stroke-width: 2.4;" x1="91.2" x2="120" y1="1111.2" y2="1111.2"/><text fill="#000000" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="38.4" x="86.4" y="1132.9664">Faiss</text><!--MD5=[577ee27765cb72cf7b02c80a46fe7b51]
+entity Encoder--><ellipse cx="62.4" cy="988.8" fill="#FFFFFF" filter="url(#fxi04wucfllwy)" rx="14.4" ry="14.4" style="stroke: #2683B9; stroke-width: 2.4;"/><line style="stroke: #2683B9; stroke-width: 2.4;" x1="48" x2="76.8" y1="1005.6" y2="1005.6"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="98.4" x="13.2" y="1027.3664">Bert Encoder</text><!--MD5=[0b4846db015581273f652c6d394a5ede]
+entity Matcher--><ellipse cx="68.4" cy="1292.4" fill="#FFFFFF" filter="url(#fxi04wucfllwy)" rx="14.4" ry="14.4" style="stroke: #2683B9; stroke-width: 2.4;"/><line style="stroke: #2683B9; stroke-width: 2.4;" x1="54" x2="82.8" y1="1309.2" y2="1309.2"/><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="72" x="32.4" y="1330.9664">Sentence</text><text fill="#2683B9" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="68.4" x="32.4" y="1359.7289">Matching</text><!--MD5=[ce87164961160ef57e12dd1e6fb85888]
+link FindReplyModule_vars to FindReplyModule_vols--><!--MD5=[0f1dfe5e38ae2459e96001a9059acb33]
+link TestFindings to MSG_T--><path d="M744,78.252 C744,78.252 744,257.7276 744,341.1552 " fill="none" id="TestFindings-MSG_T" style="stroke: #73A839; stroke-width: 3.0;"/><polygon fill="#73A839" points="744,357.2532,748.8,346.4532,744,351.2532,739.2,346.4532,744,357.2532" style="stroke: #73A839; stroke-width: 3.0;"/><line style="stroke: #73A839; stroke-width: 3.0;" x1="744" x2="744" y1="351.2532" y2="341.6532"/><polygon fill="#FFFFFF" points="744,63.852,739.2,71.052,744,78.252,748.8,71.052,744,63.852" style="stroke: #73A839; stroke-width: 3.0;"/><!--MD5=[7a910b07c96c7c18159a08bdf23f5fcf]
+link FindReplyRMQ to EntryPoint--><path d="M92.752,423.6 C92.752,423.6 136.5454,423.6 157.0034,423.6 C167.2324,423.6 176.5316,423.6 183.6779,423.6 C184.5712,423.6 185.4308,423.6 186.2544,423.6 C186.6662,423.6 187.069,423.6 187.4625,423.6 C187.6593,423.6 187.8537,423.6 188.0458,423.6 C188.1418,423.6 188.2372,423.6 188.3321,423.6 " fill="none" id="FindReplyRMQ-EntryPoint" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="188.3321,423.6,177.5321,418.8,182.3321,423.6,177.5321,428.4,188.3321,423.6" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="78.352,423.6,85.552,428.4,92.752,423.6,85.552,418.8,78.352,423.6" style="stroke: #2FA4E7; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="69.6" x="102.984" y="376.9664">Consume</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="28.8" x="123.384" y="393.7289">RPC</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="31.2" x="122.184" y="410.4914">msg</text><path d="M165.4887,432.0853 A12,12 0 0 0 165.4887 415.1147" fill="#FFFFFF" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><ellipse cx="157.0034" cy="423.6" fill="#FFFFFF" rx="7.2" ry="7.2" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><!--MD5=[772798b0a77b593c46a83d9d01daa4be]
+link MSG_C to GetCtx--><path d="M391.7712,566.7708 C393.9876,636.8304 397.8168,722.5524 404.4,799.2 C404.8644,804.6096 405.4248,810.2088 406.0416,815.826 " fill="none" id="MSG_C-&gt;GetCtx" style="stroke: #2FA4E7; stroke-width: 3.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#2FA4E7" points="406.7316,821.9196,410.285,810.6478,406.056,815.9578,400.7461,811.7287,406.7316,821.9196" style="stroke: #2FA4E7; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="73.2" x="418.8" y="724.3664">Search Q.</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="87.6" x="411.6" y="741.1289">Thread 1..N</text><!--MD5=[f1adc2b44053004af7124fd502d274f4]
+link MSG_T to GetCtx--><path d="M753.4704,489.8568 C761.5668,572.016 762.0576,713.0292 687.6,799.2 C666.228,823.9344 637.7184,841.4148 607.1868,853.7388 " fill="none" id="MSG_T-&gt;GetCtx" style="stroke: #73A839; stroke-width: 3.0;"/><polygon fill="#73A839" points="601.4628,855.9804,613.2694,856.5125,607.0498,853.7929,609.7695,847.5733,601.4628,855.9804" style="stroke: #73A839; stroke-width: 3.0;"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="52.8" x="760.8" y="732.7664">Test Q.</text><!--MD5=[b6223a3a6390dc20fa00adcaa859a578]
+link RetBet to GetCtx--><!--MD5=[047457c171c94be8065864a2166fa3de]
+link GetCtx to GetVects--><path d="M415.2,944.5776 C415.2,951.3588 415.2,958.116 415.2,964.488 " fill="none" id="GetCtx-&gt;GetVects" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="415.2,970.7172,420,959.9172,415.2,964.7172,410.4,959.9172,415.2,970.7172" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[62895d07cdb544a06ce13b735ba82e7a]
+link GetVects to AskFaiss--><path d="M415.2,1035.924 C415.2,1042.1868 415.2,1048.9176 415.2,1055.6556 " fill="none" id="GetVects-&gt;AskFaiss" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="415.2,1061.8332,420,1051.0332,415.2,1055.8332,410.4,1051.0332,415.2,1061.8332" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[c37a44f2f5b3f10a24b8bd2687bbbcc8]
+link AskFaiss to GetVectAdm--><path d="M415.2,1155.8664 C415.2,1162.4868 415.2,1169.2368 415.2,1175.6688 " fill="none" id="AskFaiss-&gt;GetVectAdm" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="415.2,1181.9808,420,1171.1808,415.2,1175.9808,410.4,1171.1808,415.2,1181.9808" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[1813dca5fe309a935a680031668006e9]
+link GetVectAdm to getBestMatching--><path d="M421.3212,1246.9236 C422.6232,1253.586 424.0308,1260.7932 425.4384,1267.9944 " fill="none" id="GetVectAdm-&gt;getBestMatching" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="426.618,1274.0304,429.2552,1262.5098,425.466,1268.142,419.8338,1264.3529,426.618,1274.0304" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[06877c503610f9ba5727f110a1c60292]
+reverse link RetBet to getBestMatching--><path d="M625.8396,764.97 C646.0128,794.7744 669.6,838.8468 669.6,882 C669.6,882 669.6,882 669.6,1215.6 C669.6,1249.8528 648.4296,1272.9468 618.8256,1288.4928 " fill="none" id="RetBet&lt;-getBestMatching" style="stroke: #868E96; stroke-width: 3.0;"/><polygon fill="#868E96" points="622.3788,759.9444,624.5499,771.5619,625.7814,764.8863,632.457,766.1177,622.3788,759.9444" style="stroke: #868E96; stroke-width: 3.0;"/><!--MD5=[54ac080d62da3b07971dc3a0e89da4c2]
+reverse link MSG_C to RetBet--><path d="M490.5912,571.6368 C522.6768,617.9208 555.0912,664.68 575.7012,694.4112 " fill="none" id="MSG_C&lt;-RetBet" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="487.086,566.58,489.293,578.1907,490.5038,571.5114,497.1832,572.7222,487.086,566.58" style="stroke: #2FA4E7; stroke-width: 3.0;"/><!--MD5=[dbb8e5923775c1c1eaf4b80534072436]
+reverse link MSG_T to RetBet--><path d="M709.6728,495.4236 C679.0044,558.5208 635.5116,648.0012 612.7788,694.7724 " fill="none" id="MSG_T&lt;-RetBet" style="stroke: #73A839; stroke-width: 3.0;"/><polygon fill="#73A839" points="712.4136,489.7848,703.3755,497.4001,709.7908,495.1812,712.0097,501.5965,712.4136,489.7848" style="stroke: #73A839; stroke-width: 3.0;"/><!--MD5=[17bf6e70bd950cfc4d74cb02577c3d96]
+link Admin1 to GetCtx--><path d="M146.7,883.2 C168.81,883.2 214.3308,883.2 214.3308,883.2 " fill="none" id="Admin1-GetCtx" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="228.7308,883.2,221.5308,878.4,214.3308,883.2,221.5308,888,228.7308,883.2" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="131.0568,883.2,141.8568,888,137.0568,883.2,141.8568,878.4,131.0568,883.2" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="137.0568" x2="146.6568" y1="883.2" y2="883.2"/><!--MD5=[9b0615f058061e7be644c4c3710bd288]
+link Encoder to GetVects--><path d="M133.962,1003.2 C165.9996,1003.2 245.8584,1003.2 245.8584,1003.2 " fill="none" id="Encoder-GetVects" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="260.2584,1003.2,253.0584,998.4,245.8584,1003.2,253.0584,1008,260.2584,1003.2" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="117.9131,1003.2,128.7131,1008,123.9131,1003.2,128.7131,998.4,117.9131,1003.2" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="123.9131" x2="133.5132" y1="1003.2" y2="1003.2"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="38.4" x="169.8" y="973.3664">Send</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="92.4" x="142.8" y="990.1289">RPC request</text><path d="M210.4096,1011.6853 A12,12 0 0 0 210.4096 994.7147" fill="#FFFFFF" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><ellipse cx="201.9243" cy="1003.2" fill="#FFFFFF" rx="7.2" ry="7.2" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><!--MD5=[c82c8146aee7f8fa2805a5fe9c1ce465]
+link Faiss to AskFaiss--><path d="M146.994,1108.8 C158.466,1108.8 182.652,1108.8 182.652,1108.8 " fill="none" id="Faiss-AskFaiss" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="197.052,1108.8,189.852,1104,182.652,1108.8,189.852,1113.6,197.052,1108.8" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="130.9968,1108.8,141.7968,1113.6,136.9968,1108.8,141.7968,1104,130.9968,1108.8" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="136.9968" x2="146.5968" y1="1108.8" y2="1108.8"/><!--MD5=[57ae039b23fbf6a8d6f4e71fc269894a]
+link Admin2 to GetVectAdm--><path d="M146.8128,1214.4 C165.5436,1214.4 204.342,1214.4 204.342,1214.4 " fill="none" id="Admin2-GetVectAdm" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="218.742,1214.4,211.542,1209.6,204.342,1214.4,211.542,1219.2,218.742,1214.4" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="131.0568,1214.4,141.8568,1219.2,137.0568,1214.4,141.8568,1209.6,131.0568,1214.4" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="137.0568" x2="146.6568" y1="1214.4" y2="1214.4"/><!--MD5=[0c71eff58df83eceeaf53b07c9051436]
+link Matcher to getBestMatching--><path d="M126.4711,1321.2 C156.8748,1321.2 237.9696,1321.2 237.9696,1321.2 " fill="none" id="Matcher-getBestMatching" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#FFFFFF" points="252.3696,1321.2,245.1696,1316.4,237.9696,1321.2,245.1696,1326,252.3696,1321.2" style="stroke: #2FA4E7; stroke-width: 3.0;"/><polygon fill="#2FA4E7" points="110.5225,1321.2,121.3225,1326,116.5225,1321.2,121.3225,1316.4,110.5225,1321.2" style="stroke: #2FA4E7; stroke-width: 3.0;"/><line style="stroke: #2FA4E7; stroke-width: 3.0;" x1="116.5225" x2="126.1225" y1="1321.2" y2="1321.1999"/><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="38.4" x="162.3" y="1291.3664">Send</text><text fill="#343A40" font-family="Verdana" font-size="14.4" lengthAdjust="spacingAndGlyphs" textLength="92.4" x="135.3" y="1308.1289">RPC request</text><path d="M202.107,1329.6853 A12,12 0 0 0 202.107 1312.7147" fill="#FFFFFF" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><ellipse cx="193.6217" cy="1321.2" fill="#FFFFFF" rx="7.2" ry="7.2" style="stroke: #2FA4E7; stroke-width: 1.7999999999999998;"/><!--MD5=[e4ed78c4c4450be3f35bb117fbb17952]
+@startuml
+
+
+
+
+skinparam backgroundColor White
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             True
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor $SUCCESS_DARK
+    IBackgroundColor #D2494E
+    IBorderColor $DANGER_DARK
+    EBackgroundColor #E47833
+    EBorderColor $WARNING_DARK
+    NBackgroundColor #35638F
+    NBorderColor $INFO_DARK
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              White
+}
+
+skinparam legend {
+	BackgroundColor White
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam activity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor White
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #BABDBF
+}
+
+
+skinparam participant {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam arrow {
+	Thickness 2.5
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor White
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor White
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor White
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	DividerBackgroundColor White
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor White
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor White
+}
+
+
+skinparam collections {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam control {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam entity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam boundary {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam agent {
+	BackgroundColor White
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam artifact {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam component {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	
+}
+
+
+skinparam interface {
+	BackgroundColor  White
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+}
+
+
+skinparam node {
+	BackgroundColor White
+	BorderColor #343A40
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #343A40
+}
+
+
+skinparam database {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam class {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	BackgroundColor #F2FCFE-#eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+
+skinparam state {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam card {
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam file {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam stack {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+
+hide stereotype
+
+!pragma horizontalLineBetweenDifferentPackageAllowed
+
+skinparam file<<NOTE>> {
+	BorderThickness 0.5
+    BackgroundColor LightYellow
+	BorderColor LightSteelBlue
+	FontColor SteelBlue
+    FontSize 10
+    ArrowColor LightSteelBlue
+}
+skinparam arrow<<NOTE>> {
+    Color LightSteelBlue
+}
+
+
+
+
+
+skinparam node<<MULTITHREADED>>{
+    FontColor #E47833
+	BorderColor #E47833
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+skinparam frame<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam rectangle<<boundary>> {
+    BackgroundColor #eeeeee
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+    BoxPadding 0
+}
+
+skinparam file<<docker_params>> {
+    Shadowing True
+    FontSize 10
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam nodesep 30
+skinparam ranksep 20
+skinparam componentStyle uml2
+
+skinparam Entity<<ADMIN>>{
+    FontColor black
+	BorderColor #6F42C1
+	BackgroundColor #Red/Yellow
+}
+skinparam Entity<<FAISS>>{
+    FontColor black
+	BorderColor #6F42C1
+	BackgroundColor #Blue/White
+}
+skinparam arrow<<TEST>> {
+	Thickness 1
+	Color #73A839
+	FontColor #343A40
+}
+
+skinparam arrow<<INTRA>> {
+	Color #868E96
+}
+
+
+scale 1.2
+interface "<b>Start Here</b>" as FindReplyRMQ
+interface "<b>Testings</b>" as TestFindings
+
+Entity "Admin" <<ADMIN>> as Admin1
+Entity "Admin" <<ADMIN>> as Admin2
+Entity Faiss <<FAISS>>
+Entity "Bert Encoder" as Encoder
+Entity "Sentence\nMatching" as Matcher
+
+    package FindReplyModule as FindReplyModule <<CONTAINER>> {
+            rectangle "Docker Config" <<boundary>> as FindReplyModule_cfg {
+                    
+
+        file "- - =Variables - -\n==Mandatory\nRMQ_IP: <i>RMQ broker</i>\n===Optional\nRMQ_USER = <i>tbott</i>\n                                RMQ_PASSWD = <i>M0m3n773ch</i>\n                                QUESTIONS_QUEUE = <i>tbott-rpc</i>\n                                ENCODER_QUEUE = <i>tbott-encoder</i>\n                                MATCHING_QUEUE = <i>tbott-matching</i>\n                                NB_INSTANCES = <i>5</i>\n                                RMQ_PORT = <i>5672</i>\n                                LOG_LEVEL= <i>INFO</i>" <<docker_params>> as FindReplyModule_vars
+                    
+
+        file "- - =Volumes - -\n<b>logs</b> -> /var/log/supervisor" <<docker_params>> as FindReplyModule_vols
+    
+                FindReplyModule_vols -[hidden]U- FindReplyModule_vars
+        } 
+            frame "Internal Testing" as TestingInterface {
+            component MSG_T [
+                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                - - - -
+                <i><color:teal>waitRequest()</color></i>
+                <i><color:teal>on <b>127.0.0.1:14002</b></color></i>
+                ]
+        }
+        TestFindings o-d-> MSG_T<<TEST>>
+
+                node "Entry Point\n<i><font color=Teal>NB_INSTANCES</font></i> Threads" as EntryPoint <<MULTITHREADED>> {
+            component MSG_C [
+                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                - - - -
+                <i><color:teal>treaded_rpc.worker(</color></i>
+                <i><color:teal>host=<b>$RMQ_IP</b></color></i>
+                <i><color:teal>username=$RMQ_USER</color></i>
+                <i><color:teal>password=$RMQ_PASSWD</color></i>
+                <i><color:teal>rpc_queue=$QUESTION_QUEUE</color></i>
+                <i><color:teal>port=$RMQ_PORT)</color></i>
+                - - - -
+                on_request(msg)
+                ]
+        }
+        FindReplyRMQ o-r0)-> EntryPoint: Consume\nRPC\nmsg
+    
+        frame "Search Best" as SearchBest {
+            [if type == "question":\n > get N1/N2 contexts @ 127.0.0.1:14001\n > extend question list] as GetCtx
+            [get vectors @ $ENCODER_QUEUE] as GetVects
+            [get candidates IDs from FAISS @ 127.0.0.1:14000\nrearange IDs] as AskFaiss
+            [get IDs' <b>questions</b> and <b>replies</b> from Admin] as GetVectAdm
+            [create list of paired vectors\nget best Matching @ $MATCHING_QUEUE] as getBestMatching
+            [return best] as RetBet
+
+        }
+        MSG_C ..> GetCtx: "Search Q.\nThread 1..N"
+            MSG_T - -> GetCtx<<TEST>>: "Test Q."
+
+        RetBet -[hidden]-> GetCtx
+        GetCtx -down-> GetVects<<INTRA>>
+        GetVects -down-> AskFaiss<<INTRA>>
+        AskFaiss -down-> GetVectAdm<<INTRA>>
+        GetVectAdm -down-> getBestMatching<<INTRA>>
+        getBestMatching -u-> RetBet<<INTRA>>
+
+        RetBet -u-> MSG_C
+            RetBet -u-> MSG_T<<TEST>>
+            
+        GetCtx o-l-> Admin1
+        GetVects o-l0)-> Encoder: Send\nRPC request
+        AskFaiss o-l-> Faiss
+        GetVectAdm o-l-> Admin2
+        getBestMatching o-l0)-> Matcher: Send\nRPC request
+
+
+}
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

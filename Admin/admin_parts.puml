@@ -1,0 +1,195 @@
+@startuml Admin
+!includeurl https://raw.githubusercontent.com/momenttech/plantuml/master/globals/commons.puml
+'!include ./globals/commons.puml
+'skinparam linetype ortho
+'skinparam linetype polyline
+'left to right direction
+'top to bottom direction
+skinparam nodesep 30
+skinparam ranksep 20
+
+'scale 1
+skinparam Entity<<FINDREP>>{
+    FontColor black
+	BorderColor $PURPLE
+	BackgroundColor #Yellow/Blue
+}
+skinparam Entity<<FAISS>>{
+    FontColor black
+	BorderColor $PURPLE
+	BackgroundColor #Blue/White
+}
+skinparam arrow<<TEST>> {
+	Thickness 1
+	Color $SUCCESS
+	FontColor $FGCOLOR
+}
+skinparam arrow<<INTRA>> {
+	Color $GRAY
+}
+
+!procedure $make_docker_config($display)
+    !if ($display != "")
+        $DockerConfig("AdminModule") {
+            !if ($display == "all") || ($display == "variables")
+                $DockerVariables("AdminModule", \
+                                "RMQ_IP: <i>RMQ broker</i>\n\
+                                GIT_SERVER: <i>Git server address</i>\n\
+                                GIT_DOMAIN: <i>Git DOMAIN</i>\n\
+                                GIT_PROJECT: <i>Git project in $GIT_DOMAIN</i>\n\
+                                TARGET: <i>Pod's destination (ex: prod, test ...)</i>", \
+                                \
+                                "RMQ_USER = <i>tbott</i>\n\
+                                RMQ_PASSWD = <i>M0m3n773ch</i>\n\
+                                COMMAND_QUEUE = <i>tbott-admin-in</i>\n\
+                                REPLY_QUEUE = <i>tbott-admin-out</i>\n\
+                                COMMAND_TOPIC = <i>$GIT_DOMAIN.$GIT_PROJECT.$TARGET</i>\n\
+                                ENCODER_QUEUE = <i>tbott-encoder</i>\n\
+                                RMQ_PORT = <i>5672</i>\n\
+                                LOG_LEVEL= <i>INFO</i>")
+            !endif
+            ' !if ($display == "all") || ($display == "ports")
+            '     $DockerPorts("AdminModule",\
+            '                 "127.0.0.1:<b>14001</b>")
+            ' !endif
+            !if ($display == "all") || ($display == "volumes")
+                $DockerVolumes("AdminModule",\
+                            "<b>logs</b> -> /var/log/supervisor\n\
+                            <b>data_dir</b> -> /opt/admin")
+            !endif
+            !if ($display == "all") || ($display == "extra")
+                '$DockerExtra("AdminModule", "test", "content")
+            !endif
+        }
+    !endif
+!endprocedure
+
+!procedure $make_content($display)
+    !if ($display == "all") || ($display == "AdminIndex")
+        frame "Pod communications" as AdminPodCom {
+            component ADM_MSG [
+                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                ----
+                <i><color:teal>waitRequest()</color></i>
+                <i><color:teal>on <b>127.0.0.1:14001</b></color></i>
+                ---
+                ThreadPool
+                ]
+        }
+        AdminPodComInterface o-l-> ADM_MSG<<request>>
+    !endif
+    !if ($display == "all") || ($display == "AdminIndex")
+        frame "Data Access" as AdminDataAccess {
+            component AdminGetData [
+                get_all_categories()
+                ----
+                get_questions_from_ids()
+                ]
+        }
+        ADM_MSG o..> AdminGetData: Thread N
+        ADM_MSG o..> AdminGetData: Thread N+1
+    !endif
+    !if ($display == "all") || ($display == "AdminEntryPoint")
+       frame "Entry Point" as AdminEntryPoint {
+            component ADMIN_MSG_C [
+                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                ----
+                <i><color:teal>base.backend_com(</color></i>
+                <i><color:teal>host=<b>$RMQ_IP</b></color></i>
+                <i><color:teal>username=$RMQ_USER</color></i>
+                <i><color:teal>password=$RMQ_PASSWD</color></i>
+                <i><color:teal>in_queue=$COMMAND_QUEUE</color></i>
+                <i><color:teal>out_queue=$REPLY_QUEUE</color></i>
+                <i><color:teal>topic=$COMMAND_TOPIC</color></i>
+                <i><color:teal>port=$RPC_PORT)</color></i>
+                ----
+                on_request(msg)
+                ]
+        }
+        AdminRMQ_IN o-0)-> ADMIN_MSG_C: Get\nCommand\nmsg
+        'AdminRMQ_OUT <-0)-o ADMIN_MSG_C: Send reply
+        
+    !endif
+
+    !if ($display == "all") || ($display == "AdminExecCommand")
+        frame "Execute Command" as AdminExecCommand {
+            [Topic routing] as AdminTopicRouting
+            [result] as AdminRes
+            [Test questions] as AdminMasterCmd
+            [Master Election process] as AdminElectMaster
+            [Checkout git project] as AdminCheckout
+            [Get git differences] as AdminGetDiff
+            [Create list of questions] as AdminCreateQuestions
+            [Data augmentation\nwith N1 and N2\ncategories (or contexts)] as AdminDataAugment
+            [Get vectors from Bert encoder] as AdminEncodeSent
+            [Send command to create/update FAISS index] as FaissCmd
+            [Create/Update questions index] as AdminCreateIndex
+        }
+        !if ($display == "AdminExecCommand")
+            interface "request" as ADMIN_MSG_REQ
+            interface "reply" as ADMIN_MSG_REP
+            ADMIN_MSG_REQ -d-> AdminTopicRouting
+            AdminRes -u-> ADMIN_MSG_REP
+        !endif
+        !if ($display == "all")
+            ADMIN_MSG_C -d-> AdminTopicRouting
+            AdminRes -u-> ADMIN_MSG_C
+        !endif
+        
+
+        $small_notes("AdminTopicRouting",\
+        "NB: if last msg < X mins\nthen GUI can send\ndirect messages\nfor tests",\
+        ".d.")
+        AdminTopicRouting --> AdminElectMaster<<INTRA>>: $DOMAIN.\n$PROJECT.\n$TARGET.\n#
+        AdminElectMaster -l-> AdminMasterCmd<<TEST>>: tests
+        AdminMasterCmd o-l-> FindReply<<TEST>>: tests
+        AdminMasterCmd -u-> AdminRes<<TEST>>
+        AdminTopicRouting --> AdminMasterCmd<<TEST>>: $DOMAIN.\n$PROJECT.\n$TARGET.\nmaster
+        AdminElectMaster --> AdminCheckout<<INTRA>>: create/update
+        AdminCheckout o-l-> GitRepo: git checkout
+        AdminCheckout --> AdminGetDiff<<INTRA>>
+        AdminGetDiff --> AdminCreateQuestions<<INTRA>>
+        AdminCreateQuestions --> AdminDataAugment<<INTRA>>
+        AdminDataAugment --> AdminEncodeSent<<INTRA>>
+        AdminEncodeSent o-l0)-> AdminEncoder
+        AdminEncodeSent --> FaissCmd<<INTRA>>
+        FaissCmd -l-> Faiss
+        FaissCmd --> AdminCreateIndex<<INTRA>>
+        AdminCreateIndex ..u-> AdminRes<<INTRA>>
+        
+    !endif
+
+    !if ($display == "all") || ($display == "AdminIndex") || ($display == "AdminExecCommand")
+        database "Questions Index" as AdminIndex {
+            frame "RWLock¹" as AdminRWLock {
+                !if ($display == "all") || ($display == "AdminIndex")
+                 component "read" as admin_read
+                !endif
+                !if ($display == "all") || ($display == "AdminExecCommand")
+                    component "<b>write</b>\n<i>prioritized</i>" as admin_write
+                !endif
+            }
+        }
+        'note bottom of AdminIndex: view example in docs
+        '$small_notes("AdminIndex", "View example in documentation")
+        !if ($display == "all") || ($display == "AdminExecCommand")
+            AdminCreateIndex o-l-> admin_write
+        !endif
+        !if ($display == "all") || ($display == "AdminIndex")
+            AdminGetData o--> admin_read
+        !endif
+    !endif
+    
+    
+
+!endprocedure
+
+
+
+' legend
+'     (1) RWLock lib: 
+'     [[https://github.com/elarivie/pyReaderWriterLock]]
+' endlegend
+
+
+@enduml

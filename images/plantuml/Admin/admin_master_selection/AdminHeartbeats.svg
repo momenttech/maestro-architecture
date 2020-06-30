@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1976.8px" preserveAspectRatio="none" style="width:1489px;height:1976px;" version="1.1" viewBox="0 0 1489 1976" width="1489.6px" zoomAndPan="magnify"><defs><filter height="300%" id="fuvv85g9drpsf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.8"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.6" dy="5.6" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fe96d87cd5a374614722c86433e91ebd]
+cluster Reply to GUI--><polygon fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" points="436.8,1649.2,579.6,1649.2,589.4,1691.1563,711.2,1691.1563,711.2,1960,436.8,1960,436.8,1649.2" style="stroke: #033C73; stroke-width: 2.8;"/><line style="stroke: #033C73; stroke-width: 2.8;" x1="436.8" x2="589.4" y1="1691.1563" y2="1691.1563"/><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="120.4" x="449.4" y="1674.5941">Reply to GUI</text><!--MD5=[40cd02e6404a294cfc2f4d31d7fc6c00]
+cluster Master selection--><polygon fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" points="848.4,168,1037.4,168,1047.2,209.9562,1458.8,209.9562,1458.8,1568,848.4,1568,848.4,168" style="stroke: #033C73; stroke-width: 2.8;"/><line style="stroke: #033C73; stroke-width: 2.8;" x1="848.4" x2="1047.2" y1="209.9562" y2="209.9562"/><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="166.6" x="861" y="193.3941">Master selection</text><!--MD5=[0b09b14ea966c977e0c5c623ee65db0a]
+cluster Apply for Master position--><polygon fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" points="30.8,624.4,303.8,624.4,313.6,666.3562,814.8,666.3562,814.8,1603,30.8,1603,30.8,624.4" style="stroke: #033C73; stroke-width: 2.8;"/><line style="stroke: #033C73; stroke-width: 2.8;" x1="30.8" x2="313.6" y1="666.3562" y2="666.3562"/><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="250.6" x="43.4" y="649.7941">Apply for Master position</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="212.8" x="467.6" y="1708"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="170.8" x="488.6" y="1744.5941">Master Reply to GUI</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="229.6" x="459.2" y="1799"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="187.6" x="480.2" y="1835.5941">Master start listening</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="138.6" x="504.7" y="1855.1504">&lt;master&gt; topic</text><ellipse cx="574" cy="1923.6" fill="none" filter="url(#fuvv85g9drpsf)" rx="14" ry="14" style="stroke: #033C73; stroke-width: 1.4;"/><ellipse cx="574.7" cy="1924.3" fill="#033C73" rx="8.4" ry="8.4" style="stroke: none; stroke-width: 1.4;"/><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="294" x="1142.4" y="226.8"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="130.2" x="1163.4" y="263.3941">All pods post a</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="42" x="1299.2" y="263.3941">WIM</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="68.6" x="1346.8" y="263.3941">request</text><path d="M871.5,239.4 L871.5,275.7562 A5.6,5.6 0 0 0 877.1,281.3563 L1094.1,281.3563 A5.6,5.6 0 0 0 1099.7,275.7562 L1099.7,263.2 L1142.2628,257.6 L1099.7,252 L1099.7,247.8 L1085.7,233.8 L877.1,233.8 A5.6,5.6 0 0 0 871.5,239.4 " fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" style="stroke: #033C73; stroke-width: 1.4;"/><path d="M1085.7,233.8 L1085.7,245 A2.8,2.8 0 0 0 1088.5,247.8 L1099.7,247.8 L1085.7,233.8 " fill="#FFFFFF" style="stroke: #033C73; stroke-width: 1.4;"/><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="42" x="886.9" y="263.3941">WIM</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="5.6" x="928.9" y="263.3941">:</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="19.6" x="940.1" y="263.3941">W</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="22.4" x="959.7" y="263.3941">ho</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="5.6" x="987.7" y="263.3941">I</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="9.8" x="993.3" y="263.3941">s</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.8" x="1008.7" y="263.3941">M</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="46.2" x="1025.5" y="263.3941">aster</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="144.2" x="1039.5" y="317.8"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="102.2" x="1060.5" y="354.3941">Wait replies</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="205.8" x="1008.7" y="408.8"/><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="162.4" x="1030.4" y="445.3941">Received a reply</text><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="163.8" x="1029.7" y="464.9504">before timeout ?</text><polygon fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" points="1111.6,519.4,1128.4,536.2,1111.6,553,1094.8,536.2,1111.6,519.4" style="stroke: #BABDBF; stroke-width: 2.0999999999999996;"/><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="212.8" x="922.6" y="673.4"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="170.8" x="943.6" y="709.9941">No previous master</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="112" x="973" y="729.5504">or Master KO</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="180.6" x="1178.1" y="683.2"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="138.6" x="1199.1" y="719.7941">Select a master</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="187.6" x="1150.8" y="784"/><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145.6" x="1171.8" y="820.5941">All timestamps</text><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="116.2" x="1186.5" y="840.1504">are empty ?</text><path d="M929.6,796.6 L929.6,852.5125 A5.6,5.6 0 0 0 935.2,858.1125 L1103.2,858.1125 A5.6,5.6 0 0 0 1108.8,852.5125 L1108.8,830.2 L1150.3212,824.6 L1108.8,819 L1108.8,805 L1094.8,791 L935.2,791 A5.6,5.6 0 0 0 929.6,796.6 " fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" style="stroke: #033C73; stroke-width: 1.4;"/><path d="M1094.8,791 L1094.8,802.2 A2.8,2.8 0 0 0 1097.6,805 L1108.8,805 L1094.8,791 " fill="#FFFFFF" style="stroke: #033C73; stroke-width: 1.4;"/><text fill="#033C73" font-family="Verdana" font-size="16.8" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="135.8" x="945" y="820.5941">date of the last</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="116.2" x="945" y="840.1504">cmd received</text><polygon fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" points="1170.4,894.6,1187.2,911.4,1170.4,928.2,1153.6,911.4,1170.4,894.6" style="stroke: #BABDBF; stroke-width: 2.0999999999999996;"/><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="162.4" x="924" y="1086.4"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="120.4" x="945" y="1122.9941">First in queue</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="120.4" x="945" y="1142.5504">is now Master</text><rect fill="#73A839" filter="url(#fuvv85g9drpsf)" height="11.2" style="stroke: none; stroke-width: 1.4;" width="112" x="911.4" y="1534.4"/><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="190.4" x="1075.2" y="991.2"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="148.4" x="1096.2" y="1027.7941">Keep only replies</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="133" x="1106.7" y="1047.3504">with timestamp</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="194.6" x="1073.1" y="1191.4"/><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="152.6" x="1094.1" y="1227.9941">NB replies &gt; 1 ?</text><polygon fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" points="1170.4,1292.2,1187.2,1309,1170.4,1325.8,1153.6,1309,1170.4,1292.2" style="stroke: #BABDBF; stroke-width: 2.0999999999999996;"/><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="232.4" x="968.8" y="1388.8"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="190.4" x="989.8" y="1425.3941">Select last timestamp</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="86.8" x="1041.6" y="1444.9504">as Master</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="189" x="1243.9" y="1398.6"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="147" x="1264.9" y="1435.1941">Select as Master</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="326.2" x="466.9" y="683.2"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="130.2" x="487.9" y="719.7941">All pods post a</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="74.2" x="623.7" y="719.7941">WKWIM</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="68.6" x="703.5" y="719.7941">request</text><path d="M53.9,695.8 L53.9,732.1563 A5.6,5.6 0 0 0 59.5,737.7562 L419.3,737.7562 A5.6,5.6 0 0 0 424.9,732.1563 L424.9,719.6 L466.7712,714 L424.9,708.4 L424.9,704.2 L410.9,690.2 L59.5,690.2 A5.6,5.6 0 0 0 53.9,695.8 " fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" style="stroke: #033C73; stroke-width: 1.4;"/><path d="M410.9,690.2 L410.9,701.4 A2.8,2.8 0 0 0 413.7,704.2 L424.9,704.2 L410.9,690.2 " fill="#FFFFFF" style="stroke: #033C73; stroke-width: 1.4;"/><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="74.2" x="69.3" y="719.7941">WKWIM</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="5.6" x="143.5" y="719.7941">:</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="19.6" x="154.7" y="719.7941">W</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="22.4" x="174.3" y="719.7941">ho</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="12.6" x="202.3" y="719.7941">K</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="44.8" x="214.9" y="719.7941">nows</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="19.6" x="265.3" y="719.7941">W</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="22.4" x="284.9" y="719.7941">ho</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="5.6" x="312.9" y="719.7941">I</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="9.8" x="318.5" y="719.7941">s</text><text fill="#033C73" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="16.8" x="333.9" y="719.7941">M</text><text fill="#033C73" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="46.2" x="350.7" y="719.7941">aster</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="193.2" x="533.4" y="784"/><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="98" x="581" y="820.5941">All replies</text><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="151.2" x="554.4" y="840.1504">are &lt;&lt;UNK&gt;&gt; ?</text><polygon fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" points="630,894.6,646.8,911.4,630,928.2,613.2,911.4,630,894.6" style="stroke: #BABDBF; stroke-width: 2.0999999999999996;"/><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="204.4" x="254.8" y="991.2"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="162.4" x="275.8" y="1027.7941">No master defined</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="102.2" x="308.7" y="1047.3504">or I'm alone</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="182" x="278.6" y="1181.6"/><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="140" x="299.6" y="1218.1941">Someone else</text><text fill="#E47833" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127.4" x="305.9" y="1237.7504">has replied ?</text><polygon fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" points="376.6,1292.2,393.4,1309,376.6,1325.8,359.8,1309,376.6,1292.2" style="stroke: #BABDBF; stroke-width: 2.0999999999999996;"/><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="288.4" x="232.4" y="1398.6"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="71.4" x="253.4" y="1435.1941">Act as a</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="103.6" x="330.4" y="1435.1941">temporary</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="60.2" x="439.6" y="1435.1941">Master</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="204.4" x="562.8" y="1388.8"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="162.4" x="583.8" y="1425.3941">No master defined</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="162.4" x="583.8" y="1444.9504">Choose a new one</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="254.8" x="537.6" y="1499.4"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="212.8" x="558.6" y="1535.9941">all pods apply as Master</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="191.8" x="569.1" y="1555.5504">with empty timestamp</text><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="81.1125" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="291.2" x="501.2" y="991.2"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="249.2" x="522.2" y="1027.7941">Ask for command forwarding</text><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="200.2" x="546.7" y="1047.3504">till master is reachable</text><ellipse cx="1289.4" cy="25.2" fill="#033C73" filter="url(#fuvv85g9drpsf)" rx="14" ry="14" style="stroke: none; stroke-width: 1.4;"/><rect fill="#FFFFFF" filter="url(#fuvv85g9drpsf)" height="61.5563" rx="17.5" ry="17.5" style="stroke: #2683B9; stroke-width: 2.0999999999999996;" width="207.2" x="1185.8" y="68.6"/><text fill="#2683B9" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="165.2" x="1206.8" y="105.1941">GUI post command</text><!--MD5=[0e969a6fccea0b7a1bec5368d29a7758]
+link Master Reply to GUI to Master start listening\n<master> topic--><path d="M574,1769.6028 C574,1776.453 574,1783.915 574,1791.3126 " fill="none" id="Master Reply to GUI-&gt;Master start listening\n&lt;master&gt; topic" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="574,1798.664,579.6,1786.064,574,1791.664,568.4,1786.064,574,1798.664" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[8a6bd538461944e2f5838e10a0c0a0c7]
+link Master start listening\n<master> topic to end--><path d="M574,1880.6486 C574,1888.1717 574,1895.7386 574,1902.315 " fill="none" id="Master start listening\n&lt;master&gt; topic-&gt;end" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="574,1909.5181,579.6,1896.9181,574,1902.5181,568.4,1896.9181,574,1909.5181" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[ae68d935bab5633488c380ea2ac49052]
+link start to GUI post command--><path d="M1289.4,39.69 C1289.4,45.864 1289.4,53.55 1289.4,61.306 " fill="none" id="start-&gt;GUI post command" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1289.4,68.404,1295,55.804,1289.4,61.404,1283.8,55.804,1289.4,68.404" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[76b02ed0d1d816339d4d596fd08484c9]
+link GUI post command to All pods post a <b>WIM</b> request--><path d="M1289.4,130.396 C1289.4,155.666 1289.4,192.136 1289.4,219.31 " fill="none" id="GUI post command-&gt;All pods post a &lt;b&gt;WIM&lt;/b&gt; request" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1289.4,226.716,1295,214.116,1289.4,219.716,1283.8,214.116,1289.4,226.716" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[3bc673f7ceeec08dae1ebe164890ea40]
+link All pods post a <b>WIM</b> request to Wait replies--><path d="M1229.7012,288.61 C1213.135,296.828 1195.0484,305.802 1178.1182,314.202 " fill="none" id="All pods post a &lt;b&gt;WIM&lt;/b&gt; request-&gt;Wait replies" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1171.4444,317.52,1185.2201,316.9292,1177.7134,314.4055,1180.237,306.8988,1171.4444,317.52" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[26c220725d037d1a9c360826f868037d]
+link Wait replies to Received a reply\nbefore timeout ?--><path d="M1111.6,379.4 C1111.6,386.26 1111.6,393.722 1111.6,401.114 " fill="none" id="Wait replies-&gt;Received a reply\nbefore timeout ?" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1111.6,408.464,1117.2,395.864,1111.6,401.464,1106,395.864,1111.6,408.464" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[207080bb22843b24b647b9be1f4c7017]
+link Received a reply\nbefore timeout ? to #10476--><path d="M1111.6,490.336 C1111.6,497.686 1111.6,505.12 1111.6,511.756 " fill="none" id="Received a reply\nbefore timeout ?-&gt;#10476" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1111.6,519.134,1117.2,506.534,1111.6,512.134,1106,506.534,1111.6,519.134" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="0" x="1084.5452" y="497.01"/><!--MD5=[86c3e04b360dbed37cff5da45ea6297c]
+link #10476 to No previous master\nor Master KO--><path d="M1106.4326,548.548 C1095.549,571.606 1069.7148,626.3404 1050.8694,666.2656 " fill="none" id="#10476-&gt;No previous master\nor Master KO" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1047.6732,673.036,1058.1159,664.0321,1050.6613,666.7058,1047.9876,659.2512,1047.6732,673.036" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="23.8" x="1104.6" y="590.9941">No</text><!--MD5=[ece9616221bb41e3d68fb50c5adf6d84]
+link #10476 to Select a master--><path d="M1120.602,544.446 C1127.9016,550.158 1138.3036,558.684 1146.6,567 C1181.7386,602.21 1217.783,646.5144 1241.45,676.9504 " fill="none" id="#10476-&gt;Select a master" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1246.014,682.8458,1242.7316,669.4538,1241.73,677.3098,1233.874,676.3082,1246.014,682.8458" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="30.8" x="1187.2" y="590.9941">Yes</text><!--MD5=[a8acfe9579f03d110becb7a07e9bcb44]
+link Select a master to All timestamps\nare empty ?--><path d="M1261.897,744.8574 C1259.7494,754.5818 1257.305,765.653 1254.9432,776.349 " fill="none" id="Select a master-&gt;All timestamps\nare empty ?" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1253.3276,783.671,1261.5104,772.5732,1254.8355,776.8353,1250.5733,770.1605,1253.3276,783.671" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[2efc4a456b68eb0bdfc15a2239a8740d]
+link All timestamps\nare empty ? to #10488--><path d="M1209.6728,865.5402 C1199.8994,876.6044 1189.9244,887.8968 1182.4736,896.3318 " fill="none" id="All timestamps\nare empty ?-&gt;#10488" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1177.7514,901.677,1190.2901,895.9411,1182.3857,896.4307,1181.896,888.5263,1177.7514,901.677" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="0" x="1199.6609" y="872.6044"/><!--MD5=[45bb6f92e12cc80a1d6cb1783592dc92]
+link #10488 to First in queue\nis now Master--><path d="M1159.123,917.1246 C1135.722,926.6964 1081.7758,951.9832 1054.2,991.2 C1035.6318,1017.6082 1023.2866,1051.848 1015.6328,1079.1592 " fill="none" id="#10488-&gt;First in queue\nis now Master" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1013.7862,1085.9436,1022.4983,1075.2562,1015.6243,1079.1892,1011.6913,1072.3153,1013.7862,1085.9436" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="30.8" x="1117.2" y="966.1941">Yes</text><!--MD5=[29f7ca87005016d2a881a0f83c374f43]
+link First in queue\nis now Master to DONE--><path d="M969.9662,1168.1922 C948.5896,1196.4624 925.4,1236.431 925.4,1276.8 C925.4,1276.8 925.4,1276.8 925.4,1430.8 C925.4,1468.7456 948.2732,1509.3946 960.26,1528.0902 " fill="none" id="First in queue\nis now Master-&gt;DONE" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="964.3788,1534.3188,962.0997,1520.7201,960.5176,1528.48,952.7576,1526.898,964.3788,1534.3188" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[242ae9f121314be6c646039295fee911]
+link #10488 to Keep only replies\n with timestamp--><path d="M1170.4,928.6606 C1170.4,942.8426 1170.4,964.3536 1170.4,983.9494 " fill="none" id="#10488-&gt;Keep only replies\n with timestamp" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1170.4,991.0642,1176,978.4642,1170.4,984.0642,1164.8,978.4642,1170.4,991.0642" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="23.8" x="1178.8" y="966.1941">No</text><!--MD5=[b3449b4acd164d415a2bb08647e7d96e]
+link Keep only replies\n with timestamp to NB replies > 1 ?--><path d="M1170.4,1072.5274 C1170.4,1105.4904 1170.4,1152.1874 1170.4,1184.3244 " fill="none" id="Keep only replies\n with timestamp-&gt;NB replies &gt; 1 ?" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1170.4,1191.3538,1176,1178.7538,1170.4,1184.3538,1164.8,1178.7538,1170.4,1191.3538" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[9720d56230ec7ae60b13301a13e5d8e2]
+link NB replies > 1 ? to #10499--><path d="M1170.4,1253.4522 C1170.4,1263.8234 1170.4,1275.2754 1170.4,1284.9676 " fill="none" id="NB replies &gt; 1 ?-&gt;#10499" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1170.4,1291.9872,1176,1279.3872,1170.4,1284.9872,1164.8,1279.3872,1170.4,1291.9872" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="0" x="1156.4028" y="1270.2062"/><!--MD5=[c44c3f1f1a7417842fe65017a31c10ac]
+link #10499 to Select last timestamp\nas Master--><path d="M1163.6982,1319.6274 C1153.8394,1333.2046 1134.7616,1359.477 1117.858,1382.752 " fill="none" id="#10499-&gt;Select last timestamp\nas Master" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1113.6146,1388.5956,1125.5503,1381.692,1117.7284,1382.9319,1116.4884,1375.11,1113.6146,1388.5956" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="30.8" x="1156.4" y="1363.7941">Yes</text><!--MD5=[0618f7bdeea190034a7ba5fdc9e97d47]
+link Select last timestamp\nas Master to DONE--><path d="M1041.8772,1470.329 C1018.4762,1491.7812 991.4982,1516.5094 977.3106,1529.5154 " fill="none" id="Select last timestamp\nas Master-&gt;DONE" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="972.0592,1534.3286,985.1314,1529.9425,977.2193,1529.5985,977.5633,1521.6864,972.0592,1534.3286" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[23d0080ca4baddcb0d8fa6214dcd3e92]
+link #10499 to Select as Master--><path d="M1179.9144,1317.0598 C1200.7338,1331.6338 1251.5552,1367.2078 1290.0776,1394.1746 " fill="none" id="#10499-&gt;Select as Master" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1296.1494,1398.4236,1289.0368,1386.6113,1290.4142,1394.4102,1282.6153,1395.7876,1296.1494,1398.4236" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="23.8" x="1268.4" y="1363.7941">No</text><!--MD5=[77911dccea0ccf051e19ef37cf41b9f4]
+link Select as Master to DONE--><path d="M1252.9258,1460.3078 C1242.6036,1463.672 1232.1848,1466.9746 1222.2,1470 C1138.1342,1495.4688 1037.057,1521.2694 991.6116,1532.6178 " fill="none" id="Select as Master-&gt;DONE" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="984.8076,1534.3118,998.3876,1536.6999,991.6,1532.6197,995.6803,1525.8321,984.8076,1534.3118" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[a4738cc47da40d6d238413ebdbbaba27]
+link DONE to Master Reply to GUI--><path d="M958.818,1545.6756 C917.6412,1566.1912 738.276,1655.5546 639.6278,1704.703 " fill="none" id="DONE-&gt;Master Reply to GUI" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="633.2494,1707.881,647.0244,1707.2725,639.5144,1704.7585,642.0284,1697.2485,633.2494,1707.881" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[22d1d0f2ea4b95745a4b0d00a93a3b8c]
+link No previous master\nor Master KO to All pods post a <b>WKWIM</b> request--><path d="M922.1814,695.8854 C881.559,691.5146 840.9352,690.018 800.3128,691.3942 " fill="none" id="No previous master\nor Master KO-&gt;All pods post a &lt;b&gt;WKWIM&lt;/b&gt; request" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="793.2624,691.6616,806.0661,696.7787,800.2573,691.3956,805.6405,685.5868,793.2624,691.6616" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[c0e93479c4b452cd507b6522f11101af]
+link All pods post a <b>WKWIM</b> request to All replies\nare <<UNK>> ?--><path d="M630,744.8574 C630,754.5818 630,765.653 630,776.349 " fill="none" id="All pods post a &lt;b&gt;WKWIM&lt;/b&gt; request-&gt;All replies\nare &lt;&lt;UNK&gt;&gt; ?" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="630,783.671,635.6,771.071,630,776.671,624.4,771.071,630,783.671" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[6a91b9a8168ab517dc70da6bdb56ec93]
+link All replies\nare <<UNK>> ? to #10517--><path d="M630,865.5402 C630,872.8804 630,880.3214 630,886.9616 " fill="none" id="All replies\nare &lt;&lt;UNK&gt;&gt; ?-&gt;#10517" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="630,894.3354,635.6,881.7354,630,887.3354,624.4,881.7354,630,894.3354" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="0" x="602.9452" y="872.2143"/><!--MD5=[12e308ca1964cfa7e6561d854f45bbdb]
+link #10517 to No master defined\n or I'm alone--><path d="M618.9596,917.5558 C591.4328,929.4138 517.4862,961.268 455.1498,988.12 " fill="none" id="#10517-&gt;No master defined\n or I'm alone" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="448.385,991.0334,462.1725,991.1898,454.8135,988.2632,457.7402,980.9042,448.385,991.0334" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="30.8" x="565.6" y="966.1941">Yes</text><!--MD5=[3667c08ac924b07308ddf59cf0410c81]
+link No master defined\n or I'm alone to Someone else\nhas replied ?--><path d="M359.6418,1072.5274 C361.6326,1102.1682 364.3696,1142.9166 366.4696,1174.1954 " fill="none" id="No master defined\n or I'm alone-&gt;Someone else\nhas replied ?" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="366.9624,1181.5244,371.7037,1168.5768,366.4924,1174.5402,360.529,1169.3288,366.9624,1181.5244" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[1840796319c83ee567cced76e37b4aae]
+link Someone else\nhas replied ? to #10524--><path d="M372.8956,1263.1402 C373.5508,1271.0152 374.2172,1279.0064 374.7996,1285.9994 " fill="none" id="Someone else\nhas replied ?-&gt;#10524" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="375.396,1293.145,379.929,1280.123,374.814,1286.1692,368.7678,1281.0542,375.396,1293.145" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="0" x="350.4699" y="1270.1305"/><!--MD5=[b55dd01c50a1410b1a3ab51606245890]
+link #10524 to Act as a <b>temporary</b> Master--><path d="M376.6,1326.2606 C376.6,1342.8198 376.6,1369.3722 376.6,1391.1982 " fill="none" id="#10524-&gt;Act as a &lt;b&gt;temporary&lt;/b&gt; Master" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="376.6,1398.3984,382.2,1385.7984,376.6,1391.3984,371,1385.7984,376.6,1398.3984" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="23.8" x="385" y="1363.7941">No</text><!--MD5=[b224d21dc397b9d1e580028583beb5d0]
+link Act as a <b>temporary</b> Master to Master Reply to GUI--><path d="M395.8864,1460.7558 C432.4656,1517.5706 511.7644,1640.737 551.026,1701.7154 " fill="none" id="Act as a &lt;b&gt;temporary&lt;/b&gt; Master-&gt;Master Reply to GUI" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="554.925,1707.7732,552.812,1694.1477,551.1354,1701.8877,543.3953,1700.2111,554.925,1707.7732" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[e95142680ceef400185f672c09da9770]
+link #10524 to No master defined\nChoose a new one--><path d="M387.5536,1314.866 C416.1528,1326.528 495.4684,1358.8708 562.0062,1386.0028 " fill="none" id="#10524-&gt;No master defined\nChoose a new one" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="568.813,1388.779,559.2587,1378.8374,562.3308,1386.1369,555.0313,1389.209,568.813,1388.779" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="30.8" x="539" y="1363.7941">Yes</text><!--MD5=[3dfb6ff40cd161c6a2d8a4e0cbd1007a]
+link No master defined\nChoose a new one to all pods apply as Master\nwith empty timestamp--><path d="M665,1470.329 C665,1477.3598 665,1484.742 665,1491.9478 " fill="none" id="No master defined\nChoose a new one-&gt;all pods apply as Master\nwith empty timestamp" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="665,1499.0766,670.6,1486.4766,665,1492.0766,659.4,1486.4766,665,1499.0766" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[c2b6aa61cd1a1e251ba8331940e39968]
+link all pods apply as Master\nwith empty timestamp to Wait replies--><path d="M792.7906,1510.0848 C828.7202,1494.0604 858.2,1469.209 858.2,1430.8 C858.2,448 858.2,448 858.2,448 C858.2,410.186 957.5902,381.304 1031.8784,364.994 " fill="none" id="all pods apply as Master\nwith empty timestamp-&gt;Wait replies" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="1038.9862,363.454,1025.4886,360.6372,1032.1436,364.9302,1027.8506,371.5853,1038.9862,363.454" style="stroke: #2FA4E7; stroke-width: 3.5;"/><!--MD5=[06fcb32c015f0bdadad26259a8bf2c20]
+link #10517 to Ask for command forwarding\ntill master is reachable--><path d="M631.9278,926.2904 C633.941,940.3828 637.2128,963.2882 640.1752,984.0292 " fill="none" id="#10517-&gt;Ask for command forwarding\ntill master is reachable" style="stroke: #2FA4E7; stroke-width: 3.5;"/><polygon fill="#2FA4E7" points="641.1664,990.9648,644.9282,977.6995,640.1765,984.0352,633.8408,979.2834,641.1664,990.9648" style="stroke: #2FA4E7; stroke-width: 3.5;"/><text fill="#343A40" font-family="Verdana" font-size="16.8" lengthAdjust="spacingAndGlyphs" textLength="23.8" x="648.2" y="966.1941">No</text><!--MD5=[7d13209a1e4a860a53d831934e72fc5a]
+@startuml
+
+
+
+
+skinparam backgroundColor White
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             True
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor $SUCCESS_DARK
+    IBackgroundColor #D2494E
+    IBorderColor $DANGER_DARK
+    EBackgroundColor #E47833
+    EBorderColor $WARNING_DARK
+    NBackgroundColor #35638F
+    NBorderColor $INFO_DARK
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              White
+}
+
+skinparam legend {
+	BackgroundColor White
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam activity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor White
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #BABDBF
+}
+
+
+skinparam participant {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam arrow {
+	Thickness 2.5
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor White
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor White
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor White
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	DividerBackgroundColor White
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor White
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor White
+}
+
+
+skinparam collections {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam control {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam entity {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam boundary {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam agent {
+	BackgroundColor White
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam artifact {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam component {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	
+}
+
+
+skinparam interface {
+	BackgroundColor  White
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+}
+
+
+skinparam node {
+	BackgroundColor White
+	BorderColor #343A40
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #343A40
+}
+
+
+skinparam database {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam class {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	BackgroundColor #F2FCFE-#eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor White
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+
+skinparam state {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #BABDBF
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+skinparam card {
+	BackgroundColor White
+	BorderColor #033C73
+	FontColor #033C73
+}
+
+
+skinparam file {
+	BackgroundColor White
+	BorderColor #868E96
+	FontColor #868E96
+}
+
+
+skinparam stack {
+		FontColor #2683B9
+	BorderColor #2683B9
+	BackgroundColor White
+}
+
+
+
+hide stereotype
+
+!pragma horizontalLineBetweenDifferentPackageAllowed
+
+skinparam file<<NOTE>> {
+	BorderThickness 0.5
+    BackgroundColor LightYellow
+	BorderColor LightSteelBlue
+	FontColor SteelBlue
+    FontSize 10
+    ArrowColor LightSteelBlue
+}
+skinparam arrow<<NOTE>> {
+    Color LightSteelBlue
+}
+
+
+
+
+
+skinparam node<<MULTITHREADED>>{
+    FontColor #E47833
+	BorderColor #E47833
+	BackgroundColor White
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+skinparam frame<<CONTAINER>>{
+    	BackgroundColor #eeeeee
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam rectangle<<boundary>> {
+    BackgroundColor #eeeeee
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+    BoxPadding 0
+}
+
+skinparam file<<docker_params>> {
+    Shadowing True
+    FontSize 10
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam nodesep 30
+skinparam ranksep 20
+scale 1.4
+
+skinparam activity<<ASK>>{
+    FontColor #E47833
+    FontStyle bold
+}
+skinparam ActivityDiamondFontStyle bold
+skinparam ActivityDiamondFontColor #E47833
+
+partition "Reply to GUI" {
+    "Master Reply to GUI" - -> "Master start listening\n<master> topic"
+    - -> (*)
+}
+(*) - -> "GUI post command"
+
+partition "Master selection" {
+    - -> "All pods post a <b>WIM</b> request" 
+    note left: <b>WIM</b>: <b>W</b>ho <b>I</b>s <b>M</b>aster
+    - -> "Wait replies"
+    - -> "Received a reply\nbefore timeout ?" <<ASK>>
+    if ""
+        - -> [No] "No previous master\nor Master KO"
+    else
+        - -> [Yes] "Select a master"
+        - -> "All timestamps\nare empty ?" <<ASK>>
+        note left: <i>date of the last</i>\n<i>cmd received</i>
+        if ""
+            - -> [Yes] "First in queue\nis now Master"
+            - -> ===DONE===
+        else
+            - -> [No] "Keep only replies\n with timestamp"
+            - -> "NB replies > 1 ?" <<ASK>>
+            if ""
+                - -> [Yes] "Select last timestamp\nas Master"
+                - -> ===DONE===
+            else
+                - -> [No] "Select as Master"
+                - -> ===DONE===
+            endif
+        endif
+    endif
+
+===DONE=== - -> "Master Reply to GUI"
+}
+
+partition "Apply for Master position" {
+    "No previous master\nor Master KO" -> "All pods post a <b>WKWIM</b> request"
+    note left: <b>WKWIM</b>: <b>W</b>ho <b>K</b>nows <b>W</b>ho <b>I</b>s <b>M</b>aster
+    - -> "All replies\nare <<UNK>> ?" <<ASK>>
+    if ""
+        - -> [Yes] "No master defined\n or I'm alone"
+        - -> "Someone else\nhas replied ?" <<ASK>>
+        if ""
+            - -> [No] "Act as a <b>temporary</b> Master"
+            - -> "Master Reply to GUI"
+        else
+            - -> [Yes] "No master defined\nChoose a new one"
+            - -> "all pods apply as Master\nwith empty timestamp"
+            - -> "Wait replies"
+        endif
+    else
+        - -> [No] "Ask for command forwarding\ntill master is reachable"
+    endif
+
+}
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-8u212-b01-1~deb9u1-b01
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
