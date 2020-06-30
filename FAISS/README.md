@@ -3,11 +3,11 @@ title: Maestro > FAISS
 menu:
     - uri: /
       label: Overview
-    - uri: /FAISS
+    - uri: ../FAISS
       label: FAISS Module
-    - uri: /FindReply
+    - uri: ../FindReply
       label: Find Reply Module
-    - uri: /Admin
+    - uri: ../Admin
       label: Admin Module
 slideshow:
    #logoUrl: ../images/plantuml/MMTT_dark-blue.png
