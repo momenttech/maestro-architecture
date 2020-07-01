@@ -12,7 +12,7 @@ menu:
 slideshow:
    logoUrl: ../images/mmtt.png
    headingLevel: 4
-   theme: mmtt
+   theme: moon
    transition: convex
 ---
 # FAISS Module
