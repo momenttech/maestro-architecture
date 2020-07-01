@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Maestro Architecture</title>
+	<link rel="stylesheet" href="assets/css/reveal/reveal.css">
+	<link rel="stylesheet" href="assets/css/reveal/theme/mmtt.css">
+	<link rel="stylesheet" href="assets/css/highlight-hybrid.css">
+	<link rel="stylesheet" href="assets/css/slideshow.css">
+	<style>
+	.reveal .slides::after {
+		background-image: url("../images/mmtt.png");
+		background-repeat: no-repeat;
+		content: "";
+		height: 100px;
+		left: 15px;
+		position: absolute;
+		right: 15px;
+		bottom: 0;
+
+		background-position: left;
+	}
+	</style>
+	<!-- mmtt -->
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown
+			data-separator="(^#HSLIDE$|^#HSLIDE\?.*)"
+			data-separator-vertical="(^#VSLIDE$|^#VSLIDE\?.*)"
+			data-separator-notes="^Presentation note:"
+			data-charset="utf-8">
+			<script type="text/template">
+				# Current limitations
+
+- Created for one big client, not in line with our current needs
+- Requires re-training for every new data added
+- Training process hard to fully automized
+- Categories and sub-categories are hard to define correctly
+- Problems arise when using datasets with overlapping meanings
+
+#HSLIDE
+
+# Guide lines for the new architecture
+
+- Avoid specific trainings whenever it&#39;s possible
+- Do not require huge amount of data to start working
+- By default, no data leaks between projects
+- Use categories as **contextual helps** instead of storage boxes  
+Ex: The question *How many dead during the landing ?*  
+in the absolute, is **not equal to**  
+*How many dead during the landing of the bay of pigs ?*  
+**nor**  
+*How many dead during the landing of the D-Day ?*  
+
+#HSLIDE
+
+# Architecture Overview
+#HSLIDE
+
+## Context
+#VSLIDE
+
+###  
+<img src="images/plantuml/architecture/MaestroArchitecture.svg" height="610">
+
+#VSLIDE
+
+### Rasa(s)
+Because each project has its own instance of Maestro, we must also have multiple instances of Rasa, one per Maestro  
+
+<img src="images/plantuml/architecture/Rasa.svg">
+
+#VSLIDE
+
+### Artificial Intel
+As explained in [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf) paper, while pretrained BERT model perform poorly for sentence embeddings, BERT models fine-tuned on sentence matching are slow and resource hungry.  
+
+So to build an efficient search engine we must use two different models,
+
+
+- one for sentence encoding that will be fed to an efficient search index such as FAISS to quickly output candidates,
+- and another one for sentence matching to be able to make the difference between a *best match* and a *true match* 
+
+<img src="images/plantuml/architecture/IAs.svg">
+
+#VSLIDE
+
+#### Sentence Encoder
+
+- Encode sentence as a contextual vector
+- ex: [Universal Sentence Encoder Multilingual](https://tfhub.dev/google/universal-sentence-encoder-multilingual/3) from Google
+- Used in Faiss Index to find best **candidates**
+- Trained only **once**
+- Follows *SOTA* improvements
+
+#VSLIDE
+
+#### Sentence Matching
+
+- Tells if two sentences are the same or not
+- Provides  **relevance score**
+- Do not use *sentence encoder*&#39;s vectors
+- Trained only **once**
+- Follows *SOTA* improvements
+
+#HSLIDE
+
+## Maestro
+
+- *Maestro* is split in 3 parts for maintainability and efficiency.
+- All 3 containers are grouped within the same Pod
+- A Pod is dedicated to a *Target* (ex: prod or test) attached to a *Project* within a *Domain*  
+In this doc referred as *Domain.Project.Target*
+- For redundancy and scalability, multiple Pods can share the same *Domain.Project.env*
+- Communications within a Pod is done through ZeroMQ on 127.0.0.1  
+Containers within a Pod share the same network namespace, enabling the use of localhost address.  
+ZeroMQ is fast, flexible and is indifferent to the startup order of clients and servers.  
+It will more or less act as an IPC within the Pod
+- Messages between containers will use JSON format containing [Numpy](https://numpy.org/) arrays.  
+Exemple of numpy serialisation with ZeroMQ: https://pyzmq.readthedocs.io/en/latest/serialization.html
+
+#VSLIDE
+
+#### Modules description
+
+- [FAISS](FAISS/index.html)
+- [FindReply](FindReply/index.html)
+- [Admin](Admin/index.html)
+
+
+			</script>
+		</section>
+	</div>
+</div>
+
+<script src="assets/js/reveal/reveal.js"></script>
+<script src="assets/js/reveal/lib/head.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script>
+Reveal.initialize({
+	embedded: true,
+	margin: 0.0,
+	showNotes: false,
+	transition: 'convex',
+	autoSlide: 0,
+	loop: false,
+	center: true,
+	rtl: false,
+	shuffle: false,
+	mouseWheel: false,
+	history: true,
+
+	// disabled for now
+	// math: {
+	// 	mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+	// 	config: 'TeX-AMS_HTML-full'
+	// },
+
+	dependencies: [
+		{ src: "assets/js/reveal/plugin/markdown/marked.js"},
+		{ src: "assets/js/reveal/plugin/markdown/markdown.js"},
+		{ src: "assets/js/reveal/plugin/notes/notes.js"},
+		// { src: "assets/js/reveal/plugin/math/math.js", async: true }
+		{ src: "assets/js/reveal/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+	]
+});
+
+Reveal.configure({
+	keyboard: {
+		67: function() { // bind "s" key to "select" code block content
+
+		var currentSlide = Reveal.getCurrentSlide();
+		var preBlock = $(currentSlide).find("pre");
+
+		if(preBlock.length > 0) {
+
+			if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(preBlock[0]);
+				var selection = window.getSelection();
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+		}
+	}
+}
+});
+
+</script>
+
+</body>
+</html>

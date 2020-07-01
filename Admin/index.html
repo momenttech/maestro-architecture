@@ -1,0 +1,292 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Maestro Architecture - Maestro 2</title>
+		<link rel="stylesheet" href="../assets/css/highlight.min.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/tipuesearch.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
+	</head>
+	<body>
+		<header class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../">Maestro 2</a> <p class="navbar-text hidden-xs">Maestro Architecture</p>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<form action="../search.html" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required class="form-control" placeholder="Search">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../Admin/index-slideshow.html" target="_blank">View as slideshow</a></li>
+						<!--li><a href="../Admin/index-raw.html">View Markdown</a></li-->
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!--
+<div class="toc">
+<p class="lead">Table of contents:</p>
+<p class="toc-1">
+<a href="#admin-module">Admin Module</a>
+</p>
+<p class="toc-2">
+<a href="#architecture-overview">Architecture Overview</a>
+</p>
+<p class="toc-2">
+<a href="#-"> </a>
+</p>
+<p class="toc-2">
+<a href="#attributes">Attributes</a>
+</p>
+<p class="toc-2">
+<a href="#docker-configuration">Docker Configuration</a>
+</p>
+<p class="toc-3">
+<a href="#environment-variables">ENVIRONMENT VARIABLES</a>
+</p>
+<p class="toc-3">
+<a href="#volumes">VOLUMES</a>
+</p>
+<p class="toc-2">
+<a href="#admin-master-election">Admin Master election</a>
+</p>
+<p class="toc-3">
+<a href="#messaging-architecture">Messaging architecture</a>
+</p>
+<p class="toc-3">
+<a href="#-"> </a>
+</p>
+<p class="toc-3">
+<a href="#state-diagram">State diagram</a>
+</p>
+<p class="toc-3">
+<a href="#-"> </a>
+</p>
+<p class="toc-2">
+<a href="#admin-gui-commands">Admin GUI commands</a>
+</p>
+<p class="toc-3">
+<a href="#messaging-architecture">Messaging architecture</a>
+</p>
+<p class="toc-3">
+<a href="#command-processing">Command processing</a>
+</p>
+<p class="toc-3">
+<a href="#-"> </a>
+</p>
+<p class="toc-3">
+<a href="#faiss-request-example-">FAISS request example:</a>
+</p>
+<p class="toc-3">
+<a href="#questions-index-example-">Questions index example:</a>
+</p>
+<p class="toc-2">
+<a href="#questions-index-queries">Questions Index queries</a>
+</p>
+<p class="toc-3">
+<a href="#-"> </a>
+</p>
+</div>
+-->
+
+		<div class="container">
+			<div class="row">
+				<nav id="sidebar" class="col-lg-2 col-sm-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li role="presentation" class=""><a href="../index.html">Homepage</a></li>
+						<li role="presentation" class=""><a href="../FAISS/index.html">FAISS</a></li>
+						<li role="presentation" class=""><a href="../FindReply/index.html">Find Reply</a></li>
+						<li role="presentation" class="active"><a href="../Admin/index.html">Admin</a></li>
+					</ul>
+					<!--
+Available versions:<br>
+raw<br>
+->Admin/index-raw.html<br>
+slideshow<br>
+->Admin/index-slideshow.html<br>
+default<br>
+->Admin/index.html<br>
+<br>
+Document informations:<br>
+Admin/README.md<br><br>
+active
+-->
+				</nav>
+				<header>
+					<div class="entry-meta text-right">
+
+					</div>
+				</header>
+				<article id="content" class="col-lg-10 col-sm-9">
+					<h1 id="admin-module">Admin Module</h1>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<h2 id="-"> </h2>
+<p><img src="../images/plantuml/Admin/admin/Admin_Full.svg" height="610"></p>
+<h2 id="attributes">Attributes</h2>
+<ul>
+<li>Centralise project&#39;s data</li>
+<li>Access point for the admin GUI</li>
+<li>Manage an index of Questions and Replies<ul>
+<li>This index can be saved on disk (pickle protocol) in a first stage</li>
+<li>In a later development, the use of an Elasticsearch database instead of a local file could be considered</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>NB: Many parts of previous version of maestro&#39;s code can be reused.</p>
+</blockquote>
+<h2 id="docker-configuration">Docker Configuration</h2>
+<h3 id="environment-variables">ENVIRONMENT VARIABLES</h3>
+<ul>
+<li><p><u>Mandatory</u></p>
+<ul>
+<li><strong>RMQ_IP</strong>: RabbitMQ broker FQN or IP</li>
+<li><strong>GIT_SERVER</strong>: GOGS FQN or IP</li>
+<li><strong>GIT_DOMAIN</strong>: Client&#39;s domain name on GIT</li>
+<li><strong>GIT_PROJECT</strong>: Client&#39;s project name</li>
+<li><strong>TARGET</strong>: Pod&#39;s target (or branch) - ex: prod, test, ...</li>
+</ul>
+</li>
+<li><p><u>Optional</u></p>
+<ul>
+<li>RMQ_USER: <em>tbott</em></li>
+<li>RMQ_PASSWD: <em>M0m3n773ch</em></li>
+<li>COMMAND_QUEUE: <em>tbott-admin-in</em>    (Commands from GUI backend)</li>
+<li>REPLY_QUEUE: <em>tbott-admin-out</em>  (Replies to GUI backend)</li>
+<li>COMMAND_TOPIC: <em>$GIT_DOMAIN.$GIT_PROJECT.$TARGET</em></li>
+<li>ENCODER_QUEUE: <em>tbott-encoder</em></li>
+<li>RMQ_PORT: <em>5672</em></li>
+<li>LOG_LEVEL: <em>INFO</em>  </li>
+</ul>
+</li>
+</ul>
+<h3 id="volumes">VOLUMES</h3>
+<ul>
+<li>logs: mounted in /var/log/supervisor</li>
+<li>data_dir: mounted in /opt/admin</li>
+</ul>
+<h2 id="admin-master-election">Admin Master election</h2>
+<h3 id="messaging-architecture">Messaging architecture</h3>
+<ul>
+<li>2 topic queues:<ul>
+<li><strong>Q</strong> for questions (<em>$DOMAIN.$PROJECT.$TARGET</em>.<strong>Q</strong>.#)</li>
+<li><strong>A</strong> for answers  (<em>$DOMAIN.$PROJECT.$TARGET</em>.<strong>A</strong>.#)</li>
+<li>All <strong>Admin</strong> modules see all <em>questions</em> and all <em>answers</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="-"> </h3>
+<p><img src="../images/plantuml/Admin/admin_coms/CommandsMaster.svg" height="610"></p>
+<h3 id="state-diagram">State diagram</h3>
+<h3 id="-"> </h3>
+<p><img src="../images/plantuml/Admin/admin_master_selection/AdminHeartbeats.svg" height="610"></p>
+<h2 id="admin-gui-commands">Admin GUI commands</h2>
+<ul>
+<li>Commands are atomic → no need for multithreading</li>
+<li>Commands are adressed to multiple Pods</li>
+<li>Only one pod, the master, reply to all commands</li>
+</ul>
+<p><img src="../images/plantuml/Admin/admin/Admin_EntryPoint.svg" height="400"></p>
+<h3 id="messaging-architecture">Messaging architecture</h3>
+<h4 id="-"> </h4>
+<p><img src="../images/plantuml/Admin/messaging_commands/MessagingCommands.svg" height="610"></p>
+<h3 id="command-processing">Command processing</h3>
+<h3 id="-"> </h3>
+<p><img src="../images/plantuml/Admin/admin/Admin_Manage.svg" height="610"></p>
+<h3 id="faiss-request-example-">FAISS request example:</h3>
+<pre><code>{&quot;requests&quot; : [&quot;create&quot;],
+ &quot;create&quot; : [
+               {&quot;vector&quot; : numpy.array , &quot;id&quot; : 1},
+               {&quot;vector&quot; : numpy.array , &quot;id&quot; : 2}
+             ]
+} 
+</code></pre><h3 id="questions-index-example-">Questions index example:</h3>
+<pre><code class="lang-python">{
+  &quot;git&quot;: {&quot;path&quot;: DOMAIN/PROJECT
+          &quot;branch&quot;: test,
+          &quot;commit&quot;: git_commit_number
+          }
+  &quot;references&quot;: {
+    ref_1: {&quot;ids&quot;: [id1, id2],
+            &quot;categories&quot;: {&quot;N1&quot;: &quot;n1_cat1&quot;, &quot;N2&quot;: &quot;n2_cat1&quot;},
+            &quot;reply&quot;: &quot;a reply...&quot;
+            }
+    ref_2: {&quot;ids&quot;: [id3],
+            &quot;categories&quot;: {&quot;N1&quot;: &quot;n1_cat2&quot;, &quot;N2&quot;: &quot;n2_cat2&quot;},
+            &quot;reply&quot;: &quot;another reply...&quot;
+            }
+  }
+  &quot;all_categories&quot;: [{&quot;N1&quot;: &quot;n1_cat1&quot;, &quot;N2&quot;: &quot;n2_cat1&quot;},
+                      {&quot;N1&quot;: &quot;n1_cat2&quot;, &quot;N2&quot;: &quot;n2_cat2&quot;}]
+  &quot;ids&quot;:{
+    id1: {
+        &quot;ref&quot;: ref_1,
+        &quot;question&quot;: &quot;a quetion&quot;,
+        &quot;augmented&quot;: false,
+        &quot;vector&quot;: np.array},
+    id2: {
+        &quot;ref&quot;: ref_1,
+        &quot;question&quot;: &quot;n1_cat, a quetion&quot;,
+        &quot;augmented&quot;: true,
+        &quot;vector&quot;: np.array},
+    id3: {
+        &quot;ref&quot;: ref_1,
+        &quot;question&quot;: &quot;n1_cat, n2_cat, a quetion&quot;,
+        &quot;augmented&quot;: true,
+        &quot;vector&quot;: np.array},
+    id4: {
+        &quot;ref&quot;: ref_2,
+        &quot;question&quot;: &quot;a 2nd quetion&quot;,
+        &quot;vector&quot;: np.array}
+    }
+}
+</code></pre>
+<h2 id="questions-index-queries">Questions Index queries</h2>
+<ul>
+<li>Internal requests from <strong>Find Reply</strong> module</li>
+<li>Multithreaded</li>
+<li>Access the index through a <strong>Read/Write Lock</strong> with priority on <strong>Write</strong><ul>
+<li>RWLock lib: <a href="https://github.com/elarivie/pyReaderWriterLock">https://github.com/elarivie/pyReaderWriterLock</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="-"> </h3>
+<p><img src="../images/plantuml/Admin/admin/Admin_Index.svg" height="610"></p>
+
+				</article>
+			</div>
+		</div>
+
+		<footer><a href="../site-index.html">Pages index</a>
+</footer>
+
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/highlight.min.js"></script>
+		<script src="../assets/js/tipuesearch_set.js"></script>
+		<script src="../assets/js/tipuesearch.min.js"></script>
+		<script>
+			$(function() {
+				hljs.initHighlightingOnLoad();
+				$('#tipue_search_input').tipuesearch({
+					mode: 'json',
+					contentLocation: '../index.json'
+				});
+			});
+		</script>
+		
+		<!-- Generated by Vegetables from 'Admin/README.md' with format 'default' - '01/07/2020 à 16:54:15' -->
+	</body>
+</html>

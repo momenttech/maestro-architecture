@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Maestro Architecture</title>
+	<link rel="stylesheet" href="../assets/css/reveal/reveal.css">
+	<link rel="stylesheet" href="../assets/css/reveal/theme/mmtt.css">
+	<link rel="stylesheet" href="../assets/css/highlight-hybrid.css">
+	<link rel="stylesheet" href="../assets/css/slideshow.css">
+	<style>
+	.reveal .slides::after {
+		background-image: url("../images/mmtt.png");
+		background-repeat: no-repeat;
+		content: "";
+		height: 100px;
+		left: 15px;
+		position: absolute;
+		right: 15px;
+		bottom: 0;
+
+		background-position: left;
+	}
+	</style>
+	<!-- mmtt -->
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown
+			data-separator="(^#HSLIDE$|^#HSLIDE\?.*)"
+			data-separator-vertical="(^#VSLIDE$|^#VSLIDE\?.*)"
+			data-separator-notes="^Presentation note:"
+			data-charset="utf-8">
+			<script type="text/template">
+				# FAISS Module
+#HSLIDE
+
+## Attributes
+
+- Based on [Facebook AI Similarity Search](https://ai.facebook.com/tools/faiss/)
+- Heart of a **fast** search system</li>
+- Able to index litteraly **billions** of inputs</li>
+- Only handle **matrices**, of any shapes</li>
+- As **simple** as possible, to reduce risks.</li>
+- As **generic** as possible, to be reusable for any kind of inputs</li>
+
+#HSLIDE
+
+## Architecture Overview
+#HSLIDE
+
+##  
+<TABLE>
+  <TR>
+    <TD style="vertical-align: top">
+      <u>Entry Point:</u>  
+      <ul>
+        <li>Uses **Messaging** lib</li>
+        <li>**Internal** communication only (Admin &amp; FindReply)</li>
+        <li>Based on **ØMQ** for fast exchanges</li>
+        <li>**Multithreaded** to serve mutliple requests</li>
+        <li>Receives requests with **Numpy** arrays</li>
+      </ul>
+      </br>
+      <u>Manage Index:</u>  
+      <ul>
+        <li>Handle 2 scenarios:
+          <ul>
+            <li>Indexing requests</li>
+            <li>Search requests</li>
+          </ul>
+        </li>
+      </ul>
+      </br>
+      <u>Faiss Index:</u>  
+      <ul>
+        <li>Protected by a [Read/Write Lock](https://github.com/elarivie/pyReaderWriterLock)</li>
+        <li>Priority given to write access</li>
+        <li>Index is saved in **data_dir** volume</li>
+      </ul>
+    </TD>
+    <TD style="width:55%"><img src="../images/plantuml/FAISS/faiss/FAISS_Full.svg" width="100%" height="610"></TD>
+  </TR>
+</TABLE>
+
+#HSLIDE
+
+## Docker Configuration
+#VSLIDE
+
+### ENVIRONMENT VARIABLES
+
+- <u>Mandatory</u>
+ - None
+- <u>Optional</u>
+ - NB_MATCHING: number of matching results to return  
+  ► High enougth to include the right wuestion, if it exists  
+  ► Low enougth to not overcharge **sentence matching** module  
+  ► default = _10_  
+ - LOG_LEVEL: *INFO*  
+
+#VSLIDE
+
+### VOLUMES
+
+- logs: mounted in /var/log/supervisor
+- data_dir: mounted in /opt/faiss
+
+#HSLIDE
+
+## Indexing procedure
+As stated in Faiss [FAQ](https://github.com/facebookresearch/faiss/wiki/FAQ) only the *add* procedure is supported.  
+Thus the *delete* and *update* procedures boils down to simply re-creating a new index.  
+This imply that the list of vectors and the their associated id must be saved on disk.  
+</br>
+Indexing requests come from **Admin** module.  
+A **create** request always comes alone.  
+**delete**, **add** and **update** requests may come in any combinations.  
+
+#VSLIDE
+
+### Creating a new Index
+*Deserialized **create** request example:*  
+
+```
+{"requests" : ["create"],
+ "create" : [
+               {"vector" : numpy.array , "id" : 1},
+               {"vector" : numpy.array , "id" : 2}
+             ]
+} 
+```
+#VSLIDE
+
+###  
+
+1. Create a **Flat** index
+1. Add the list of vectors and their IDs to the index
+1. Save the index on disk in **$data_dir** (cf. docker configuration)
+1. Save the list of vectors and their IDs on disk in **$data_dir**
+ - use pickle protocol to save python dict with numpy arrays on disk
+ - check *data_factory.prepare_data* function in maestro for an example  
+
+Code snippet
+
+```python
+import faiss
+import numpy as np
+
+with alock.gen_wlock():
+  xb = np.array(get_vector_list(request)) # create matrix
+  dim = xb.shape[1]                       # vector's dimension
+  tmp_index = faiss.IndexFlatL2(dim)      # Flat index without ids
+  ids = get_ids(request)
+  index = faiss.IndexIDMap(tmp_index)     # index with ids
+  index.add_with_ids(xb, ids)             # add vectors and ids
+```
+#VSLIDE
+
+### Updating the Index
+**delete**, **add** and **update** requests may come in any combinations.  
+<u>To update an index:</u>
+
+
+1. retrieve vectors and IDs from disk
+1. update as specified
+1. create a new index
+1. save new index and new data on disk
+
+*updating request example:*  
+
+```python
+{ "requests" : ["add", "update", "delete"],
+  "add" : [{"vector" : numpy.array , "id" : 10}],
+  "update": [{"vector" : numpy.array , "id" : 11}],
+  "delete": [{"id": 1}, {"id": 2}]
+} 
+```
+#HSLIDE
+
+## Searching procedure
+Indexing requests come from **FindReply** module.  
+Return a matrix of shape *2* X *Nb_Questions* X *$NB_MATCHING*   
+
+
+- shape **2** correspond to IDs and scores
+- shape **Nb_Questions**  correspond to the number of questions to search
+- shape **$NB_MATCHING** correspond to the number of matchings to return  
+(defined in docker config)
+
+#VSLIDE
+
+###  
+*search request example:*  
+
+```python
+{ "requests" : ["search"],
+  "search" : [numpy.array , numpy.array]
+} 
+```
+#VSLIDE
+
+###  
+Code snippet
+
+```python
+#K=NB_MATCHING : Number of results returned by query (default = 10)
+with alock.gen_rlock():
+  S, I = index.search(q_vectors, K) # S: scores, I: indexes
+  res = np.array([I, S])            # Transform S and I in a matrix
+  send(res)
+```
+
+			</script>
+		</section>
+	</div>
+</div>
+
+<script src="../assets/js/reveal/reveal.js"></script>
+<script src="../assets/js/reveal/lib/head.min.js"></script>
+<script src="../assets/js/jquery.js"></script>
+<script>
+Reveal.initialize({
+	embedded: true,
+	margin: 0.0,
+	showNotes: false,
+	transition: 'convex',
+	autoSlide: 0,
+	loop: false,
+	center: true,
+	rtl: false,
+	shuffle: false,
+	mouseWheel: false,
+	history: true,
+
+	// disabled for now
+	// math: {
+	// 	mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+	// 	config: 'TeX-AMS_HTML-full'
+	// },
+
+	dependencies: [
+		{ src: "../assets/js/reveal/plugin/markdown/marked.js"},
+		{ src: "../assets/js/reveal/plugin/markdown/markdown.js"},
+		{ src: "../assets/js/reveal/plugin/notes/notes.js"},
+		// { src: "../assets/js/reveal/plugin/math/math.js", async: true }
+		{ src: "../assets/js/reveal/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+	]
+});
+
+Reveal.configure({
+	keyboard: {
+		67: function() { // bind "s" key to "select" code block content
+
+		var currentSlide = Reveal.getCurrentSlide();
+		var preBlock = $(currentSlide).find("pre");
+
+		if(preBlock.length > 0) {
+
+			if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(preBlock[0]);
+				var selection = window.getSelection();
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+		}
+	}
+}
+});
+
+</script>
+
+</body>
+</html>

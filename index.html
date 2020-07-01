@@ -1,0 +1,183 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Maestro Architecture - Maestro 2</title>
+		<link rel="stylesheet" href="assets/css/highlight.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/tipuesearch.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body>
+		<header class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="">Maestro 2</a> <p class="navbar-text hidden-xs">Maestro Architecture</p>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<form action="search.html" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required class="form-control" placeholder="Search">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index-slideshow.html" target="_blank">View as slideshow</a></li>
+						<!--li><a href="index-raw.html">View Markdown</a></li-->
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!--
+<div class="toc">
+<p class="lead">Table of contents:</p>
+<p class="toc-1">
+<a href="#current-limitations">Current limitations</a>
+</p>
+<p class="toc-1">
+<a href="#guide-lines-for-the-new-architecture">Guide lines for the new architecture</a>
+</p>
+<p class="toc-1">
+<a href="#architecture-overview">Architecture Overview</a>
+</p>
+<p class="toc-2">
+<a href="#context">Context</a>
+</p>
+<p class="toc-3">
+<a href="#-"> </a>
+</p>
+<p class="toc-3">
+<a href="#rasa-s-">Rasa(s)</a>
+</p>
+<p class="toc-3">
+<a href="#artificial-intel">Artificial Intel</a>
+</p>
+<p class="toc-2">
+<a href="#maestro">Maestro</a>
+</p>
+</div>
+-->
+
+		<div class="container">
+			<div class="row">
+				<nav id="sidebar" class="col-lg-2 col-sm-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li role="presentation" class="active"><a href="index.html">Homepage</a></li>
+						<li role="presentation" class=""><a href="FAISS/index.html">FAISS</a></li>
+						<li role="presentation" class=""><a href="FindReply/index.html">Find Reply</a></li>
+						<li role="presentation" class=""><a href="Admin/index.html">Admin</a></li>
+					</ul>
+					<!--
+Available versions:<br>
+raw<br>
+->index-raw.html<br>
+slideshow<br>
+->index-slideshow.html<br>
+default<br>
+->index.html<br>
+<br>
+Document informations:<br>
+README.md<br><br>
+active
+-->
+				</nav>
+				<header>
+					<div class="entry-meta text-right">
+
+					</div>
+				</header>
+				<article id="content" class="col-lg-10 col-sm-9">
+					<h1 id="current-limitations">Current limitations</h1>
+<ul>
+<li>Created for one big client, not in line with our current needs</li>
+<li>Requires re-training for every new data added</li>
+<li>Training process hard to fully automized</li>
+<li>Categories and sub-categories are hard to define correctly</li>
+<li>Problems arise when using datasets with overlapping meanings</li>
+</ul>
+<h1 id="guide-lines-for-the-new-architecture">Guide lines for the new architecture</h1>
+<ul>
+<li>Avoid specific trainings whenever it&#39;s possible</li>
+<li>Do not require huge amount of data to start working</li>
+<li>By default, no data leaks between projects</li>
+<li>Use categories as <strong>contextual helps</strong> instead of storage boxes<br>Ex: The question <em>How many dead during the landing ?</em><br>in the absolute, is <strong>not equal to</strong><br><em>How many dead during the landing of the bay of pigs ?</em><br><strong>nor</strong><br><em>How many dead during the landing of the D-Day ?</em>  </li>
+</ul>
+<h1 id="architecture-overview">Architecture Overview</h1>
+<h2 id="context">Context</h2>
+<h3 id="-"> </h3>
+<p><img src="images/plantuml/architecture/MaestroArchitecture.svg" height="610"></p>
+<h3 id="rasa-s-">Rasa(s)</h3>
+<p>Because each project has its own instance of Maestro, we must also have multiple instances of Rasa, one per Maestro  </p>
+<p><img src="images/plantuml/architecture/Rasa.svg"></p>
+<h3 id="artificial-intel">Artificial Intel</h3>
+<p>As explained in <a href="https://arxiv.org/pdf/1908.10084.pdf">Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks</a> paper, while pretrained BERT model perform poorly for sentence embeddings, BERT models fine-tuned on sentence matching are slow and resource hungry.  </p>
+<p>So to build an efficient search engine we must use two different models,</p>
+<ul>
+<li>one for sentence encoding that will be fed to an efficient search index such as FAISS to quickly output candidates,</li>
+<li>and another one for sentence matching to be able to make the difference between a <em>best match</em> and a <em>true match</em> </li>
+</ul>
+<p><img src="images/plantuml/architecture/IAs.svg"></p>
+<h4 id="sentence-encoder">Sentence Encoder</h4>
+<ul>
+<li>Encode sentence as a contextual vector</li>
+<li>ex: <a href="https://tfhub.dev/google/universal-sentence-encoder-multilingual/3">Universal Sentence Encoder Multilingual</a> from Google</li>
+<li>Used in Faiss Index to find best <strong>candidates</strong></li>
+<li>Trained only <strong>once</strong></li>
+<li>Follows <em>SOTA</em> improvements</li>
+</ul>
+<h4 id="sentence-matching">Sentence Matching</h4>
+<ul>
+<li>Tells if two sentences are the same or not</li>
+<li>Provides  <strong>relevance score</strong></li>
+<li>Do not use <em>sentence encoder</em>&#39;s vectors</li>
+<li>Trained only <strong>once</strong></li>
+<li>Follows <em>SOTA</em> improvements</li>
+</ul>
+<h2 id="maestro">Maestro</h2>
+<ul>
+<li><em>Maestro</em> is split in 3 parts for maintainability and efficiency.</li>
+<li>All 3 containers are grouped within the same Pod</li>
+<li>A Pod is dedicated to a <em>Target</em> (ex: prod or test) attached to a <em>Project</em> within a <em>Domain</em><br>In this doc referred as <em>Domain.Project.Target</em></li>
+<li>For redundancy and scalability, multiple Pods can share the same <em>Domain.Project.env</em></li>
+<li>Communications within a Pod is done through ZeroMQ on 127.0.0.1<br>Containers within a Pod share the same network namespace, enabling the use of localhost address.<br>ZeroMQ is fast, flexible and is indifferent to the startup order of clients and servers.<br>It will more or less act as an IPC within the Pod</li>
+<li>Messages between containers will use JSON format containing <a href="https://numpy.org/">Numpy</a> arrays.<br>Exemple of numpy serialisation with ZeroMQ: <a href="https://pyzmq.readthedocs.io/en/latest/serialization.html">https://pyzmq.readthedocs.io/en/latest/serialization.html</a></li>
+</ul>
+<h4 id="modules-description">Modules description</h4>
+<ul>
+<li><a href="FAISS/index.html">FAISS</a></li>
+<li><a href="FindReply/index.html">FindReply</a></li>
+<li><a href="Admin/index.html">Admin</a></li>
+</ul>
+
+				</article>
+			</div>
+		</div>
+
+		<footer><a href="site-index.html">Pages index</a>
+</footer>
+
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/highlight.min.js"></script>
+		<script src="assets/js/tipuesearch_set.js"></script>
+		<script src="assets/js/tipuesearch.min.js"></script>
+		<script>
+			$(function() {
+				hljs.initHighlightingOnLoad();
+				$('#tipue_search_input').tipuesearch({
+					mode: 'json',
+					contentLocation: 'index.json'
+				});
+			});
+		</script>
+		
+		<!-- Generated by Vegetables from 'README.md' with format 'default' - '01/07/2020 à 16:54:15' -->
+	</body>
+</html>

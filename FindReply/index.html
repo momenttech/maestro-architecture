@@ -1,0 +1,284 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Maestro Architecture - Maestro 2</title>
+		<link rel="stylesheet" href="../assets/css/highlight.min.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/tipuesearch.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
+	</head>
+	<body>
+		<header class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../">Maestro 2</a> <p class="navbar-text hidden-xs">Maestro Architecture</p>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<form action="../search.html" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required class="form-control" placeholder="Search">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../FindReply/index-slideshow.html" target="_blank">View as slideshow</a></li>
+						<!--li><a href="../FindReply/index-raw.html">View Markdown</a></li-->
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!--
+<div class="toc">
+<p class="lead">Table of contents:</p>
+<p class="toc-1">
+<a href="#find-reply-module">Find Reply Module</a>
+</p>
+<p class="toc-2">
+<a href="#architecture-overview">Architecture Overview</a>
+</p>
+<p class="toc-2">
+<a href="#-"> </a>
+</p>
+<p class="toc-2">
+<a href="#attributes">Attributes</a>
+</p>
+<p class="toc-2">
+<a href="#docker-configuration">Docker Configuration</a>
+</p>
+<p class="toc-3">
+<a href="#environment-variables">ENVIRONMENT VARIABLES</a>
+</p>
+<p class="toc-3">
+<a href="#volumes">VOLUMES</a>
+</p>
+<p class="toc-2">
+<a href="#communications">Communications</a>
+</p>
+<p class="toc-3">
+<a href="#two-type-of-requests">Two type of requests</a>
+</p>
+<p class="toc-2">
+<a href="#testing-procedure">Testing procedure</a>
+</p>
+</div>
+-->
+
+		<div class="container">
+			<div class="row">
+				<nav id="sidebar" class="col-lg-2 col-sm-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li role="presentation" class=""><a href="../index.html">Homepage</a></li>
+						<li role="presentation" class=""><a href="../FAISS/index.html">FAISS</a></li>
+						<li role="presentation" class="active"><a href="../FindReply/index.html">Find Reply</a></li>
+						<li role="presentation" class=""><a href="../Admin/index.html">Admin</a></li>
+					</ul>
+					<!--
+Available versions:<br>
+raw<br>
+->FindReply/index-raw.html<br>
+slideshow<br>
+->FindReply/index-slideshow.html<br>
+default<br>
+->FindReply/index.html<br>
+<br>
+Document informations:<br>
+FindReply/README.md<br><br>
+active
+-->
+				</nav>
+				<header>
+					<div class="entry-meta text-right">
+
+					</div>
+				</header>
+				<article id="content" class="col-lg-10 col-sm-9">
+					<h1 id="find-reply-module">Find Reply Module</h1>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<h2 id="-"> </h2>
+<p><img src="../images/plantuml/FindReply/find_reply/FindReply_Full.svg" height="610"></p>
+<h2 id="attributes">Attributes</h2>
+<ul>
+<li>Aggregate content from different sources</li>
+<li>Most of its time spent in waiting a reply from those sources</li>
+<li>Must use mutlithreading to serve RPC requests from RASA to optimize performances</li>
+</ul>
+<h2 id="docker-configuration">Docker Configuration</h2>
+<h3 id="environment-variables">ENVIRONMENT VARIABLES</h3>
+<ul>
+<li><p><u>Mandatory</u></p>
+<ul>
+<li><strong>RMQ_IP</strong>: RabbitMQ broker FQN or IP  </li>
+</ul>
+</li>
+<li><p><u>Optional</u></p>
+<ul>
+<li><strong>NB_INSTANCES</strong>: number of allocated threads<br>  ► limits the number of questions in parallel<br>  ► defines service level capacities (dimensioning rule)<br>  ► default =  <em>5</em>  </li>
+<li>RMQ_USER: <em>tbott</em></li>
+<li>RMQ_PASSWD: <em>M0m3n773ch</em></li>
+<li>QUESTIONS_QUEUE: <em>tbott-rpc</em>    (Questions from RASA)</li>
+<li>ENCODER_QUEUE: <em>tbott-encoder</em>  (Bert encoder queue)</li>
+<li>MATCHING_QUEUE: <em>tbott-matching</em> (Sentence matching queue)</li>
+<li>RMQ_PORT: <em>5672</em></li>
+<li>LOG_LEVEL: <em>INFO</em>  </li>
+</ul>
+</li>
+</ul>
+<h3 id="volumes">VOLUMES</h3>
+<ul>
+<li>logs: mounted in /var/log/supervisor</li>
+</ul>
+<h2 id="communications">Communications</h2>
+<p><em>most of the code can be picked from the previous version of Maestro</em><br><img src="../images/plantuml/FindReply/find_reply/FindReply_EntryPoint.svg">   </p>
+<h3 id="two-type-of-requests">Two type of requests</h3>
+<p>To be compatible with the existing  </p>
+<ul>
+<li>&quot;question&quot; : questions coming from <em>RASA</em></li>
+<li>&quot;analyse_sentence&quot; : From <em>Analyser</em>  <ul>
+<li>can be implemented in a second or third stage ~ not mandatory ~  </li>
+<li>reuse codes from the previous Maestro version  </li>
+<li>needs to generate a list of questions with one and two words missings  </li>
+<li>number of free threads must be set to 0, or heavily decreased, to save resources</li>
+</ul>
+</li>
+</ul>
+<h4 id="code-trails">code trails</h4>
+<p>Line _51_ of ai_worker.py:</p>
+<pre><code class="lang-python">self.worker = Worker(ip, user, passwd, channel, self.handle_message)
+</code></pre>
+<p>Line _57_ of ai_worker.py:</p>
+<pre><code class="lang-python">def handle_message(self, msg):
+  &quot;&quot;&quot;
+    Callback to handle messages
+  &quot;&quot;&quot;
+  LOGGER.debug(&#39;Received: %s&#39;, msg)
+  try:
+    request = json.loads(msg)
+    if request[&#39;type&#39;] == &quot;question&quot;:
+      full_answer = self.find_reply(request)
+      return json.dumps(full_answer)
+    elif request[&#39;type&#39;] == &quot;analyse_sentence&quot;:
+      full_answer = self.analyse_sentence(request[&#39;content&#39;], request[&#39;categories&#39;], request[&#39;reference&#39;])
+      return json.dumps(full_answer)
+
+...
+</code></pre>
+<h4 id="step-1-contexts">Step 1: contexts</h4>
+<p><em>NB: only if message is a &quot;question&quot; (ie comes from RASA)</em></p>
+<ol>
+<li>get all possible categories (or contexts) from Admin.</li>
+<li>extend question list with all <em>possible</em> contexts</li>
+</ol>
+<h4 id="step-2-vectors">Step 2: vectors</h4>
+<p>Send question list to rabbitMQ $ENCODER_QUEUE using the <em>Messaging</em> library.</p>
+<p>Request example:</p>
+<pre><code class="lang-python">{ 
+  &quot;request&quot;: &quot;encode&quot;,
+  &quot;content&quot;: [&quot;original_question&quot;, &quot;extended_question1&quot;, &quot;...&quot;]
+}
+</code></pre>
+<p>Reply example:</p>
+<pre><code class="lang-python">{ 
+  &quot;encoded&quot;: [numpy.array, numpy.array, numpy.array]
+}
+</code></pre>
+<h4 id="step-3-candidates">Step 3 : candidates</h4>
+<p>Get possible candidates from <strong>FAISS</strong> module (127.0.0.1:14000)  </p>
+<p>Search request example:  </p>
+<pre><code class="lang-python">{ &quot;requests&quot; : [&quot;search&quot;],
+  &quot;search&quot; : [numpy.array , numpy.array]
+} 
+</code></pre>
+<p>FAISS reply example:  </p>
+<pre><code class="lang-python">{ &quot;result&quot; : numpy.array }
+</code></pre>
+<h4 id="-"> </h4>
+<p>The <strong>FAISS</strong> module send back a matrix of size <strong>2 x nb_questions x nb_results</strong> :</p>
+<ul>
+<li>2 : IDs and scores (in this order)</li>
+<li>nb_questions: number of questions sent to FAISS</li>
+<li>nb_results: number of results per question (<em>top k results</em>)</li>
+</ul>
+<h4 id="-"> </h4>
+<p>If the question comes from RASA (ie message type = &quot;question&quot;), then all the questions are derivated from the original question.<br>Which means that the results must be consolidated into only one list of IDs.<br>This shouldbe done via <strong>Numpy</strong> as python&#39;s loops are quite time consuming.</p>
+<p>Code snippet:</p>
+<pre><code class="lang-python">res = search_faiss(q_vectors)
+I = res[0]
+S = res[1]
+NQ = I.shape[0]              # Number of questions
+K = I.shape[1]               # Number of results per question
+I_ = np.reshape(I, NQ * K)   # reshape matrice into a list
+S_ = np.reshape(S, NQ * K)   # idem
+res_ids = np.argsort(S_)     # indexes of the sorted scores
+#first occurence of each result
+_, i = np.unique(I_[res_ids], return_index=True)
+I_ = I_[i]                   # keep uniq ids
+S_ = S_[i]                   # Keep uniq scores
+final_idx = np.argsort(S_)   # Indexes of the sorted scores
+final_idx = final_idx[:K]     # Keep only the K first results
+final_ids = I_[final_idx]
+final_scores = S_[final_idx]
+return final_ids, final_scores
+</code></pre>
+<h4 id="step-4-questions-to-match">Step 4 : Questions to match</h4>
+<ol>
+<li>Get from <strong>Admin</strong> questions and replies associated to the list of candidates IDs.  </li>
+<li>Build a list of paired questions.<ul>
+<li>Augmented questions must be paired only with questions from the same categories/contexts</li>
+</ul>
+</li>
+</ol>
+<h4 id="step-5-best-match">Step 5 : Best match</h4>
+<ol>
+<li>Send the list of questions pairs to rabbitMQ $MATCHING_QUEUE using the <em>Messaging</em> library.</li>
+<li>Build the final reply with the best match and other candidates<ul>
+<li>chuncks of previous version of Maestro can be reused to speed up devs</li>
+</ul>
+</li>
+</ol>
+<h2 id="testing-procedure">Testing procedure</h2>
+<TABLE>
+  <TR>
+    <TD style="vertical-align: top">
+      <ul>
+        <li><strong>&quot;backdoor&quot;</strong> to test question directly from admin consol</li>
+        <li>Uses <strong>Messaging</strong> lib</li>
+        <li><strong>Internal</strong> communication only (Admin)</li>
+      </ul>
+    </TD>
+    <TD style="width:55%"><img src="../images/plantuml/FindReply/find_reply/FindReply_TestingInterface.svg"></TD>
+  </TR>
+</TABLE>
+
+				</article>
+			</div>
+		</div>
+
+		<footer><a href="../site-index.html">Pages index</a>
+</footer>
+
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/highlight.min.js"></script>
+		<script src="../assets/js/tipuesearch_set.js"></script>
+		<script src="../assets/js/tipuesearch.min.js"></script>
+		<script>
+			$(function() {
+				hljs.initHighlightingOnLoad();
+				$('#tipue_search_input').tipuesearch({
+					mode: 'json',
+					contentLocation: '../index.json'
+				});
+			});
+		</script>
+		
+		<!-- Generated by Vegetables from 'FindReply/README.md' with format 'default' - '01/07/2020 à 16:54:15' -->
+	</body>
+</html>

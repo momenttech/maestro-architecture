@@ -1,0 +1,270 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Maestro Architecture - Maestro 2</title>
+		<link rel="stylesheet" href="../assets/css/highlight.min.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/tipuesearch.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
+	</head>
+	<body>
+		<header class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../">Maestro 2</a> <p class="navbar-text hidden-xs">Maestro Architecture</p>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<form action="../search.html" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required class="form-control" placeholder="Search">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../FAISS/index-slideshow.html" target="_blank">View as slideshow</a></li>
+						<!--li><a href="../FAISS/index-raw.html">View Markdown</a></li-->
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!--
+<div class="toc">
+<p class="lead">Table of contents:</p>
+<p class="toc-1">
+<a href="#faiss-module">FAISS Module</a>
+</p>
+<p class="toc-2">
+<a href="#attributes">Attributes</a>
+</p>
+<p class="toc-2">
+<a href="#architecture-overview">Architecture Overview</a>
+</p>
+<p class="toc-2">
+<a href="#-"> </a>
+</p>
+<p class="toc-2">
+<a href="#docker-configuration">Docker Configuration</a>
+</p>
+<p class="toc-3">
+<a href="#environment-variables">ENVIRONMENT VARIABLES</a>
+</p>
+<p class="toc-3">
+<a href="#volumes">VOLUMES</a>
+</p>
+<p class="toc-2">
+<a href="#indexing-procedure">Indexing procedure</a>
+</p>
+<p class="toc-3">
+<a href="#creating-a-new-index">Creating a new Index</a>
+</p>
+<p class="toc-3">
+<a href="#-"> </a>
+</p>
+<p class="toc-3">
+<a href="#updating-the-index">Updating the Index</a>
+</p>
+<p class="toc-2">
+<a href="#searching-procedure">Searching procedure</a>
+</p>
+<p class="toc-3">
+<a href="#-"> </a>
+</p>
+<p class="toc-3">
+<a href="#-"> </a>
+</p>
+</div>
+-->
+
+		<div class="container">
+			<div class="row">
+				<nav id="sidebar" class="col-lg-2 col-sm-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li role="presentation" class=""><a href="../index.html">Homepage</a></li>
+						<li role="presentation" class="active"><a href="../FAISS/index.html">FAISS</a></li>
+						<li role="presentation" class=""><a href="../FindReply/index.html">Find Reply</a></li>
+						<li role="presentation" class=""><a href="../Admin/index.html">Admin</a></li>
+					</ul>
+					<!--
+Available versions:<br>
+raw<br>
+->FAISS/index-raw.html<br>
+slideshow<br>
+->FAISS/index-slideshow.html<br>
+default<br>
+->FAISS/index.html<br>
+<br>
+Document informations:<br>
+FAISS/README.md<br><br>
+active
+-->
+				</nav>
+				<header>
+					<div class="entry-meta text-right">
+
+					</div>
+				</header>
+				<article id="content" class="col-lg-10 col-sm-9">
+					<h1 id="faiss-module">FAISS Module</h1>
+<h2 id="attributes">Attributes</h2>
+<ul>
+<li>Based on <a href="https://ai.facebook.com/tools/faiss/">Facebook AI Similarity Search</a></li>
+<li>Heart of a <strong>fast</strong> search system</li></li>
+<li>Able to index litteraly <strong>billions</strong> of inputs</li></li>
+<li>Only handle <strong>matrices</strong>, of any shapes</li></li>
+<li>As <strong>simple</strong> as possible, to reduce risks.</li></li>
+<li>As <strong>generic</strong> as possible, to be reusable for any kind of inputs</li></li>
+</ul>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<h2 id="-"> </h2>
+<TABLE>
+  <TR>
+    <TD style="vertical-align: top">
+      <u>Entry Point:</u><br>      <ul>
+        <li>Uses <strong>Messaging</strong> lib</li>
+        <li><strong>Internal</strong> communication only (Admin &amp; FindReply)</li>
+        <li>Based on <strong>ØMQ</strong> for fast exchanges</li>
+        <li><strong>Multithreaded</strong> to serve mutliple requests</li>
+        <li>Receives requests with <strong>Numpy</strong> arrays</li>
+      </ul>
+      </br>
+      <u>Manage Index:</u><br>      <ul>
+        <li>Handle 2 scenarios:
+          <ul>
+            <li>Indexing requests</li>
+            <li>Search requests</li>
+          </ul>
+        </li>
+      </ul>
+      </br>
+      <u>Faiss Index:</u><br>      <ul>
+        <li>Protected by a <a href="https://github.com/elarivie/pyReaderWriterLock">Read/Write Lock</a></li>
+        <li>Priority given to write access</li>
+        <li>Index is saved in <strong>data_dir</strong> volume</li>
+      </ul>
+    </TD>
+    <TD style="width:55%"><img src="../images/plantuml/FAISS/faiss/FAISS_Full.svg" width="100%" height="610"></TD>
+  </TR>
+</TABLE>
+
+<h2 id="docker-configuration">Docker Configuration</h2>
+<h3 id="environment-variables">ENVIRONMENT VARIABLES</h3>
+<ul>
+<li><u>Mandatory</u><ul>
+<li>None</li>
+</ul>
+</li>
+<li><u>Optional</u><ul>
+<li>NB_MATCHING: number of matching results to return<br>  ► High enougth to include the right wuestion, if it exists<br>  ► Low enougth to not overcharge <strong>sentence matching</strong> module<br>  ► default = _10_  </li>
+<li>LOG_LEVEL: <em>INFO</em>  </li>
+</ul>
+</li>
+</ul>
+<h3 id="volumes">VOLUMES</h3>
+<ul>
+<li>logs: mounted in /var/log/supervisor</li>
+<li>data_dir: mounted in /opt/faiss</li>
+</ul>
+<h2 id="indexing-procedure">Indexing procedure</h2>
+<p>As stated in Faiss <a href="https://github.com/facebookresearch/faiss/wiki/FAQ">FAQ</a> only the <em>add</em> procedure is supported.<br>Thus the <em>delete</em> and <em>update</em> procedures boils down to simply re-creating a new index.<br>This imply that the list of vectors and the their associated id must be saved on disk.<br></br>
+Indexing requests come from <strong>Admin</strong> module.<br>A <strong>create</strong> request always comes alone.<br><strong>delete</strong>, <strong>add</strong> and <strong>update</strong> requests may come in any combinations.  </p>
+<h3 id="creating-a-new-index">Creating a new Index</h3>
+<p><em>Deserialized <strong>create</strong> request example:</em>  </p>
+<pre><code>{&quot;requests&quot; : [&quot;create&quot;],
+ &quot;create&quot; : [
+               {&quot;vector&quot; : numpy.array , &quot;id&quot; : 1},
+               {&quot;vector&quot; : numpy.array , &quot;id&quot; : 2}
+             ]
+} 
+</code></pre><h3 id="-"> </h3>
+<ol>
+<li>Create a <strong>Flat</strong> index</li>
+<li>Add the list of vectors and their IDs to the index</li>
+<li>Save the index on disk in <strong>$data_dir</strong> (cf. docker configuration)</li>
+<li>Save the list of vectors and their IDs on disk in <strong>$data_dir</strong><ul>
+<li>use pickle protocol to save python dict with numpy arrays on disk</li>
+<li>check <em>data_factory.prepare_data</em> function in maestro for an example  </li>
+</ul>
+</li>
+</ol>
+<p>Code snippet</p>
+<pre><code class="lang-python">import faiss
+import numpy as np
+
+with alock.gen_wlock():
+  xb = np.array(get_vector_list(request)) # create matrix
+  dim = xb.shape[1]                       # vector&#39;s dimension
+  tmp_index = faiss.IndexFlatL2(dim)      # Flat index without ids
+  ids = get_ids(request)
+  index = faiss.IndexIDMap(tmp_index)     # index with ids
+  index.add_with_ids(xb, ids)             # add vectors and ids
+</code></pre>
+<h3 id="updating-the-index">Updating the Index</h3>
+<p><strong>delete</strong>, <strong>add</strong> and <strong>update</strong> requests may come in any combinations.<br><u>To update an index:</u></p>
+<ol>
+<li>retrieve vectors and IDs from disk</li>
+<li>update as specified</li>
+<li>create a new index</li>
+<li>save new index and new data on disk</li>
+</ol>
+<p><em>updating request example:</em>  </p>
+<pre><code class="lang-python">{ &quot;requests&quot; : [&quot;add&quot;, &quot;update&quot;, &quot;delete&quot;],
+  &quot;add&quot; : [{&quot;vector&quot; : numpy.array , &quot;id&quot; : 10}],
+  &quot;update&quot;: [{&quot;vector&quot; : numpy.array , &quot;id&quot; : 11}],
+  &quot;delete&quot;: [{&quot;id&quot;: 1}, {&quot;id&quot;: 2}]
+} 
+</code></pre>
+<h2 id="searching-procedure">Searching procedure</h2>
+<p>Indexing requests come from <strong>FindReply</strong> module.<br>Return a matrix of shape <em>2</em> X <em>Nb_Questions</em> X <em>$NB_MATCHING</em>   </p>
+<ul>
+<li>shape <strong>2</strong> correspond to IDs and scores</li>
+<li>shape <strong>Nb_Questions</strong>  correspond to the number of questions to search</li>
+<li>shape <strong>$NB_MATCHING</strong> correspond to the number of matchings to return<br>(defined in docker config)</li>
+</ul>
+<h3 id="-"> </h3>
+<p><em>search request example:</em>  </p>
+<pre><code class="lang-python">{ &quot;requests&quot; : [&quot;search&quot;],
+  &quot;search&quot; : [numpy.array , numpy.array]
+} 
+</code></pre>
+<h3 id="-"> </h3>
+<p>Code snippet</p>
+<pre><code class="lang-python">#K=NB_MATCHING : Number of results returned by query (default = 10)
+with alock.gen_rlock():
+  S, I = index.search(q_vectors, K) # S: scores, I: indexes
+  res = np.array([I, S])            # Transform S and I in a matrix
+  send(res)
+</code></pre>
+
+				</article>
+			</div>
+		</div>
+
+		<footer><a href="../site-index.html">Pages index</a>
+</footer>
+
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/highlight.min.js"></script>
+		<script src="../assets/js/tipuesearch_set.js"></script>
+		<script src="../assets/js/tipuesearch.min.js"></script>
+		<script>
+			$(function() {
+				hljs.initHighlightingOnLoad();
+				$('#tipue_search_input').tipuesearch({
+					mode: 'json',
+					contentLocation: '../index.json'
+				});
+			});
+		</script>
+		
+		<!-- Generated by Vegetables from 'FAISS/README.md' with format 'default' - '01/07/2020 à 16:54:15' -->
+	</body>
+</html>
