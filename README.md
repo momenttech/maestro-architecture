@@ -1,7 +1,7 @@
 ---
 title: Maestro Architecture
 menu:
-    - uri: /
+    - uri: ./
       label: Overview
     - uri: ./FAISS
       label: FAISS Module
