@@ -10,9 +10,9 @@ menu:
     - uri: ./Admin
       label: Admin Module
 slideshow:
-   #logoUrl: /images/MMTT_dark-blue.png
+   logoUrl: /images/MMTT_dark-blue.png
    headingLevel: 4
-   #theme: simple
+   theme: sky
 ---
 [Access to Github Pages](https://momenttech.github.io/maestro-architecture/)
 

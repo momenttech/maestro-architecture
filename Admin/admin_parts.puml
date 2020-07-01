@@ -28,6 +28,7 @@ skinparam arrow<<INTRA>> {
 	Color $GRAY
 }
 
+
 !procedure $make_docker_config($display)
     !if ($display != "")
         $DockerConfig("AdminModule") {
