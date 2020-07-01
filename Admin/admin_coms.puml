@@ -7,7 +7,7 @@
 'top to bottom direction
 skinparam nodesep 30
 skinparam ranksep 20
-
+scale 1
 ' rectangle "Master Inputs" as MasterQuestions {
 '     actor "Ask: who is master" as MasterAsk
 '     actor "Reply: I'm master" as MasterReply
