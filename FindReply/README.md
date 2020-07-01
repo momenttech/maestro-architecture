@@ -10,9 +10,10 @@ menu:
     - uri: ./Admin
       label: Admin Module
 slideshow:
-   #logoUrl: ../images/plantuml/MMTT_dark-blue.png
+   logoUrl: ../images/mmtt.png
    headingLevel: 4
-   #theme: simple
+   theme: mmtt
+   transition: convex
 ---
 # Find Reply Module
 
