@@ -3,7 +3,7 @@ title: Maestro > FAISS
 menu:
     - uri: /
       label: Overview
-    - uri: ../FAISS
+    - uri: ./FAISS
       label: FAISS Module
     - uri: ../FindReply
       label: Find Reply Module
