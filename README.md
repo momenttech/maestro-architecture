@@ -10,9 +10,10 @@ menu:
     - uri: ./Admin
       label: Admin Module
 slideshow:
-   logoUrl: ./images/MMTT_dark-blue.png
+   logoUrl: ../images/mmtt.png
    headingLevel: 4
    theme: mmtt
+   transition: convex
 ---
 [Access to Github Pages](https://momenttech.github.io/maestro-architecture/)
 
@@ -50,7 +51,7 @@ Because each project has its own instance of Maestro, we must also have multiple
 <img src="images/plantuml/architecture/Rasa.svg">
 
 
-### IAs
+### Artificial Intel
 
 As explained in [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf) paper, while pretrained BERT model perform poorly for sentence embeddings, BERT models fine-tuned on sentence matching are slow and resource hungry.  
 
