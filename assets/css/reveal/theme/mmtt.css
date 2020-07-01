@@ -242,7 +242,11 @@ body {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.70);
   border: 4px solid #93a1a1;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .reveal section img.plain {
   border: 0;
