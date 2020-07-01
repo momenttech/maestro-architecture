@@ -1,13 +1,13 @@
 ---
 title: Maestro > Admin
 menu:
-    - uri: /
+    - uri: ./
       label: Overview
-    - uri: ../FAISS
+    - uri: ./FAISS
       label: FAISS Module
-    - uri: ../FindReply
+    - uri: ./FindReply
       label: Find Reply Module
-    - uri: ../Admin
+    - uri: ./Admin
       label: Admin Module
 slideshow:
    #logoUrl: ../images/MMTT_dark-blue.png
