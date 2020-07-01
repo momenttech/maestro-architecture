@@ -1,20 +1,3 @@
----
-title: Maestro > Admin
-menu:
-    - uri: ./
-      label: Overview
-    - uri: ./FAISS
-      label: FAISS Module
-    - uri: ./FindReply
-      label: Find Reply Module
-    - uri: ./Admin
-      label: Admin Module
-slideshow:
-   logoUrl: ../images/mmtt.png
-   headingLevel: 4
-   theme: mmtt
-   transition: convex
----
 # Admin Module
 
 ## Architecture Overview

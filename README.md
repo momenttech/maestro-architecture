@@ -1,22 +1,6 @@
 ---
-title: Maestro Architecture
-menu:
-    - uri: ./
-      label: Overview
-    - uri: ./FAISS
-      label: FAISS Module
-    - uri: ./FindReply
-      label: Find Reply Module
-    - uri: ./Admin
-      label: Admin Module
-slideshow:
-   logoUrl: ../images/mmtt.png
-   headingLevel: 4
-   theme: mmtt
-   transition: convex
----
 [Access to Github Pages](https://momenttech.github.io/maestro-architecture/)
-
+---
 # Current limitations
 
 * Created for one big client, not in line with our current needs

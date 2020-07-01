@@ -1,0 +1,18 @@
+template: template
+tags:
+ globalTitle: Maestro 2
+ title: Maestro Architecture
+ menu:
+  - uri: index.html
+    label: Homepage
+  - uri: FAISS/index.html
+    label: FAISS
+  - uri: FindReply/index.html
+    label: Find Reply
+  - uri: Admin/index.html
+    label: Admin
+ slideshow:
+   logoUrl: ../images/mmtt.png
+   headingLevel: 4
+   theme: mmtt
+   transition: convex 
