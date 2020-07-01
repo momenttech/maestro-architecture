@@ -1,3 +1,8 @@
+---
+title: Admin
+slideshow:
+   logoUrl: ../images/mmtt.png
+---
 # Admin Module
 
 ## Architecture Overview

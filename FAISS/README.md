@@ -1,3 +1,8 @@
+---
+title: FAISS
+slideshow:
+   logoUrl: ../images/mmtt.png
+---
 # FAISS Module
 
 ## Attributes

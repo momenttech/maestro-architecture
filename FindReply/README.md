@@ -1,3 +1,8 @@
+---
+title: Find Reply
+slideshow:
+   logoUrl: ../images/mmtt.png
+---
 # Find Reply Module
 
 ## Architecture Overview
