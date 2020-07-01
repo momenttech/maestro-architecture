@@ -12,7 +12,9 @@ tags:
   - uri: Admin/index.html
     label: Admin
  slideshow:
-   logoUrl: images/mmtt.png
+   logoUrl: /images/mmtt.png
    headingLevel: 4
    theme: mmtt
+   logoPositionX: right
+   logoPositionY: top
    transition: convex 
