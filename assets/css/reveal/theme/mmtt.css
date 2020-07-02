@@ -38,11 +38,17 @@ body {
   background: #d33682;
   text-shadow: none; }
 
+
 .reveal .slides {
-  padding-left: 0%;
-  padding-right: 0%;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0%;
+  margin-right: 0%;
+  min-width: 100%;
+  /*border: 1px solid white;*/
+}
+
+.reveal {
+  /*border: 10px solid blue;*/
+  width: 100%
 }
 
 .reveal .slides > section,
@@ -50,6 +56,9 @@ body {
   /*line-height: 1.3;*/
   line-height: 1.5;
   font-weight: inherit;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*********************************************
