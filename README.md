@@ -3,18 +3,18 @@
 ---
 # Current architecture's limitations
 
-* Created for one big client, not in line with our current needs
+* Created for **one** big client, not in line with our current needs
 * Requires re-training for every new data added
 * Training process hard to fully automized
 * Categories and sub-categories are hard to define correctly
-* Problems arise when using datasets with overlapping meanings
+* Many problems arise when using datasets with overlapping meanings
 
 # Guide lines for an evolution
 
 * Avoid specific trainings whenever it's possible
 * Do not require huge amount of data to start working
 * By default, no data leaks between projects
-* Use categories as **contextual helps** instead of storage boxes  
+* Use categories as **contextual helps** instead of arbitrary silos  
   Ex: The question _How many dead during the landing ?_  
   in the absolute, is **not equal to**  
   _How many dead during the landing of the bay of pigs ?_  
