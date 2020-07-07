@@ -1,7 +1,7 @@
 ---
 [Access to Github Pages](https://momenttech.github.io/maestro-architecture/)
 ---
-# Current limitations
+# Current architecture's limitations
 
 * Created for one big client, not in line with our current needs
 * Requires re-training for every new data added
@@ -9,7 +9,7 @@
 * Categories and sub-categories are hard to define correctly
 * Problems arise when using datasets with overlapping meanings
 
-# Guide lines for the new architecture
+# Guide lines for an evolution
 
 * Avoid specific trainings whenever it's possible
 * Do not require huge amount of data to start working
