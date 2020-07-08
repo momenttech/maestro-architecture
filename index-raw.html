@@ -26,14 +26,15 @@
 ###  
 <img src="images/plantuml/architecture/MaestroArchitecture.svg" height="610">
 
-### Rasa(s)
-
-Because each project has its own instance of Maestro, we must also have multiple instances of Rasa, one per Maestro  
-
+## Rasa(s)
 <img src="images/plantuml/architecture/Rasa.svg">
 
 
-### Neural Networks
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Warning_icon.svg/1200px-Warning_icon.svg.png" width="16"> 
+Each project has its own instance of Maestro, so we must also have one Rasa instance per Maestro with a dedicated RabbitMQ queue.
+
+## Neural Networks
+<img src="images/plantuml/architecture/IAs.svg">
 
 As explained in [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf) paper, while pretrained BERT model perform poorly for sentence embeddings, BERT models fine-tuned on sentence matching are slow and resource hungry.  
 
@@ -41,7 +42,7 @@ So to build an efficient search engine we must use two different models,
 * one for sentence encoding that will be fed to an efficient search index such as FAISS to quickly output candidates,
 * and another one for sentence matching to be able to make the difference between a _best match_ and a _true match_ 
 
-<img src="images/plantuml/architecture/IAs.svg">
+
 
 #### Sentence Encoder
 * Encode sentence as a contextual vector
