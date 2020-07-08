@@ -22,6 +22,7 @@ slideshow:
 ### ENVIRONMENT VARIABLES
 * <u>Mandatory</u>
   * **RMQ_IP**: RabbitMQ broker FQN or IP  
+  * **QUESTIONS_QUEUE**: Questions from RASA  (Ex: tbott-rpc_.dom.proj_)
   
 * <u>Optional</u>
   * **NB_INSTANCES**: number of allocated threads  
@@ -29,8 +30,7 @@ slideshow:
       ► defines service level capacities (dimensioning rule)  
       ► default =  *5*  
   * RMQ_USER: _tbott_
-  * RMQ_PASSWD: _M0m3n773ch_
-  * QUESTIONS_QUEUE: _tbott-rpc_    (Questions from RASA)
+  * RMQ_PASSWD: _M0m3n773ch_  
   * ENCODER_QUEUE: _tbott-encoder_  (Bert encoder queue)
   * MATCHING_QUEUE: _tbott-matching_ (Sentence matching queue)
   * RMQ_PORT: _5672_
