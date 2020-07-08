@@ -67,7 +67,7 @@ slideshow:
 
 ## Admin GUI commands
 
-* Commands are atomic → no need for multithreading
+* Commands are atomics → no need for multithreading
 * Commands are adressed to multiple Pods
 * Only one pod, the master, reply to all commands
 
