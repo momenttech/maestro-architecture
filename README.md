@@ -33,7 +33,8 @@
 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Warning_icon.svg/1200px-Warning_icon.svg.png" width="16"> 
-Each project has its own instance of Maestro, so we must also have one Rasa instance per Maestro with a dedicated RabbitMQ queue.
+Each project has its own instance of Maestro, so we must also have one Rasa instance per Maestro with a dedicated RabbitMQ queue  
+> Ex: tbott-rpc*.domain.project*
 
 ## Neural Networks
 <img src="images/plantuml/architecture/IAs.svg">
