@@ -34,11 +34,12 @@ skinparam arrow<<INTRA>> {
         $DockerConfig("FindReplyModule") {
             !if ($display == "all") || ($display == "variables")
                 $DockerVariables("FindReplyModule", \
-                                "RMQ_IP: <i>RMQ broker</i>", \
+                                "RMQ_IP: <i>RMQ broker</i>,\n\
+                                QUESTIONS_QUEUE = Questions from RASA\n\
+                                Ex: tbott-rpc.<i>dom.proj</i>", \
                                 \
                                 "RMQ_USER = <i>tbott</i>\n\
                                 RMQ_PASSWD = <i>M0m3n773ch</i>\n\
-                                QUESTIONS_QUEUE = <i>tbott-rpc</i>\n\
                                 ENCODER_QUEUE = <i>tbott-encoder</i>\n\
                                 MATCHING_QUEUE = <i>tbott-matching</i>\n\
                                 NB_INSTANCES = <i>5</i>\n\
