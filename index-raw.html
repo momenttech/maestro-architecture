@@ -9,6 +9,8 @@
 
 # Guide lines for an evolution
 
+##  
+
 * Avoid specific trainings whenever it's possible
 * Do not require huge amount of data to start working
 * By default, no data leaks between projects
@@ -19,6 +21,8 @@
   **nor**  
   _How many dead during the landing of the D-Day ?_  
 
+##  
+> Basically, the aim of the new architecture is to build a NLP **search engine** with the ability to tell if an information is present or not.
 
 # Architecture Overview
 
@@ -73,12 +77,13 @@ So to build an efficient search engine we must use two different models,
 * A Pod is dedicated to a _Target_ (ex: prod or test) attached to a _Project_ within a _Domain_  
   In this doc referred as _Domain.Project.Target_
 * For redundancy and scalability, multiple Pods can share the same _Domain.Project.env_
-* Communications within a Pod is done through ZeroMQ on 127.0.0.1  
-  Containers within a Pod share the same network namespace, enabling the use of localhost address.  
-  ZeroMQ is fast, flexible and is indifferent to the startup order of clients and servers.  
-  It will more or less act as an IPC within the Pod
-* Messages between containers will use JSON format containing [Numpy](https://numpy.org/) arrays.  
-  Exemple of numpy serialisation with ZeroMQ: https://pyzmq.readthedocs.io/en/latest/serialization.html
+* All communications must be integrated within the **Messaging** library  
+  * Messages between containers use JSON format containing [Numpy](https://numpy.org/) arrays.  
+  * Communications within a Pod is done through ZeroMQ on 127.0.0.1  
+    -> Containers within a Pod share the same network namespace, enabling the use of localhost address.  
+    -> ZeroMQ is fast, flexible and is indifferent to the startup order of clients and servers.  
+    -> more or less act as an IPC within the Pod  
+  * Exemple of numpy serialisation with ZeroMQ: https://pyzmq.readthedocs.io/en/latest/serialization.html
 
 #### Modules description
 
