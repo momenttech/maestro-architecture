@@ -40,7 +40,7 @@ scale 1
                 [[http://10.165.64.205/AI/Messaging Messaging]] lib
                 ----
                 <color:teal>zeromq.ThreadedWorker(</color>
-                <color:teal>    <i>callback_func</i>,</color>
+                <color:teal>    <i><b>callback_func</b></i>,</color>
                 <color:teal>    127.0.0.1,</color>
                 <color:teal>    <b>14000</b>)</color>
                 ----

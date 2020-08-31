@@ -68,7 +68,7 @@ skinparam arrow<<INTRA>> {
                 [[http://10.165.64.205/AI/Messaging Messaging]] lib
                 ----
                 <color:teal>zeromq.ThreadedWorker(</color>
-                <color:teal>    <i>callback_func</i>,</color>
+                <color:teal>    <i><b>callback_func</b></i>,</color>
                 <color:teal>    127.0.0.1,</color>
                 <color:teal>    <b>14002</b></color>
                 <color:teal>    <b>nb_workers=1</b>)</color>
