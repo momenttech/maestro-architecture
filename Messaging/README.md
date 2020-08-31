@@ -21,7 +21,7 @@ Serialization and deserialization is done by the library and support numpy array
 **Parameters:**
 * server: remote address, should be *127.0.0.1*
 * port: remote port
-* protocol: Optional, default is *tcp*
+* _protocol_: Optional, default is *tcp*
 
 **Simple exemple:**  
 ```python
@@ -51,8 +51,8 @@ The worker is multi-threaded, default is 5 threads.
 * callback: call function of the worker
 * server: address to bind, should be *127.0.0.1*
 * port: port to bind
-* protocol: Optional, default is *tcp*
-* nb_workers: Optional, number of threads to use. Default is 5.
+* _protocol_: Optional, default is *tcp*
+* *nb_workers*: Optional, number of threads to use. Default is 5.
 
 **Simple exemple:**
 ```python
@@ -69,3 +69,4 @@ workers.start()
 ## Stop workers after 120 seconds
 sleep(120)
 workers.stop()
+```

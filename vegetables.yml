@@ -11,6 +11,8 @@ tags:
     label: Find Reply
   - uri: Admin/index.html
     label: Admin
+  - uri: Messaging/index.html
+    label: Messaging details
  slideshow:
    logoUrl: images/mmtt.png
    headingLevel: 4
