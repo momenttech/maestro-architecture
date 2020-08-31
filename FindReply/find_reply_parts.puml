@@ -67,8 +67,11 @@ skinparam arrow<<INTRA>> {
             component MSG_T [
                 [[http://10.165.64.205/AI/Messaging Messaging]] lib
                 ----
-                <i><color:teal>waitRequest()</color></i>
-                <i><color:teal>on <b>127.0.0.1:14002</b></color></i>
+                <color:teal>zeromq.ThreadedWorker(</color>
+                <color:teal>    <i>callback_func</i>,</color>
+                <color:teal>    127.0.0.1,</color>
+                <color:teal>    <b>14002</b></color>
+                <color:teal>    <b>nb_workers=1</b>)</color>
                 ]
         }
         TestFindings o-d-> MSG_T<<TEST>>

@@ -71,8 +71,10 @@ skinparam arrow<<INTRA>> {
             component ADM_MSG [
                 [[http://10.165.64.205/AI/Messaging Messaging]] lib
                 ----
-                <i><color:teal>waitRequest()</color></i>
-                <i><color:teal>on <b>127.0.0.1:14001</b></color></i>
+                <color:teal>zeromq.ThreadedWorker(</color>
+                <color:teal>    <i>callback_func</i>,</color>
+                <color:teal>    127.0.0.1,</color>
+                <color:teal>    <b>14001</b>)</color>
                 ---
                 ThreadPool
                 ]

@@ -12,7 +12,7 @@ tags:
   - uri: Admin/index.html
     label: Admin
   - uri: Messaging/index.html
-    label: Messaging details
+    label: Messaging
  slideshow:
    logoUrl: images/mmtt.png
    headingLevel: 4

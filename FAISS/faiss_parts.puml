@@ -39,8 +39,10 @@ scale 1
             component FAISS_MSG_C [
                 [[http://10.165.64.205/AI/Messaging Messaging]] lib
                 ----
-                <i><color:teal>ListenNumpyMsg()</color></i>
-                <i><color:teal>on <b>127.0.0.1:14000</b></color></i>
+                <color:teal>zeromq.ThreadedWorker(</color>
+                <color:teal>    <i>callback_func</i>,</color>
+                <color:teal>    127.0.0.1,</color>
+                <color:teal>    <b>14000</b>)</color>
                 ----
                 ThreadPool
                 ]
