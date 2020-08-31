@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Messaging</title>
+	<link rel="stylesheet" href="../assets/css/reveal/reveal.css">
+	<link rel="stylesheet" href="../assets/css/reveal/theme/mmtt.css">
+	<link rel="stylesheet" href="../assets/css/highlight-hybrid.css">
+	<link rel="stylesheet" href="../assets/css/slideshow.css">
+	<style>
+	.reveal .slides::after {
+		background-image: url("../images/mmtt.png");
+		background-repeat: no-repeat;
+		content: "";
+		height: 100px;
+		left: 15px;
+		position: absolute;
+		right: 15px;
+		top: 0;
+
+		background-position: right;
+	}
+	</style>
+	<!-- mmtt -->
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown
+			data-separator="(^#HSLIDE$|^#HSLIDE\?.*)"
+			data-separator-vertical="(^#VSLIDE$|^#VSLIDE\?.*)"
+			data-separator-notes="^Presentation note:"
+			data-charset="utf-8">
+			<script type="text/template">
+				# Messaging details
+#HSLIDE
+
+## Intra Pod Messaging
+Communication beetween elements of a pod is done via zeromq lib from [Messaging package](http://gitlab.mmtt.fr/AI/Messaging) version **3**.
+
+#VSLIDE
+
+### Installation
+```
+pip3 install git+http://gitlab.mmtt.fr/AI/Messaging.git@3.0
+```
+#VSLIDE
+
+### The client
+The client implement the [Lazy Pirate pattern](http://zguide.zeromq.org/page:chapter4), a client-side reliability algorithme.  
+Serialization and deserialization is done by the library and support numpy arrays.
+
+**Parameters:**
+
+
+- server: remote address, should be *127.0.0.1*
+- port: remote port
+- *protocol*: Optional, default is *tcp*
+
+**Simple exemple:**  
+
+```python
+from Messaging import zeromq
+import numpy as np
+
+client = zeromq.LazyClient('127.0.0.1', 65000)
+data = {'request': 'inverse array', 
+        'content': np.array([[1, 2, 3],
+                             [4, 5, 6]])
+       }
+
+res = client.send(data)
+print res
+
+>>> {'request': 'inverse array', 
+     'content': array([[-1, -2, -3], 
+                       [-4, -5, -6]])
+    }
+```
+#VSLIDE
+
+### The Worker
+The worker is multi-threaded, default is 5 threads.
+
+**Parameters:**
+
+
+- callback: call function of the worker
+- server: address to bind, should be *127.0.0.1*
+- port: port to bind
+- *protocol*: Optional, default is *tcp*
+- *nb_workers*: Optional, number of threads to use. Default is 5.
+
+**Simple exemple:**
+
+```python
+from time import sleep
+from Messaging import zeromq
+import numpy as np
+
+def inverse(data):
+    data['array'] = -data['array']
+    return data
+
+workers = zeromq.ThreadedWorker(inverse, "127.0.0.1", 65000, nb_workers=2)
+workers.start()
+## Stop workers after 120 seconds
+sleep(120)
+workers.stop()
+```
+
+			</script>
+		</section>
+	</div>
+</div>
+
+<script src="../assets/js/reveal/reveal.js"></script>
+<script src="../assets/js/reveal/lib/head.min.js"></script>
+<script src="../assets/js/jquery.js"></script>
+<script>
+Reveal.initialize({
+	embedded: true,
+	margin: 0.0,
+	showNotes: false,
+	transition: 'convex',
+	autoSlide: 0,
+	loop: false,
+	center: true,
+	rtl: false,
+	shuffle: false,
+	mouseWheel: false,
+	history: true,
+
+	// disabled for now
+	// math: {
+	// 	mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+	// 	config: 'TeX-AMS_HTML-full'
+	// },
+
+	dependencies: [
+		{ src: "../assets/js/reveal/plugin/markdown/marked.js"},
+		{ src: "../assets/js/reveal/plugin/markdown/markdown.js"},
+		{ src: "../assets/js/reveal/plugin/notes/notes.js"},
+		// { src: "../assets/js/reveal/plugin/math/math.js", async: true }
+		{ src: "../assets/js/reveal/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+	]
+});
+
+Reveal.configure({
+	keyboard: {
+		67: function() { // bind "s" key to "select" code block content
+
+		var currentSlide = Reveal.getCurrentSlide();
+		var preBlock = $(currentSlide).find("pre");
+
+		if(preBlock.length > 0) {
+
+			if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(preBlock[0]);
+				var selection = window.getSelection();
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+		}
+	}
+}
+});
+
+</script>
+
+</body>
+</html>

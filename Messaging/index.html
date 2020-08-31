@@ -1,0 +1,170 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Messaging - Maestro 2</title>
+		<link rel="stylesheet" href="../assets/css/highlight.min.css">
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/tipuesearch.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
+	</head>
+	<body>
+		<header class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../">Maestro 2</a> <p class="navbar-text hidden-xs">Messaging</p>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<form action="../search.html" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required class="form-control" placeholder="Search">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../Messaging/index-slideshow.html" target="_blank">View as slideshow</a></li>
+						<!--li><a href="../Messaging/index-raw.html">View Markdown</a></li-->
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!--
+<div class="toc">
+<p class="lead">Table of contents:</p>
+<p class="toc-1">
+<a href="#messaging-details">Messaging details</a>
+</p>
+<p class="toc-2">
+<a href="#intra-pod-messaging">Intra Pod Messaging</a>
+</p>
+<p class="toc-3">
+<a href="#installation">Installation</a>
+</p>
+<p class="toc-3">
+<a href="#the-client">The client</a>
+</p>
+<p class="toc-3">
+<a href="#the-worker">The Worker</a>
+</p>
+</div>
+-->
+
+		<div class="container">
+			<div class="row">
+				<nav id="sidebar" class="col-lg-2 col-sm-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li role="presentation" class=""><a href="../index.html">Homepage</a></li>
+						<li role="presentation" class=""><a href="../FAISS/index.html">FAISS</a></li>
+						<li role="presentation" class=""><a href="../FindReply/index.html">Find Reply</a></li>
+						<li role="presentation" class=""><a href="../Admin/index.html">Admin</a></li>
+						<li role="presentation" class="active"><a href="../Messaging/index.html">Messaging details</a></li>
+					</ul>
+					<!--
+Available versions:<br>
+raw<br>
+->Messaging/index-raw.html<br>
+slideshow<br>
+->Messaging/index-slideshow.html<br>
+default<br>
+->Messaging/index.html<br>
+<br>
+Document informations:<br>
+Messaging/README.md<br><br>
+active
+-->
+				</nav>
+				<header>
+					<div class="entry-meta text-right">
+
+					</div>
+				</header>
+				<article id="content" class="col-lg-10 col-sm-9">
+					<h1 id="messaging-details">Messaging details</h1>
+<h2 id="intra-pod-messaging">Intra Pod Messaging</h2>
+<p>Communication beetween elements of a pod is done via zeromq lib from <a href="http://gitlab.mmtt.fr/AI/Messaging">Messaging package</a> version <strong>3</strong>.</p>
+<h3 id="installation">Installation</h3>
+<pre><code>pip3 install git+http://gitlab.mmtt.fr/AI/Messaging.git@3.0
+</code></pre><h3 id="the-client">The client</h3>
+<p>The client implement the <a href="http://zguide.zeromq.org/page:chapter4">Lazy Pirate pattern</a>, a client-side reliability algorithme.<br>Serialization and deserialization is done by the library and support numpy arrays.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>server: remote address, should be <em>127.0.0.1</em></li>
+<li>port: remote port</li>
+<li><em>protocol</em>: Optional, default is <em>tcp</em></li>
+</ul>
+<p><strong>Simple exemple:</strong>  </p>
+<pre><code class="lang-python">from Messaging import zeromq
+import numpy as np
+
+client = zeromq.LazyClient(&#39;127.0.0.1&#39;, 65000)
+data = {&#39;request&#39;: &#39;inverse array&#39;, 
+        &#39;content&#39;: np.array([[1, 2, 3],
+                             [4, 5, 6]])
+       }
+
+res = client.send(data)
+print res
+
+&gt;&gt;&gt; {&#39;request&#39;: &#39;inverse array&#39;, 
+     &#39;content&#39;: array([[-1, -2, -3], 
+                       [-4, -5, -6]])
+    }
+</code></pre>
+<h3 id="the-worker">The Worker</h3>
+<p>The worker is multi-threaded, default is 5 threads.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>callback: call function of the worker</li>
+<li>server: address to bind, should be <em>127.0.0.1</em></li>
+<li>port: port to bind</li>
+<li><em>protocol</em>: Optional, default is <em>tcp</em></li>
+<li><em>nb_workers</em>: Optional, number of threads to use. Default is 5.</li>
+</ul>
+<p><strong>Simple exemple:</strong></p>
+<pre><code class="lang-python">from time import sleep
+from Messaging import zeromq
+import numpy as np
+
+def inverse(data):
+    data[&#39;array&#39;] = -data[&#39;array&#39;]
+    return data
+
+workers = zeromq.ThreadedWorker(inverse, &quot;127.0.0.1&quot;, 65000, nb_workers=2)
+workers.start()
+## Stop workers after 120 seconds
+sleep(120)
+workers.stop()
+</code></pre>
+
+				</article>
+			</div>
+		</div>
+
+		<footer><a href="../site-index.html">Pages index</a>
+</footer>
+
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/highlight.min.js"></script>
+		<script src="../assets/js/tipuesearch_set.js"></script>
+		<script src="../assets/js/tipuesearch.min.js"></script>
+		<script>
+			$(function() {
+				hljs.initHighlightingOnLoad();
+				$('#tipue_search_input').tipuesearch({
+					mode: 'json',
+					contentLocation: '../index.json'
+				});
+			});
+		</script>
+		
+		<!-- Generated by Vegetables from 'Messaging/README.md' with format 'default' - '31/08/2020 à 12:08:31' -->
+	</body>
+</html>
