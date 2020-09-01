@@ -72,7 +72,7 @@ rectangle "RabbitMQ   Broker" as RmqBroker {
 
     rectangle "Admins' Queues" <<QUEUES>> as RmqQueuesOut {
         card Card_D0P0T1MASTER <<MASTER>> [
-            D0_P0_prod_master
+            D0_P0_prod_reply
             ___
             ---
             ---
@@ -121,13 +121,13 @@ rectangle "RabbitMQ   Broker" as RmqBroker {
 
 Backend -> Card_TbottAdmin_in
 Card_TbottAdmin_in -> ExchTbott
-ExchTbott -u-> Card_TbottAdmin_out<<MASTER>>: "routing:\nD0.P0.prod.master"
+ExchTbott -u-> Card_TbottAdmin_out<<MASTER>>: "routing:\nD0.P0.prod.reply"
 Card_TbottAdmin_out -> Backend<<MASTER>>
 Backend --> Proxy<<MASTER>>
 
 
 ExchTbott --> Card_D0P0T1: "routing:\nD0.P0.prod.#"
-ExchTbott <-- Card_D0P0T1MASTER<<MASTER>>: "routing:\nD0.P0.prod.master"
+ExchTbott <-- Card_D0P0T1MASTER<<MASTER>>: "routing:\nD0.P0.prod.reply"
 ExchTbott --> Card_D0P0T2: "routing:\nD0.P0.prod.#"
 ExchTbott --> Card_D0P1T1: "routing:\nD0.P1.prod.#"
 ExchTbott --> Card_D1P0T1: "routing:\nD1.P0.test.#"
@@ -178,7 +178,7 @@ frame "Pods D1.P0.test" as POD3 <<POD3>> {
 }
 
 Card_D0P0T1 --> CompD0P0T1: topic\nD0.P0.prod.uid1
-Card_D0P0T1MASTER <-- CompD0P0T1<<MASTER>>: topic\nD0.P0.prod.master
+Card_D0P0T1MASTER <-- CompD0P0T1<<MASTER>>: topic\nD0.P0.prod.reply
 Card_D0P0T2 --> CompD0P0T2: topic\nD0.P0.prod.uid2
 Card_D0P1T1 --> CompD0P1T1: topic\nD0.P1.prod.uid3
 Card_D1P0T1 --> CompD1P0T1: topic\nD1.P0.test.uid4
