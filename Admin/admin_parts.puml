@@ -69,7 +69,7 @@ skinparam arrow<<INTRA>> {
     !if ($display == "all") || ($display == "AdminIndex")
         frame "Pod communications" as AdminPodCom {
             component ADM_MSG [
-                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                from [[http://10.165.64.205/AI/Messaging Messaging]] import zeromq
                 ----
                 <color:teal>zeromq.ThreadedWorker(</color>
                 <color:teal>    <i><b>callback_func</b></i>,</color>
@@ -95,9 +95,9 @@ skinparam arrow<<INTRA>> {
     !if ($display == "all") || ($display == "AdminEntryPoint")
        frame "Entry Point" as AdminEntryPoint {
             component ADMIN_MSG_C [
-                [[http://10.165.64.205/AI/Messaging Messaging]] lib
+                from [[http://10.165.64.205/AI/Messaging Messaging]] import topic_routing
                 ----
-                <i><color:teal>base.backend_com(</color></i>
+                <i><color:teal>backend_com(</color></i>
                 <i><color:teal>host=<b>$RMQ_IP</b></color></i>
                 <i><color:teal>username=$RMQ_USER</color></i>
                 <i><color:teal>password=$RMQ_PASSWD</color></i>
