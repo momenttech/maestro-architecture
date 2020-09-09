@@ -42,8 +42,7 @@ skinparam arrow<<INTRA>> {
                                 \
                                 "RMQ_USER = <i>tbott</i>\n\
                                 RMQ_PASSWD = <i>M0m3n773ch</i>\n\
-                                COMMAND_QUEUE = <i>tbott-admin-in</i>\n\
-                                REPLY_QUEUE = <i>tbott-admin-out</i>\n\
+                                RMQ_EXCHANGE = <i>amq.topic</i>\n\
                                 COMMAND_TOPIC = <i>$GIT_DOMAIN.$GIT_PROJECT.$TARGET</i>\n\
                                 ENCODER_QUEUE = <i>tbott-encoder</i>\n\
                                 RMQ_PORT = <i>5672</i>\n\
@@ -101,8 +100,7 @@ skinparam arrow<<INTRA>> {
                 <i><color:teal>host=<b>$RMQ_IP</b></color></i>
                 <i><color:teal>username=$RMQ_USER</color></i>
                 <i><color:teal>password=$RMQ_PASSWD</color></i>
-                <i><color:teal>in_queue=$COMMAND_QUEUE</color></i>
-                <i><color:teal>out_queue=$REPLY_QUEUE</color></i>
+                <i><color:teal>exchange=$RMQ_EXCHANGE</color></i>
                 <i><color:teal>topic=$COMMAND_TOPIC</color></i>
                 <i><color:teal>port=$RPC_PORT)</color></i>
                 ----
