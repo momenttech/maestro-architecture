@@ -168,17 +168,28 @@ return final_ids, final_scores
 1. Get from **Admin** questions and replies associated to the list of candidates IDs.  
    * request:
       ```json
-      { "request": "get_candidates"}
+      { "request": "get_candidates",
+        "ids": [1, 2, 3]}
       ```
    * reply:
       ```json
       { 
       "request": "get_candidates",
-      "result":  [{"cat1": [{"cat1": "DDAY"}]},  
-                  {"cat1_cat2": [{"cat1": "D-DAY", "cat2": "Bilan"},  
-                                 {"cat1": "D-DAY", "cat2": "Cimetières"}
-                                ]}]
-      }
+      "result":  [{"id": 1, "ref": "DDAY/dday/20", 
+                   "question": "Quelles sont les plages du débarquement ?", 
+                   "augmented": false, 
+                   "reply": "Les 5 plages du débarquement sont ...", 
+                   "cat1": "D-DAY", "cat2": "Lieux de Batailles"}, 
+                  {"id": 2, "ref": "DDAY/dday/20", 
+                   "question": "D-DAY, Quelles sont les plages du débarquement ?", 
+                   "augmented": true, 
+                   "reply": "Les 5 plages du débarquement sont ...", 
+                   "cat1": "D-DAY", "cat2": "Lieux de Batailles"},
+                  {"id": 3, "ref": "DDAY/dday/20", 
+                   "question": "D-DAY, Lieux de Batailles, Quelles sont les plages du débarquement ?", 
+                   "augmented": true, 
+                   "reply": "Les 5 plages du débarquement sont ...", "cat1": "D-DAY", "cat2": "Lieux de Batailles"}
+                  ]}
       ```
 2. Build a list of paired questions.
    * Augmented questions must be paired only with questions from the same categories/contexts

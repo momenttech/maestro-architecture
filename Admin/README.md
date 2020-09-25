@@ -144,7 +144,49 @@ slideshow:
 * Multithreaded
 * Access the index through a **Read/Write Lock** with priority on **Write**
   * RWLock lib: https://github.com/elarivie/pyReaderWriterLock
-  
+
+* Exemple of context request:
+   * request:
+      ```json
+      { "request": "get_contexts"}
+      ```
+   * reply:
+      ```json
+      { 
+      "request": "get_contexts",
+      "result":  [{"cat1": [{"cat1": "DDAY"}]},  
+                  {"cat1_cat2": [{"cat1": "D-DAY", "cat2": "Bilan"},  
+                                 {"cat1": "D-DAY", "cat2": "Cimetières"}
+                                ]}]
+      }
+      ```
+
+* Exemple of info request:
+   * request:
+      ```json
+      { "request": "get_candidates",
+        "ids": [1, 2, 3]}
+      ```
+   * reply:
+      ```json
+      { 
+      "request": "get_candidates",
+      "result":  [{"id": 1, "ref": "DDAY/dday/20", 
+                   "question": "Quelles sont les plages du débarquement ?", 
+                   "augmented": false, 
+                   "reply": "Les 5 plages du débarquement sont ...", 
+                   "cat1": "D-DAY", "cat2": "Lieux de Batailles"}, 
+                  {"id": 2, "ref": "DDAY/dday/20", 
+                   "question": "D-DAY, Quelles sont les plages du débarquement ?", 
+                   "augmented": true, 
+                   "reply": "Les 5 plages du débarquement sont ...", 
+                   "cat1": "D-DAY", "cat2": "Lieux de Batailles"},
+                  {"id": 3, "ref": "DDAY/dday/20", 
+                   "question": "D-DAY, Lieux de Batailles, Quelles sont les plages du débarquement ?", 
+                   "augmented": true, 
+                   "reply": "Les 5 plages du débarquement sont ...", "cat1": "D-DAY", "cat2": "Lieux de Batailles"}
+                  ]}
+      ```
 ###  
 
 <img src="../images/plantuml/Admin/admin/Admin_Index.svg" height="610">
