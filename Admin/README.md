@@ -84,9 +84,24 @@ slideshow:
 ###  
 <img src="../images/plantuml/Admin/admin/Admin_Manage.svg" height="610">
 
+##### Messages from Admin GUI:
+
+  * Normaly, only an **update** request is necessary:
+    ```json
+    {"request" : "update"}
+    ```
+  * If needed you can pass optional parameters to change the kingdom's branch or the project's branch:
+    ```json
+    {"request": "update",
+     "kingdom_branch": "training",
+     "project_branch": "v6"
+     }
+    ```
+    * A kingdom branch change may be needed when changing the access to other Domains/Projects
+    * A project branch change may be trigerred by a rollback or a testing procedure
 
 ### FAISS request example:
-```
+```json
 {"requests" : ["create"],
  "create" : [
                {"vector" : numpy.array , "id" : 1},
