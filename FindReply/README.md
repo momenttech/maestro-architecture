@@ -82,6 +82,20 @@ def handle_message(self, msg):
 #### Step 1: contexts
 _NB: only if message is a "question" (ie comes from RASA)_
 1. get all possible categories (or contexts) from Admin.
+   * request:
+      ```json
+      { "request": "get_contexts"}
+      ```
+   * reply:
+      ```json
+      { 
+      "request": "get_contexts",
+      "result":  [{"cat1": [{"cat1": "DDAY"}]},  
+                  {"cat1_cat2": [{"cat1": "D-DAY", "cat2": "Bilan"},  
+                                 {"cat1": "D-DAY", "cat2": "Cimetières"}
+                                ]}]
+      }
+      ```
 2. extend question list with all _possible_ contexts
 
 #### Step 2: vectors
@@ -152,6 +166,20 @@ return final_ids, final_scores
 #### Step 4 : Questions to match
 
 1. Get from **Admin** questions and replies associated to the list of candidates IDs.  
+   * request:
+      ```json
+      { "request": "get_candidates"}
+      ```
+   * reply:
+      ```json
+      { 
+      "request": "get_candidates",
+      "result":  [{"cat1": [{"cat1": "DDAY"}]},  
+                  {"cat1_cat2": [{"cat1": "D-DAY", "cat2": "Bilan"},  
+                                 {"cat1": "D-DAY", "cat2": "Cimetières"}
+                                ]}]
+      }
+      ```
 2. Build a list of paired questions.
    * Augmented questions must be paired only with questions from the same categories/contexts
 

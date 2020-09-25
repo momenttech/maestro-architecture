@@ -36,14 +36,15 @@ skinparam arrow<<INTRA>> {
                 $DockerVariables("AdminModule", \
                                 "RMQ_IP: <i>RMQ broker</i>\n\
                                 GIT_SERVER: <i>Git server address</i>\n\
-                                GIT_DOMAIN: <i>Git DOMAIN</i>\n\
+                                GIT_BRANCH: <i>Kingdom branch</i>\n\
+                                DOMAIN: <i>Git DOMAIN</i>\n\
                                 GIT_PROJECT: <i>Git project in $GIT_DOMAIN</i>\n\
                                 TARGET: <i>Pod's destination (ex: prod, test ...)</i>", \
                                 \
                                 "RMQ_USER = <i>tbott</i>\n\
                                 RMQ_PASSWD = <i>M0m3n773ch</i>\n\
                                 RMQ_EXCHANGE = <i>amq.topic</i>\n\
-                                COMMAND_TOPIC = <i>$GIT_DOMAIN.$GIT_PROJECT.$TARGET</i>\n\
+                                RMQ_TOPIC = <i>$GIT_DOMAIN.$GIT_PROJECT.$TARGET</i>\n\
                                 ENCODER_QUEUE = <i>tbott-encoder</i>\n\
                                 RMQ_PORT = <i>5672</i>\n\
                                 LOG_LEVEL= <i>INFO</i>")
@@ -123,8 +124,8 @@ skinparam arrow<<INTRA>> {
             [Create list of questions] as AdminCreateQuestions
             [Data augmentation\nwith N1 and N2\ncategories (or contexts)] as AdminDataAugment
             [Get vectors from Bert encoder] as AdminEncodeSent
-            [Send command to create/update FAISS index] as FaissCmd
             [Create/Update questions index] as AdminCreateIndex
+            [Send command to create/update FAISS index] as FaissCmd
         }
         !if ($display == "AdminExecCommand")
             interface "request" as ADMIN_MSG_REQ
@@ -153,10 +154,10 @@ skinparam arrow<<INTRA>> {
         AdminCreateQuestions --> AdminDataAugment<<INTRA>>
         AdminDataAugment --> AdminEncodeSent<<INTRA>>
         AdminEncodeSent o-l0)-> AdminEncoder
-        AdminEncodeSent --> FaissCmd<<INTRA>>
+        AdminEncodeSent --> AdminCreateIndex<<INTRA>>
+        AdminCreateIndex --> FaissCmd<<INTRA>>
         FaissCmd -l-> Faiss
-        FaissCmd --> AdminCreateIndex<<INTRA>>
-        AdminCreateIndex ..u-> AdminRes<<INTRA>>
+        FaissCmd ..u-> AdminRes<<INTRA>>
         
     !endif
 
