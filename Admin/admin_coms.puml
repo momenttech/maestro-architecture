@@ -46,7 +46,7 @@ rectangle "RabbitMQ Broker" as RmqBroker {
     }
     rectangle "Admins' Queues" <<QUEUES>> as RmqQueuesOut {
         card Card_A0P0T0Q1 [
-            A0_P0_prod_<b>Q</b>_uid1
+            COUNCIL.A0_P0_prod_<b>Q</b>_uid1
             ___
             ---
             ---
@@ -54,7 +54,7 @@ rectangle "RabbitMQ Broker" as RmqBroker {
             ---
         ]
         card Card_A0P0T0A1 [
-            A0_P0_prod_<b>A</b>_uid1
+            COUNCIL.A0_P0_prod_<b>A</b>_uid1
             ___
             ---
             ---
@@ -63,7 +63,7 @@ rectangle "RabbitMQ Broker" as RmqBroker {
             ---
         ]
         card Card_A0P0T0A2 [
-            A0_P0_prod_<b>Q</b>_uid2
+            COUNCIL.A0_P0_prod_<b>Q</b>_uid2
             ___
             ---
             ---
@@ -72,7 +72,7 @@ rectangle "RabbitMQ Broker" as RmqBroker {
             ---
         ]
         card Card_A0P0T0Q2 [
-            A0_P0_prod_<b>A</b>_uid2
+            COUNCIL.A0_P0_prod_<b>A</b>_uid2
             ___
             ---
             ---
@@ -89,10 +89,10 @@ rectangle "RabbitMQ Broker" as RmqBroker {
 'MasterReply -l-> Card_TbottAdmin
 Card_TbottAdmin -d-> ExchTbott
 
-ExchTbott --> Card_A0P0T0A1: "routing:\nA0.P0.prod.<b>A</b>.#"
-ExchTbott --> Card_A0P0T0Q1: "routing:\nA0.P0.prod.<b>Q</b>.#"
-ExchTbott --> Card_A0P0T0A2: "routing:\nA0.P0.prod.<b>A</b>.#"
-ExchTbott --> Card_A0P0T0Q2: "routing:\nA0.P0.prod.<b>Q</b>.#"
+ExchTbott --> Card_A0P0T0A1: "routing:\nCOUNCIL.A0.P0.prod.<b>A</b>.#"
+ExchTbott --> Card_A0P0T0Q1: "routing:\nCOUNCIL.A0.P0.prod.<b>Q</b>.#"
+ExchTbott --> Card_A0P0T0A2: "routing:\nCOUNCIL.A0.P0.prod.<b>A</b>.#"
+ExchTbott --> Card_A0P0T0Q2: "routing:\nCOUNCIL.A0.P0.prod.<b>Q</b>.#"
 
 frame "Admin" as FrameA0P0T1 {
     component CompA0P0T1 [
@@ -112,14 +112,14 @@ frame "Admin" as FrameA0P0T2 {
     ]
 }
 
-FrameA0P0T1 -> Card_TbottAdmin: "Who is\nmaster\nA0.P0.prod.<b>Q</b>.#"
-FrameA0P0T2 -> Card_TbottAdmin: "I'm\nmaster\nA0.P0.prod.<b>A</b>.#"
+FrameA0P0T1 -> Card_TbottAdmin: "Who is\nmaster\nCOUNCIL.A0.P0.prod.<b>Q</b>.#"
+FrameA0P0T2 -> Card_TbottAdmin: "I'm\nmaster\nCOUNCIL.A0.P0.prod.<b>A</b>.#"
 'Com -u-> MasterQuestions
 
-Card_A0P0T0A1 --> CompA0P0T1: topic\nA0.P0.prod.<b>A</b>.uid1
-Card_A0P0T0Q1 --> CompA0P0T1: topic\nA0.P0.prod.<b>Q</b>.uid1
-Card_A0P0T0A2 --> CompA0P0T2: topic\nA0.P0.prod.<b>A</b>.uid2
-Card_A0P0T0Q2 --> CompA0P0T2: topic\nA0.P0.prod.<b>Q</b>.uid2
+Card_A0P0T0A1 --> CompA0P0T1: topic\nCOUNCIL.A0.P0.prod.<b>A</b>.uid1
+Card_A0P0T0Q1 --> CompA0P0T1: topic\nCOUNCIL.A0.P0.prod.<b>Q</b>.uid1
+Card_A0P0T0A2 --> CompA0P0T2: topic\nCOUNCIL.A0.P0.prod.<b>A</b>.uid2
+Card_A0P0T0Q2 --> CompA0P0T2: topic\nCOUNCIL.A0.P0.prod.<b>Q</b>.uid2
 
 
 @enduml

@@ -93,8 +93,8 @@ slideshow:
   * If needed you can pass optional parameters to change the kingdom's branch or the project's branch:
     ```json
     {"request": "update",
-     "kingdom_branch": "training",
-     "project_branch": "v6"
+     "kingdom": "training",
+     "branch": "v6"
      }
     ```
     * A kingdom branch change may be needed when changing the access to other Domains/Projects
