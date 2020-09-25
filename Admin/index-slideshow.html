@@ -64,18 +64,18 @@
 - <u>Mandatory</u>
  - **RMQ_IP**: RabbitMQ broker FQN or IP
  - **GIT_SERVER**: GOGS FQN or IP
- - **GIT_DOMAIN**: Client&#39;s domain name on GIT
- - **GIT_PROJECT**: Client&#39;s project name
+ - **GIT_BRANCH**: Kingdom branch
+ - **DOMAIN**: Client&#39;s domain name on GIT
+ - **PROJECT**: Client&#39;s project name
  - **TARGET**: Pod&#39;s target (or branch) - ex: prod, test, ...
 - <u>Optional</u>
  - RMQ_USER: *tbott*
  - RMQ_PASSWD: *M0m3n773ch*
- - COMMAND_QUEUE: *tbott-admin-in*    (Commands from GUI backend)
- - REPLY_QUEUE: *tbott-admin-out*  (Replies to GUI backend)
- - COMMAND_TOPIC: *$GIT_DOMAIN.$GIT_PROJECT.$TARGET*
+ - RMQ_TOPIC: *$GIT_DOMAIN.$GIT_PROJECT.$TARGET*
+ - RMQ_EXCHANGE: *amq.topic*
  - ENCODER_QUEUE: *tbott-encoder*
  - RMQ_PORT: *5672*
- - LOG_LEVEL: *INFO*  
+ - LOG_LEVEL: *INFO*
 
 #VSLIDE
 
