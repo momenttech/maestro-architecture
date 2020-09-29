@@ -84,8 +84,9 @@ _NB: only if message is a "question" (ie comes from RASA)_
 1. get all possible categories (or contexts) from Admin.
    * request:
       ```json
-      { "request": "get_contexts"}
+      { "request": "get_contexts", "content": "cat1"}
       ```
+      **content** is optional. It can be used to filter categories if one is provided in the question. You can omit it if not needed.
    * reply:
       ```json
       { 
