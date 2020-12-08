@@ -115,7 +115,7 @@ Request example:
 Reply example:
 ```python
 { 
-  "encoded": [numpy.array, numpy.array, numpy.array]
+  "result": [numpy.array, numpy.array, numpy.array]
 }
 ```
 
