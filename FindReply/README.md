@@ -80,7 +80,9 @@ def handle_message(self, msg):
 ```
 
 #### Step 1: contexts
+
 _NB: only if message is a "question" (ie comes from RASA)_
+
 1. get all possible categories (or contexts) from Admin.
    * request:
       ```json
@@ -195,8 +197,14 @@ return final_ids, final_scores
 2. Build a list of paired questions.
    * Augmented questions must be paired only with questions from the same categories/contexts
 
-
 #### Step 5 : Best match
+
+Starting with **LaBSE** encoder, cosine similartiry measures (provided by FAISS module) can be directly used as a matching score if:
+* score is >= 0.90 for a question with more than 6 words
+* score is >= 0.75 for a question with less than 7 words
+
+> This shortcut will improve latencies without sacrifying accuracies.
+
 
 1. Send the list of questions pairs to rabbitMQ $MATCHING_QUEUE using the _Messaging_ library.
 2. Build the final reply with the best match and other candidates
