@@ -1,6 +1,6 @@
----
+---  
 [Access to Github Pages](https://momenttech.github.io/maestro-architecture/)
----
+---  
 # Current architecture's limitations
 
 * Created for **one** big client, not in line with our current needs

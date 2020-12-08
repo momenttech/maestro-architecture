@@ -203,7 +203,7 @@ Starting with **LaBSE** encoder, cosine similartiry measures (provided by FAISS 
 * score is >= 0.90 for a question with more than 6 words
 * score is >= 0.75 for a question with less than 7 words
 
-> This shortcut will improve latencies without sacrifying accuracies.
+> _This shortcut will improve latencies without sacrifying accuracy._
 
 
 1. Send the list of questions pairs to rabbitMQ $MATCHING_QUEUE using the _Messaging_ library.
