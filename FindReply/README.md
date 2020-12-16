@@ -172,7 +172,7 @@ return final_ids, final_scores
    * request:
       ```json
       { "request": "get_candidates",
-        "ids": [1, 2, 3]}
+        "content": [1, 2, 3]}
       ```
    * reply:
       ```json
