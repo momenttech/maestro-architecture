@@ -29,8 +29,8 @@ slideshow:
       ► limits the number of questions in parallel  
       ► defines service level capacities (dimensioning rule)  
       ► default =  *5*  
-  * RMQ_USER: _tbott_
-  * RMQ_PASSWD: _M0m3n773ch_  
+  * RMQ_USER: ...
+  * RMQ_PASSWD: ...
   * ENCODER_QUEUE: _tbott-encoder_  (Bert encoder queue)
   * MATCHING_QUEUE: _tbott-matching_ (Sentence matching queue)
   * RMQ_PORT: _5672_

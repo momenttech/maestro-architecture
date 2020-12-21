@@ -38,8 +38,8 @@ skinparam arrow<<INTRA>> {
                                 QUESTIONS_QUEUE = Questions from RASA\n\
                                 Ex: tbott-rpc.<i>dom.proj</i>", \
                                 \
-                                "RMQ_USER = <i>tbott</i>\n\
-                                RMQ_PASSWD = <i>M0m3n773ch</i>\n\
+                                "RMQ_USER = ...\n\
+                                RMQ_PASSWD = ...\n\
                                 ENCODER_QUEUE = <i>tbott-encoder</i>\n\
                                 MATCHING_QUEUE = <i>tbott-matching</i>\n\
                                 NB_INSTANCES = <i>5</i>\n\

@@ -41,8 +41,8 @@ skinparam arrow<<INTRA>> {
                                 GIT_PROJECT: <i>Git project in $GIT_DOMAIN</i>\n\
                                 TARGET: <i>Pod's destination (ex: prod, test ...)</i>", \
                                 \
-                                "RMQ_USER = <i>tbott</i>\n\
-                                RMQ_PASSWD = <i>M0m3n773ch</i>\n\
+                                "RMQ_USER = ...\n\
+                                RMQ_PASSWD = ...\n\
                                 RMQ_EXCHANGE = <i>amq.topic</i>\n\
                                 RMQ_TOPIC = <i>$GIT_DOMAIN.$GIT_PROJECT.$TARGET</i>\n\
                                 ENCODER_QUEUE = <i>tbott-encoder</i>\n\

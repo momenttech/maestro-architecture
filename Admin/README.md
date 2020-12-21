@@ -32,8 +32,8 @@ slideshow:
   * **TARGET**: Pod's target (or branch) - ex: prod, test, ...
   
 * <u>Optional</u>
-  * RMQ_USER: _tbott_
-  * RMQ_PASSWD: _M0m3n773ch_
+  * RMQ_USER: ...
+  * RMQ_PASSWD: ...
   * RMQ_TOPIC: *$GIT_DOMAIN.$GIT_PROJECT.$TARGET*
   * RMQ_EXCHANGE: *amq.topic*
   * ENCODER_QUEUE: _tbott-encoder_
