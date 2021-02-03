@@ -131,20 +131,43 @@ def handle_message(self, msg):
 
 
 1. get all possible categories (or contexts) from Admin.
- - request:```json
- { "request": "get_contexts", "content": "cat1"}
+ - request:
+```json
+ { "request": "get_contexts", , "tag": "prev_tag", "content": "cat1"}
 ```
- **content** is optional. It can be used to filter categories if one is provided in the question. You can omit it if not needed.
- - reply:```json
+  - **tag**: the tag given in the previous request&#39;s result.  
+Set to *None* if it doesn&#39;t exist.  
+  - **content**: optional. It can be used to filter categories if one is provided in the question. You can omit it if not needed.
+ - reply:
+```json
  { 
  "request": "get_contexts",
- "result":  [{"cat1": [{"cat1": "DDAY"}]},  
-             {"cat1_cat2": [{"cat1": "D-DAY", "cat2": "Bilan"},  
-                            {"cat1": "D-DAY", "cat2": "Cimetières"}
-                           ]}]
+ "result":  {
+     "tag": "update_tag",
+     "dictionary": ["word_a: word_b", "word_x: word_y"],
+     "contexts": [{"cat1": [{"cat1": "DDAY"}]},  
+                          {"cat1_cat2": [{"cat1": "D-DAY", "cat2": "Bilan"},  
+                                         {"cat1": "D-DAY", "cat2": "Cimetières"}]}
+                         ]
  }
 ```
-1. extend question list with all *possible* contexts
+  - **tag**: a tag to track updates. If the *tag* in the request in equal to the last update *tag* then **dictionary** and **contexts** wil be empty and previous *dictionary* and *contexts* should be used.
+  - **dictionary**: a dictionary to pass to **wordtools**
+  - **contexts**: list of all contexts
+1. extend question list with all *possible* contexts  
+ - The list of questions must be preprocessed with the library **wordtools** 4.0 or higher:  ```python
+ from wordtools import Document
+ ...
+ doc = Document('', dictionary=dictionary)
+ processed = []
+ for q in questions:
+   doc.text = q
+   doc.clean()
+   doc.apply_dictionary()
+   if auto_correct:
+     doc.auto_correct()
+   processed.append(doc.text)
+```
 
 #VSLIDE
 
