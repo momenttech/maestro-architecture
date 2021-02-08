@@ -111,7 +111,7 @@ _NB: only if message is a "question" (ie comes from RASA)_
 2. extend question list with all _possible_ contexts  
    * The list of questions must be preprocessed with the library **wordtools** 4.0 or higher:  
       ```python
-      from wordtools import Document
+      from wordtools.text_processor import Document
       ...
       doc = Document('', dictionary=dictionary)
       processed = []
