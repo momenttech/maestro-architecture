@@ -35,7 +35,7 @@ slideshow:
   * RMQ_USER: ...
   * RMQ_PASSWD: ...
   * RMQ_TOPIC: *$GIT_DOMAIN.$GIT_PROJECT.$TARGET*
-  * RMQ_EXCHANGE: *amq.topic*
+  * RMQ_EXCHANGE: *reload-dataset*
   * ENCODER_QUEUE: _tbott-encoder_
   * RMQ_PORT: _5672_
   * LOG_LEVEL: _INFO_
